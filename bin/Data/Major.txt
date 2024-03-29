@@ -1,0 +1,54 @@
+1:Accounting:2012
+2:Economics:2013
+3:Finance:2014
+4:Health Administration:2017
+5:Hospitality Management:2017
+6:International Business & Trade:2017
+7:Management- Leaderhsip & Entrepreneurship:2017
+8:Management Information Systems:2016
+9:Marketing:2018
+10:Anthropology:2004
+11:Arts and Humanities:2004
+12:Communication and Multimedia Studies:2003
+13:Comparative Studies:2003
+14:English:2004
+15:History:2004
+16:Jewish Studies:2004
+17:"Languages, Linguistics, and Comparative Literature":2003
+18:Liberal Studies:2004
+19:Music:2000
+20:Philosophy:2004
+21:Political Science:2004
+22:Social Science:2004
+23:Sociology:2004
+24:Theater:2001
+25:Visual Arts and Art History:2002
+26:Women's Studies:2003
+27:Speech Pathology and Audiology:2005
+28:Architecture:2019
+29:Criminal Justice :2020
+30:Criminology and Criminal Justice:2020
+31:Public Management:2021
+32:Public Safety Administration:2021
+33:Public Administration:2021
+34:Nonprofit Management:2021
+35:Social Work:2022
+36:Urban Design:2023
+37:Counseling:2006
+38:Counselor Education/Mental Health:2006
+39:School Counseling K-12:2006
+40:Counselor Education/Rehab Mental Health:2006
+41:Counselor Education/Rehabilitation:2006
+42:Early Child Care and Education:2007
+43:Curriculum and Instruction:2007
+44:TESOL and Bilingual Education:2007
+45:Early Childhood Education:2007
+46:Social Foundations- Multicultural Education:2007
+47:Adult and Community Leadership:2008
+48:Educational Leadership K-12:2008
+49:Higher Education:2008
+50:Early Child Care and Education:2009
+51:Exceptional Student Education:2009
+52:Exceptional Student Education/ESOL K-12:2009
+53:Applied Behavior Analysis:2009
+54:Infant Toddler Developmental Specialist:2009

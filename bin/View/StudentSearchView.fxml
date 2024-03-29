@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentSearchController">
+   <left>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-insets: 20;" text="Enter Student ID#:" translateY="-20.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false">
+               <children>
+                  <TextField fx:id="tfIDField" minHeight="80.0" minWidth="100.0" onMouseClicked="#tfIDFieldClicked" prefHeight="80.0" prefWidth="208.0" style="-fx-background-radius: 20;" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <Pane prefHeight="315.0" prefWidth="235.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="27.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+         </children>
+      </Pane>
+   </right>
+   <top>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search For a Student" />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="37.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="searchButton" layoutX="251.0" layoutY="-20.0" mnemonicParsing="false" onAction="#search" style="-fx-background-insets: 0; -fx-border-style: dashed;" text="Search" translateY="20.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,301 @@
+Z23119407:Marie:Held:1129 W CONANT ST:Wellington:FL:33357:5615672436:mheld@my.mdc.edu:119:12/2016
+Z23119411:Michael:Schreuder:5312 NEWHALL RD:Boca Raton:FL:33431:5611357894:mschreude@my.mdc.edu:115:12/2016
+Z23119474:Ned:Whitner:9525 MILLEN DR:Boynton Beach:FL:34229:5613956717:nwhitner@my.mdc.edu:124:5/2017
+Z23119560:Gwen:Mason:241 MCGREGOR CIRCLE:Boynton Beach:FL:34229:5613131447:gmason@my.mdc.edu:17:8/2019
+Z23119573:Mark:Palumbo:3700 WEDGEDALE PL:Cooper City:FL:33070:9542289134:mpalumbo@my.mdc.edu:106:8/2019
+Z23119629:Annah:Merritt:2856 PARK PL:Boynton Beach:FL:34226:5617933301:amerritt@my.mdc.edu:36:8/2017
+Z23119709:Delores:Hallsey:105 STONEHOLLOW CT:Ft. Lauderdale:FL:34262:9543290917:dhallsey@my.mdc.edu:51:5/2016
+Z23119722:Gevine:White:9402 VOYAGERS WAY:Greenacres:FL:33328:5613621215:gwhite@my.mdc.edu:99:5/2016
+Z23119771:Mary Ann:SALEEBY:513 SIERRA DRIVE:Boca Raton:FL:33429:5618480309:msaleeby@my.mdc.edu:66:8/2017
+Z23119796:Larry:Vittoe:813 BERWYN WAY:Deerfield Beach:FL:34035:9548941657:lvittoe@my.mdc.edu:82:8/2019
+Z23119872:Lois:Kahl:1600 BEECHWOOD DR:Coral Spring:FL:34718:9548915784:lkahl@my.mdc.edu:139:8/2018
+Z23119961:Ed:Stresemann:7002 KEY POINT DR:Boca Raton:FL:33431:5615849320:estresema@my.mdc.edu:121:5/2019
+Z23119978:Bill:Harrison:110 SW 21ST ST:Deerfield Beach:FL:34035:9549156357:bharrison@my.mdc.edu:134:5/2019
+Z23120031:Julie:Harris:109 DEER COVE:Wellington:FL:33357:5615672186:jharris@my.mdc.edu:106:5/2018
+Z23120040:Clifford:Sink:6041 BELLOW ST:Deerfield Beach:FL:34034:9545615845:csink@my.mdc.edu:135:8/2019
+Z23120076:Joe:Houghton:1257 TULA LAMBERT RD:Boca Raton:FL:33424:5618319587:jhoughton@my.mdc.edu:17:12/2016
+Z23120093:Alfred:Schoenberg:5301 STARFLOWER DR.:Boynton Beach:FL:34222:5614524992:aschoenbe@my.mdc.edu:149:5/2019
+Z23120169:Kim:Lawson:205 APPLECROSS DR:Boca Raton:FL:33432:5618488175:klawson@my.mdc.edu:12:5/2019
+Z23120176:Addie:Kessler:1712 LEXINGTON DR.:Deerfield Beach:FL:34086:9544943820:akessler@my.mdc.edu:142:12/2017
+Z23120193:Estelle:Maxwell:2509 MARKET ST:Boynton Beach:FL:34229:5617943648:emaxwell@my.mdc.edu:10:8/2017
+Z23120221:Melody:Vanderwerff:805 KATHERINE AVE:Hollywood:FL:34121:9544241337:mvanderwe@my.mdc.edu:67:12/2016
+Z23120227:Dave:Howell:13 MANOR DR #7:Boynton Beach:FL:34223:5617999975:dhowell@my.mdc.edu:12:5/2018
+Z23120322:Donna:Maloney:2328 RUSTIC TR:Deerfield Beach:FL:34034:9549412536:dmaloney@my.mdc.edu:79:8/2019
+Z23120379:Elaine:Nguyen:3400 CABARRUS DRIVE:Deerfield Beach:FL:34035:9544812554:enguyen@my.mdc.edu:67:8/2019
+Z23120413:Amy:Miller:3009 JOAN AVE:Deerfield Beach:FL:34033:9546891515:amiller@my.mdc.edu:116:12/2018
+Z23120471:Mark:Hilpert:120 SUBURBAN AVENUE:Boca Raton:FL:33431:5619815345:mhilpert@my.mdc.edu:76:8/2018
+Z23120544:Claudine:Vollmer:8250 E LAKEVIEW DR:Deerfield Beach:FL:34035:9545689324:cvollmer@my.mdc.edu:140:5/2017
+Z23120612:Barbara:McDaniel:2610 SHADY LAWN DR:Ft. Lauderdale:FL:34289:9546424775:bmcdaniel@my.mdc.edu:140:8/2017
+Z23120701:Kathy:Krall:19903 225TH ST:Boynton Beach:FL:34229:5616331039:kkrall@my.mdc.edu:63:8/2019
+Z23120755:Holly:Simmel:601 DOWNPATRICK LN:Coral Spring:FL:33340:9543879377:hsimmel@my.mdc.edu:109:8/2019
+Z23120828:Ginny:Veil:8115-L DUNMORE DR:Oakland Park:FL:33101:9547710335:gveil@my.mdc.edu:25:8/2018
+Z23120904:Annette:Lunsford:2290 CRAWFORD DAIRY RD:Deerfield Beach:FL:34035:9548975235:alunsford@my.mdc.edu:129:5/2016
+Z23120965:Beverly:Storholt:6801 JUSTICE DR:Wellington:FL:33272:5612828905:bstorholt@my.mdc.edu:77:8/2019
+Z23121012:Edna:Moody:309 N. CHURTON ST:Deerfield Beach:FL:34033:9549236878:emoody@my.mdc.edu:19:5/2017
+Z23121050:Laura:Wines:PO BOX 1491:Dania Beach:FL:34127:9548915485:lwines@my.mdc.edu:113:8/2017
+Z23121095:Chuck:Remaklus:4740 FOREST HIGHLAND DR:Miami Gardens:FL:33853:9548945158:cremaklus@my.mdc.edu:65:8/2017
+Z23121106:Bill:Wecht:9049 MCGUFFEY RD:Coral Spring:FL:34424:9542642008:bwecht@my.mdc.edu:98:8/2019
+Z23121158:Fran:Tyrrell:8 MILL CREEK CT:Delray Beach:FL:33529:5614778373:ftyrrell@my.mdc.edu:39:8/2019
+Z23121234:Leslie:Panos:3705 D. MANOR DR.:Deerfield Beach:FL:33530:9549317000:lpanos@my.mdc.edu:56:8/2019
+Z23121251:Pattie:Sommers:625 WILLOUGHBY BLVD:Coral Gables:FL:33951:9547524715:psommers@my.mdc.edu:66:8/2019
+Z23121259:Marilyn:McGuire:2701 RYDAL CT:Deerfield Beach:FL:34034:9544846295:mmcguire@my.mdc.edu:89:8/2019
+Z23121316:Betsy:Werdal:922 POTOMOC DR:Deerfield Beach:FL:34029:9544325745:bwerdal@my.mdc.edu:88:5/2016
+Z23121391:Jan:Hodges:1208 FAIRFAX DR:Coral Spring:FL:33032:9545382020:jhodges@my.mdc.edu:121:5/2018
+Z23121460:Jane:Stroehl:7012 BRITTANY LAKES DRIVE:Boca Raton:FL:33431:5612584965:jstroehl@my.mdc.edu:93:5/2017
+Z23121469:Carole:MILLER:300 E ROSEMARY ST:Wellington:FL:33220:5612724769:cmiller@my.mdc.edu:60:8/2017
+Z23121476:Linda:Horan:12412 BRANDON HALL ROAD:Coral Spring:FL:33018:9542661998:lhoran@my.mdc.edu:109:8/2019
+Z23121510:Carolyn:Tyson:801 MERWIN ROAD:Aventura:FL:33337:9546627760:ctyson@my.mdc.edu:38:5/2016
+Z23121558:Fred and Linda:Wiggins:976 VACATION LAND DRIVE:Deerfield Beach:FL:34044:9545377648:fwiggins@my.mdc.edu:91:12/2017
+Z23121649:Kent:Hess:117 GATES DRIVE:Boca Raton:FL:33432:5619153894:khess@my.mdc.edu:41:5/2017
+Z23121728:Katrina:Misenheimer:303 MICHAEL CIRCLE:Ft. Lauderdale:FL:34278:9544576516:kmisenhei@my.mdc.edu:84:8/2019
+Z23121765:Cecilia:HERRMANN:116 W. GALE STREET:Boca Raton:FL:33618:5611532544:cherrmann@my.mdc.edu:52:5/2016
+Z23121795:George:Mitchell:305 PINEY MTN DR #C-1:Wellington:FL:33224:5612948679:gmitchell@my.mdc.edu:24:5/2019
+Z23121807:Mamie:Terry:721 WELDON LANE:Wellington:FL:33227:5615470982:mterry@my.mdc.edu:85:5/2018
+Z23121819:Clarice:Schultz:5323 FOX COVE LN. APT. O:Aventura:FL:33844:9547131973:cschultz@my.mdc.edu:41:5/2018
+Z23121907:Alice:Kuhns:2009 FOXDEN:Dania Beach:FL:34124:9549123458:akuhns@my.mdc.edu:91:8/2019
+Z23122005:Margaret:Townsend:7612 CHAMPLAIN DRIVE:Deerfield Beach:FL:34033:9542348514:mtownsend@my.mdc.edu:3:5/2018
+Z23122008:Linda:MOORE:3105 BARDWELL ROAD:Deerfield Beach:FL:34033:9543354815:lmoore@my.mdc.edu:145:5/2017
+Z23122043:Julian:Phillips:4101 PALMETTO PL:Deerfield Beach:FL:34086:9549477440:jphillips@my.mdc.edu:105:8/2018
+Z23122134:Dan:Lundquist:229 N LINCOLN ST:Davie:FL:34087:9545098907:dlundquis@my.mdc.edu:32:8/2018
+Z23122221:Gail:Michael:292 GHOLSON AVENUE:Wellington:FL:33227:5618673929:gmichael@my.mdc.edu:134:5/2019
+Z23122248:Lew:Piel:4104 FRATERNITY CT:Lauderhill:FL:33713:9542930612:lpiel@my.mdc.edu:87:5/2016
+Z23122268:Len:Weisner:9155 BLUE MOUNTAIN DR:Oakland Park:FL:33898:9544922160:lweisner@my.mdc.edu:77:5/2017
+Z23122284:Naydine:Hansen:107 RIVERBIRCH PL:Boynton Beach:FL:34229:5613927364:nhansen@my.mdc.edu:103:5/2016
+Z23122316:Craig:Ragsdale:8827 GOLDENWOOD DR:Boca Raton:FL:33433:5619452348:cragsdale@my.mdc.edu:53:5/2018
+Z23122406:Melanie:Guidry:10121 RIVER BANK DR.:Deerfield Beach:FL:34035:9544891415:mguidry@my.mdc.edu:88:5/2019
+Z23122493:Al:Robins:5 PELICAN POINT ROAD:Deerfield Beach:FL:34033:9545354815:arobins@my.mdc.edu:80:8/2018
+Z23122552:Kristine:Praire:423 E SECOND ST:Coral Spring:FL:33319:9543872162:kpraire@my.mdc.edu:28:8/2019
+Z23122616:Jody:Hofstedder:1214 QUEENS ISLAND COURT:Wellington:FL:33224:5612949551:jhofstedd@my.mdc.edu:109:8/2018
+Z23122701:Dave:Sullivan:706 SUTTON MILL RD:Boca Raton:FL:33431:5618707998:dsullivan@my.mdc.edu:104:8/2018
+Z23122717:Candy:White:9426 FAIRMEAD DR:Deerfield Beach:FL:34022:9543326574:cwhite@my.mdc.edu:105:8/2019
+Z23122759:Kathy:McLamb:2710 LA DUELA LANE:Boca Raton:FL:33429:5619456498:kmclamb@my.mdc.edu:4:12/2017
+Z23122790:Norma:McGrogan:269 KRISTI LYNN'S WAY:Wellington:FL:33235:5618567845:nmcgrogan@my.mdc.edu:125:5/2017
+Z23122817:Mary:Williford:PO  BOX 412:Boca Raton:FL:33430:5618461748:mwillifor@my.mdc.edu:52:8/2017
+Z23122882:Jane:Herbst:1137 CHILMARK AVE:Deerfield Beach:FL:34025:9545291468:jherbst@my.mdc.edu:85:8/2019
+Z23122936:Bill:Lombard:2204 MASONS POINT PLACE:Aventura:FL:33845:9546915657:blombard@my.mdc.edu:61:5/2017
+Z23122946:Gordon:Lockley:220 TRILLINGHAM LN:Pembroke Pines:FL:33414:9548698768:glockley@my.mdc.edu:101:12/2018
+Z23122981:Jim:JOHNSON:1509 BARLEY PL:Palm Beach Gardens:FL:33709:5617922878:jjohnson@my.mdc.edu:50:12/2016
+Z23122982:Kelly:Vogelpohl:8211 SCHOONER PL.:Deerfield Beach:FL:34032:9545321561:kvogelpoh@my.mdc.edu:46:12/2017
+Z23122983:Jane:Johansson:1500 LAFAYETTE CT:Boca Raton:FL:33432:5618470113:jjohansso@my.mdc.edu:111:8/2019
+Z23123053:Joyce:Kerins:1705 RIVER RD.:Aventura:FL:35020:9544548945:jkerins@my.mdc.edu:148:8/2019
+Z23123109:Amy:Thiel:7213 BEAVERWOOD DR:Deerfield Beach:FL:34033:9549875652:athiel@my.mdc.edu:32:5/2016
+Z23123155:Dick:Hundley:13837 ECHO PARK CIR:Boca Raton:FL:33423:5618549313:dhundley@my.mdc.edu:2:8/2018
+Z23123162:Kaye:Mowrey:314 WILLIAM STREET:Wellington:FL:34260:5612710302:kmowrey@my.mdc.edu:69:8/2019
+Z23123167:Kerolyn:Wilson:PO BOX 123:Coral Spring:FL:33032:9545381804:kwilson@my.mdc.edu:106:8/2017
+Z23123178:George:Holzhauzer:12410 MADELEY LN:Boca Raton:FL:33430:5615948334:gholzhauz@my.mdc.edu:110:5/2018
+Z23123195:Brenda:HECK:1115 Council Street:Boca Raton:FL:33431:5618468212:bheck@my.mdc.edu:67:12/2016
+Z23123277:Jo:Prill:4303 KINGSLAND DR:Deerfield Beach:FL:34034:9543354815:jprill@my.mdc.edu:26:12/2016
+Z23123327:Becky:Spain:6312 SECRET DR:Deerfield Beach:FL:34035:9549477440:bspain@my.mdc.edu:104:5/2017
+Z23123395:Gary:Tweedy:8 MILL CREEK CT:Boca Raton:FL:33424:5615098907:gtweedy@my.mdc.edu:70:5/2017
+Z23123471:Gregory:Womble:PO BOX 3511:Boynton Beach:FL:34228:5618673929:gwomble@my.mdc.edu:25:5/2019
+Z23123481:Carolyn:Iddings:1400 WHITMAN DR NW:Boynton Beach:FL:34229:5612930612:ciddings@my.mdc.edu:40:8/2017
+Z23123551:Dottie:Shipton:5800 VALLEY ESTATES DR:Wellington:FL:33357:5614922160:dshipton@my.mdc.edu:124:8/2019
+Z23123595:Jim:Page:3643 HUYTON CT:Sunrise:FL:33326:9543927364:jpage@my.mdc.edu:9:8/2019
+Z23123601:Kenneth:Randolph:4405 OMNI PLACE:Wellington:FL:33224:5619452348:krandolph@my.mdc.edu:41:5/2019
+Z23123620:Gen:SEALANDER:5419 HEDGECREST PL:Deerfield Beach:FL:34035:9544891415:gsealande@my.mdc.edu:131:5/2016
+Z23123698:Carol:Teasley:7204 BOBBY JEAN RD:Boca Raton:FL:33432:5615354815:cteasley@my.mdc.edu:9:5/2018
+Z23123760:Cindi:Orr:354 MILLFORD ROAD:Ft. Lauderdale:FL:34278:9543872162:corr@my.mdc.edu:89:8/2017
+Z23123796:Jean:Williams:P.O. BOX 43:Deerfield Beach:FL:34033:9542949551:jwilliams@my.mdc.edu:32:5/2017
+Z23123872:Eydee:Jones:154 HICKORY HILL LANE:Coral Spring:FL:33032:9548707998:ejones@my.mdc.edu:90:12/2017
+Z23123900:Ginger:Schorschinsky:5309 PETRAL CT.:Oakland Park:FL:33101:9543326574:gschorsch@my.mdc.edu:8:5/2018
+Z23123955:Barbara:Teague:7202 TAYLOR STORE ROAD:Aventura:FL:33842:9549456498:bteague@my.mdc.edu:19:8/2019
+Z23123982:Mark:McDonald:2613 DARTMOUTH DR:Wellington:FL:33227:5618567845:mmcdonald@my.mdc.edu:42:12/2018
+Z23124054:Barry:Hadden:10245 INVERSHIELD COURT:Boynton Beach:FL:34226:5618461748:bhadden@my.mdc.edu:39:8/2019
+Z23124083:Mary Lu:Huffman:132 GARRITT ST:Wellington:FL:33224:5615291468:mhuffman@my.mdc.edu:65:8/2019
+Z23124130:Kathy:Peterson:405 N. ANDREWS AVE.:Oakland Park:FL:33900:9546915657:kpeterson@my.mdc.edu:89:8/2019
+Z23124201:Noelle:Thompson:727 W SAGEFIELD DR:Delray Beach:FL:33726:5618698768:nthompson@my.mdc.edu:148:8/2019
+Z23124292:Jeff:Mesimer:2900 CORDOVA ROAD:Boynton Beach:FL:34226:5617922878:jmesimer@my.mdc.edu:77:5/2016
+Z23124375:Dale:Wilcoxen:9920 EDWARDS PL:Ft. Lauderdale:FL:33963:9545321561:dwilcoxen@my.mdc.edu:27:5/2017
+Z23124451:Karen:Korte:1921 HUNTING RIDGE RD:Greenacres:FL:33330:5618470113:kkorte@my.mdc.edu:137:8/2019
+Z23124547:Greg:May:2516 LEAS MILL CT:Riviera Beach:FL:34387:5614548945:gmay@my.mdc.edu:62:8/2018
+Z23124568:Bill:Sipe:6053 TWO NOTCH ROAD:Coral Gables:FL:39134:9549875652:bsipe@my.mdc.edu:7:5/2017
+Z23124598:Helen:Murray:320 DUPONT CIRCLE:Deerfield Beach:FL:34034:9548549313:hmurray@my.mdc.edu:1:8/2017
+Z23124628:Heidi:Hitchcock:1201 LANE STREET:Ft. Lauderdale:FL:33404:9542710302:hhitchcoc@my.mdc.edu:132:12/2018
+Z23124672:Elouise:Lumpkin:22634 DUCK LAKE RD:Boynton Beach:FL:34220:5615381804:elumpkin@my.mdc.edu:76:8/2018
+Z23124702:Oscar:McIntosh:2707 E OAK ISLAND RD:Davie:FL:34221:9545948334:omcintosh@my.mdc.edu:140:8/2019
+Z23124735:Gary:Jowers:1565 LAURELDALE DR:Coral Spring:FL:33319:9548468212:gjowers@my.mdc.edu:84:12/2017
+Z23124828:Betty (Faye):Lewis:2101 LIBERTY DR:Wellington:FL:33320:5613354815:blewis@my.mdc.edu:96:5/2018
+Z23124882:Kathy:Raynor:4501 BRAMTON RD:Greenacres:FL:33321:5619477440:kraynor@my.mdc.edu:116:8/2019
+Z23124949:Giles:Schmitt:5300 APPLE BLOSSOM CT:Boca Raton:FL:33422:5615098907:gschmitt@my.mdc.edu:5:8/2018
+Z23125007:Helen:Powell:421 BLUE ROCK DR:Aventura:FL:35020:9548673929:hpowell@my.mdc.edu:134:12/2016
+Z23125072:Linda:Misenheimer:3037 Halifax Rd:Deerfield Beach:FL:34033:9542930612:lmisenhei@my.mdc.edu:9:5/2016
+Z23125123:Craig:Tomlinson:745 ACOM OAK DRIVE:Aventura:FL:34034:9544922160:ctomlinso@my.mdc.edu:49:12/2017
+Z23125140:Carlene:Persson:401 1/2 CENTER ST:Boynton Beach:FL:34226:5613927364:cpersson@my.mdc.edu:46:12/2017
+Z23125143:Joan:HUBARD:1301 N. ELAM AVE:Deerfield Beach:FL:34035:9549452348:jhubard@my.mdc.edu:15:5/2017
+Z23125174:Michelle:Karstensen:1600 DEERCROFT CT:Deerfield Beach:FL:34034:9544891415:mkarstens@my.mdc.edu:69:8/2018
+Z23125237:Jann:Herman:115 JAY MATTHEWS LANE:Coral Gables:FL:34035:9545354815:jherman@my.mdc.edu:86:12/2017
+Z23125305:Anne:Ide:1401 MOORESVILLE ROAD:Oakland Park:FL:33900:9543872162:aide@my.mdc.edu:97:8/2019
+Z23125371:Jim:Hines:1200 WOODACRE CIRCLE:Boca Raton:FL:33430:5612949551:jhines@my.mdc.edu:36:8/2019
+Z23125451:Alex:Helmey:1129 W CONANT ST:Boca Raton:FL:33432:5618707998:ahelmey@my.mdc.edu:100:8/2017
+Z23125490:Don:Humphrey:1381 EASTFIELD DRIVE:Boca Raton:FL:33433:5613326574:dhumphrey@my.mdc.edu:31:5/2017
+Z23125516:Debbie:McLaughlin:2710 LA DUELA LANE:Deerfield Beach:FL:34029:9549456498:dmclaughl@my.mdc.edu:89:5/2017
+Z23125594:Jerri:Tucker:7717 HILBURN DR:Boynton Beach:FL:34218:5618567845:jtucker@my.mdc.edu:133:12/2016
+Z23125657:Linda:Vittoe:813 BERWYN WAY:Coral Spring:FL:33018:9548461748:lvittoe1@my.mdc.edu:106:8/2019
+Z23125699:Charles:McCombs:2604 ISAAC DR.:Pembroke Pines:FL:33019:9545291468:cmccombs@my.mdc.edu:84:12/2016
+Z23125782:Madeline:Grigsby:101 WINNEBAGO TRAIL:Oakland Park:FL:33020:9546915657:mgrigsby@my.mdc.edu:49:8/2018
+Z23125829:LaVonne:Pfeifer:409 MILLHOUSE ROAD:Oakland Park:FL:34267:9548698768:lpfeifer@my.mdc.edu:46:12/2017
+Z23125890:Bob:Walton:8712 WELLSLEY WAY:Davie:FL:34889:9547922878:bwalton@my.mdc.edu:66:5/2017
+Z23125955:Julie:Michelsen:2924 HICKORY HILL ROAD:Boca Raton:FL:33422:5615321561:jmichelse@my.mdc.edu:108:5/2019
+Z23126045:Deames:Nelson:330 CROWELL LN:Boynton Beach:FL:34226:5618470113:dnelson@my.mdc.edu:5:12/2018
+Z23126117:Judy:Park:3720 GREENE'S CROSSING:Boca Raton:FL:33422:5614548945:jpark1@my.mdc.edu:66:12/2018
+Z23126146:Amy:Weis:9107 WINTER MOSS COURT:Boca Raton:FL:33423:5619875652:aweis@my.mdc.edu:21:8/2018
+Z23126233:Julie:Whitener:9500 PRINCE GEORGE LANE APT. G:Boca Raton:FL:33425:5618549313:jwhitener@my.mdc.edu:2:8/2019
+Z23126255:Karen:Thompson:"7300 STONECLIFF DR, APT 9":Delray Beach:FL:33521:5612710302:kthompson@my.mdc.edu:121:5/2016
+Z23126339:Liz:McDonald:2615 E WOODLYN WAY:Boynton Beach:FL:34229:5615381804:lmcdonald@my.mdc.edu:118:5/2019
+Z23126351:Judy:McFillen:2679 24TH AVE:Deerfield Beach:FL:34033:9545948334:jmcfillen@my.mdc.edu:38:12/2017
+Z23126374:Ben:Wertz:924 VILLA DR:Deerfield Beach:FL:34034:9548468212:bwertz@my.mdc.edu:58:5/2018
+Z23126416:Manda:Padgett Talley:3614 MORRIS FARM DR #1C:Plantation:FL:33346:9546611199:mpadgett @my.mdc.edu:50:5/2017
+Z23126477:Kay:Kohn:1911 FORDHAM RD:Boca Raton:FL:33426:5617812946:kkohn@my.mdc.edu:115:5/2016
+Z23126525:Jeannette:Hall:105 CARRIAGE TR:Aventura:FL:33844:9547889434:jhall@my.mdc.edu:109:5/2016
+Z23126553:Carolyn:Reese:4616 REIGATE WAY:Coral Spring:FL:33845:9543994079:creese@my.mdc.edu:35:12/2016
+Z23126611:David:Mazzei:2519 WESTMORELAND:Boynton Beach:FL:33846:5614529973:dmazzei@my.mdc.edu:70:5/2017
+Z23126635:Edith:Wuenscher:PO BOX 5063:Deerfield Beach:FL:34029:9547865154:ewuensche@my.mdc.edu:91:8/2019
+Z23126729:Christina:Rector:4524 VITEX STREET:Boynton Beach:FL:34222:5619153548:crector@my.mdc.edu:19:8/2019
+Z23126821:Jennie:Park:3717 COLEWOOD DR:Deerfield Beach:FL:34034:9548956485:jpark@my.mdc.edu:33:5/2018
+Z23126869:Beverly:San Miguel:514 I AVENUE:Aventura:FL:33844:9547846126:bsan migu@my.mdc.edu:41:12/2016
+Z23126941:Alice:Holt:1236 TOMMIES DRIVE:Boynton Beach:FL:34222:5614524857:aholt@my.mdc.edu:81:5/2016
+Z23127021:Martha (Mahler):Spelzhausen:6313 BEACON HILL DR:Boca Raton:FL:33423:5612338588:mspelzhau@my.mdc.edu:40:5/2016
+Z23127026:Martha:Schmitt:5300 APPLE BLOSSOM CT:Boca Raton:FL:33429:5618466947:mschmitt@my.mdc.edu:22:8/2019
+Z23127096:Judy:Lohmeyer:2204 CRESCENT DRIVE:Hollywood:FL:34120:9544881997:jlohmeyer@my.mdc.edu:98:12/2017
+Z23127193:Ellen:Veil:8115-L DUNMORE DRIVE:Boynton Beach:FL:34229:5614588356:eveil@my.mdc.edu:109:8/2019
+Z23127199:Julien:McLean:2712 MATTLYN CT:Boca Raton:FL:33431:5618469733:jmclean@my.mdc.edu:49:8/2019
+Z23127293:Elizabeth:Hizer:1207 COPAS RD:Cooper City:FL:33347:9547341708:ehizer@my.mdc.edu:59:8/2017
+Z23127305:John:Mead:2808 CROASDAILE DR APT T-6:Boca Raton:FL:33434:5612930054:jmead@my.mdc.edu:106:12/2017
+Z23127399:Lynn:Hill:12 NORTH 6TH ST:Wellington:FL:33223:5616746708:lhill@my.mdc.edu:92:12/2018
+Z23127426:David:Hardinger:10800 W. BRIDGFORD DR.:Wellington:FL:33099:5614545822:dhardinge@my.mdc.edu:83:5/2017
+Z23127445:Cindy:Morton:312 BROOK STREET:Boynton Beach:FL:34220:5612514407:cmorton@my.mdc.edu:139:8/2019
+Z23127520:Brenda:Rodelander:5001 KORM DR:Greenacres:FL:33328:5618598563:brodeland@my.mdc.edu:122:8/2019
+Z23127543:Pam:Jones:152 GREEMONT LN:Greenacres:FL:33328:5614695951:pjones@my.mdc.edu:19:8/2019
+Z23127602:Jim:Haddow-Green:103 BROMFIELD WAY:Boca Raton:FL:33329:5618766618:jhaddow-g@my.mdc.edu:16:8/2017
+Z23127690:Noelle:Lynch:230 SEMINOLE TRAIL:Deerfield Beach:FL:34029:9545849320:nlynch@my.mdc.edu:136:8/2019
+Z23127786:Millie:Healey:111 YEOPIM CIRCLE:Coral Spring:FL:33032:9549156357:mhealey@my.mdc.edu:84:5/2016
+Z23127881:Lyn:Hoffert:1210 PINCKNEY ST:Boynton Beach:FL:34229:5615672186:lhoffert@my.mdc.edu:140:5/2017
+Z23127898:Jon Todd:Young:PO BOX 881895:Ft. Lauderdale:FL:34230:9545615845:jyoung@my.mdc.edu:75:5/2019
+Z23127949:Mary  Jane:Naugle:325 BROOKLAIN DRIVE:Lake Worth:FL:33061:5618319587:mnaugle@my.mdc.edu:50:8/2017
+Z23128044:David:Smith:6219 TURTLE HALL DR:Deerfield Beach:FL:34033:9544524992:dsmith@my.mdc.edu:115:8/2019
+Z23128133:Libby:Palmore:3700 WEDGEDALE PL:Deerfield Beach:FL:34035:9548488175:lpalmore@my.mdc.edu:122:8/2017
+Z23128196:Dottie:Wilkins:C/O LARRY CAPE P.O. BOX 71:Wellington:FL:34036:5614943820:dwilkins@my.mdc.edu:104:8/2019
+Z23128197:Cathy:Waters:8943 OSAGE ROAD:Deerfield Beach:FL:34034:9547943648:cwaters@my.mdc.edu:105:5/2018
+Z23128223:Ana Marie:Lewis:2105  E  CHARLOTTE CT:Boynton Beach:FL:34218:5614241337:alewis@my.mdc.edu:62:5/2016
+Z23128239:Katie:Patterson:3838 KELLIE LEE LN:Oakland Park:FL:34266:9547999975:kpatterso@my.mdc.edu:53:12/2017
+Z23128294:Kristina:Query:4317 GALLATREE LN:Wellington:FL:33651:5619412536:kquery@my.mdc.edu:140:8/2019
+Z23128351:John:Sumner:706 Happy Valley Ln:Boca Raton:FL:33430:5614812554:jsumner@my.mdc.edu:100:5/2018
+Z23128406:Allan:Wunderlich:PO BOX 5063:Deerfield Beach:FL:34026:9546891515:awunderli@my.mdc.edu:130:5/2017
+Z23128416:Bob:Stitzer:6757 CHAUNCEY DR:Boca Raton:FL:33434:5619815345:bstitzer@my.mdc.edu:100:5/2016
+Z23128433:Cecilia:Rehbein:4703 FREYS HILL CT:Boca Raton:FL:33433:5615689324:crehbein@my.mdc.edu:71:12/2016
+Z23128526:Les:Norris:3408 MORNINGSIDE DR:Boca Raton:FL:33426:5616424775:lnorris@my.mdc.edu:99:12/2017
+Z23128596:Dan:Young:PO Box 90726:Deerfield Beach:FL:34033:9546331039:dyoung@my.mdc.edu:141:12/2016
+Z23128627:Dick:McBride:"2527 COSTMARY LANE, Unit 2":Ft. Lauderdale:FL:34278:9543879377:dmcbride@my.mdc.edu:52:8/2017
+Z23128649:Donna:Hales:10316 LAKE WHEELER RD:Wellington:FL:33224:5617710335:dhales@my.mdc.edu:44:12/2017
+Z23128738:Debbie:Salzgeber:514 BARTLING RD:Boynton Beach:FL:34229:5618975235:dsalzgebe@my.mdc.edu:2:8/2019
+Z23128776:Mike:Rhoads:4805 RUSHING DRIVE:Deerfield Beach:FL:34029:9542828905:mrhoads@my.mdc.edu:22:5/2019
+Z23128846:John:Hinde:"1200 CARLOS DR, APT 310":Boynton Beach:FL:34226:5619236878:jhinde@my.mdc.edu:50:8/2019
+Z23128938:Lynn:Layton:205 FIFTH AVE N:Boca Raton:FL:33423:5618915485:llayton@my.mdc.edu:136:5/2016
+Z23128968:Lori:James:1436 LOCKHART PLACE NW:Deerfield Beach:FL:34044:9548945158:ljames@my.mdc.edu:13:12/2017
+Z23129058:Jim:Riggs:4912 HERITAGE WOODS CT:Oakland Park:FL:33362:9542642008:jriggs@my.mdc.edu:148:5/2018
+Z23129066:Judy:Hance:106 OAK ISLAND DRIVE:Boca Raton:FL:33430:5614778373:jhance@my.mdc.edu:108:5/2016
+Z23129130:John:Vockeroth:814 PEBBLEBROOK DR:Deerfield Beach:FL:34033:9549317000:jvockerot@my.mdc.edu:40:8/2019
+Z23129146:Liz:Philbeck:4100 USHW 29N #230:Boynton Beach:FL:34220:5617524715:lphilbeck@my.mdc.edu:124:12/2016
+Z23129226:Barbara:VARNUM:808 SEVEN LAKES N:Dania Beach:FL:34221:9544846295:bvarnum@my.mdc.edu:138:12/2017
+Z23129279:Harold:Owens:3601 MOSSBOROUGH DR:Deerfield Beach:FL:34033:9544325745:howens@my.mdc.edu:67:8/2019
+Z23129317:Michael:Yost:PO BOX 81:Deerfield Beach:FL:34035:9545382020:myost@my.mdc.edu:53:5/2019
+Z23129411:Malinda:Sutton:"706 HUFFMAN MILL RD, APT R1":Hollywood:FL:34036:9542584965:msutton@my.mdc.edu:83:8/2017
+Z23129483:Gay:Hagemann:103 BROMFIELD WAY:Deerfield Beach:FL:34029:9542724769:ghagemann@my.mdc.edu:148:5/2016
+Z23129572:Erwin:Penner:3926 HOUGH RD:Boynton Beach:FL:34229:5612661998:epenner@my.mdc.edu:21:5/2018
+Z23129595:Mike:Stewart:6609 SUBURBAN LANE:Boynton Beach:FL:34226:5616627760:mstewart@my.mdc.edu:104:5/2019
+Z23129627:Ed:Williams:P.O. BOX 38:Cooper City:FL:33347:9545377648:ewilliams@my.mdc.edu:150:5/2018
+Z23129677:Doris:Perrotta:4 ANCHORAGE PT:Deerfield Beach:FL:34033:9545849320:dperrotta@my.mdc.edu:27:8/2017
+Z23129682:Deborah:Locke:22 SOYARS DRIVE:Aventura:FL:34034:9549156357:dlocke@my.mdc.edu:29:8/2018
+Z23129724:Jon:Rasmussen:4414 DRIFTWOOD DR:Deerfield Beach:FL:34033:9545672186:jrasmusse@my.mdc.edu:60:12/2017
+Z23129730:Jerry:Riedel:4908 WORDSWORTH CIR:Boynton Beach:FL:34229:5615615845:jriedel@my.mdc.edu:53:8/2018
+Z23129768:John:Lee:206 PLEASANTVIEW DRIVE:Deerfield Beach:FL:34086:9548319587:jlee@my.mdc.edu:94:5/2017
+Z23129808:Dave:Jackson:1412 KESWICK DR:Boynton Beach:FL:34219:5614524992:djackson@my.mdc.edu:18:12/2018
+Z23129825:Beverly:Whitaker:9316 CHARLAIS LN:Boca Raton:FL:33423:5618488175:bwhitaker@my.mdc.edu:66:8/2018
+Z23129862:Anne:Orr:3540 BARRON WAY:Boca Raton:FL:33429:5614943820:aorr@my.mdc.edu:26:8/2019
+Z23129885:Faye:Misenheimer:304 OLD OAK COURT NW:Boca Raton:FL:33429:5617943648:fmisenhei@my.mdc.edu:58:12/2016
+Z23129975:Charles:Rose:5035 LONGRIDGE DRIVE:Deerfield Beach:FL:34034:9544241337:crose@my.mdc.edu:77:12/2016
+Z23130000:Bunny:Stough:6816-23 WHISPERING FALLS:Oakland Park:FL:33101:9547999975:bstough@my.mdc.edu:34:12/2016
+Z23130091:Gilbert:Sheldon:5716 OAK BLUFF LN:Boca Raton:FL:33422:5619412536:gsheldon@my.mdc.edu:19:5/2016
+Z23130156:Doris:Wessell:929 LYNNVIEW CT.:Deerfield Beach:FL:34035:9544812554:dwessell@my.mdc.edu:117:12/2018
+Z23130208:Bernice:Jones:15401 GREAT GLEN LANE:Wellington:FL:34036:5616891515:bjones@my.mdc.edu:82:8/2018
+Z23130218:Gordon:Peterson:402 HILLCREST RD:Boynton Beach:FL:34229:5619815345:gpeterson@my.mdc.edu:75:12/2017
+Z23130240:Jim:Kelley:1618 PAISLEY DR:Deerfield Beach:FL:34022:9545689324:jkelley@my.mdc.edu:121:8/2018
+Z23130305:Judy:Stresemann:7002 KEY POINT DR:Deerfield Beach:FL:34033:9546424775:jstresema@my.mdc.edu:115:8/2017
+Z23130350:Mike:Stewart:662 ANSLEY CT:Boca Raton:FL:33432:5616331039:mstewart1@my.mdc.edu:31:8/2018
+Z23130405:Karen:Hoffman:12108 WARWICKSHIRE WAY:Sunrise:FL:33327:9543879377:khoffman@my.mdc.edu:33:12/2018
+Z23130412:Diane:Lovick:2217 Dorsett Street:Coral Gables:FL:34282:9547710335:dlovick@my.mdc.edu:99:12/2016
+Z23130479:Gert:Ray:4451 SHIMPOCK ROAD:Boca Raton:FL:33426:5618975235:gray@my.mdc.edu:103:12/2016
+Z23130499:Mary:Reese:463 BLACK ANGUS DRIVE:Deerfield Beach:FL:34029:9542828905:mreese@my.mdc.edu:33:12/2017
+Z23130550:Lynda:Macmurphy:2308 PACIFIC DR:Boynton Beach:FL:34222:5619236878:lmacmurph@my.mdc.edu:122:12/2017
+Z23130624:Lynn:Richey:4900 DEVILS CT:Boca Raton:FL:33430:5618915485:lrichey@my.mdc.edu:22:5/2018
+Z23130678:Jan:Walton:8800 WEATHERSFIELD CT:Coral Spring:FL:34242:9548945158:jwalton@my.mdc.edu:126:12/2017
+Z23130763:Marion:Miller:301 FERN VALLEY LN:Boca Raton:FL:33426:5612642008:mmiller1@my.mdc.edu:5:5/2016
+Z23130834:Carolyn:Walker:8416 NEUSE RAPIDS RD:Deerfield Beach:FL:34033:9544778373:cwalker@my.mdc.edu:45:5/2016
+Z23130910:Michael:St. John:6404 LAKEREST COURT:Boynton Beach:FL:34229:5619317000:mst. john@my.mdc.edu:52:8/2019
+Z23130979:Cindy:Karnwie-Cook:1600 DEERCROFT COURT:Deerfield Beach:FL:34034:9547524715:ckarnwie-@my.mdc.edu:65:5/2016
+Z23130980:Mil:Johnson:1506 SCALES ST:Boynton Beach:FL:34220:5614846295:mjohnson@my.mdc.edu:105:5/2019
+Z23131063:Kay:Minges:3027 GLENDALE AVE:Boynton Beach:FL:34223:5614325745:kminges@my.mdc.edu:110:5/2018
+Z23131156:Gary:Hopkins:12411 OLYMPIC CLUB DR.:Hollywood:FL:34224:9545382020:ghopkins@my.mdc.edu:96:12/2017
+Z23131166:Megan:Hayes:111 SE 29TH STREET:Boca Raton:FL:33426:5612584965:mhayes@my.mdc.edu:128:5/2018
+Z23131263:Berman:Poovey:414 W. BLACKBEARD RD:Wellington:FL:33427:5612724769:bpoovey@my.mdc.edu:33:5/2016
+Z23131338:Jerry:Tulowiecki:775 BEAR RIDGE TRAIL:Boca Raton:FL:33428:5612661998:jtulowiec@my.mdc.edu:98:8/2019
+Z23131394:Andy:Soper:625 WILLOUGHBY BLVD:Boca Raton:FL:33430:5616627760:asoper@my.mdc.edu:62:5/2016
+Z23131396:David:Harris:11 ROBERT E LEE DR:Boca Raton:FL:33421:5615377648:dharris@my.mdc.edu:102:8/2019
+Z23131495:Jackie:Wright:PO BOX 428:Deerfield Beach:FL:33634:9549480750:jwright@my.mdc.edu:12:8/2018
+Z23131513:Don:Miller:3014 EDMONTON PL:Deerfield Beach:FL:33635:9547821542:dmiller@my.mdc.edu:7:5/2018
+Z23131607:Joe:Liefer:2105 N. U. ROAD:Boca Raton:FL:33433:5618727114:jliefer@my.mdc.edu:17:12/2016
+Z23131626:Marilyn:Miller:3002 ST. REGIS RD:Wellington:FL:33272:5612863505:mmiller@my.mdc.edu:128:8/2019
+Z23131723:Lisa:Jones:1521 BROWN RD.:Wellington:FL:34260:5612703283:ljones@my.mdc.edu:9:8/2017
+Z23131793:Leon:Hines:1200 S. MISSOURI AVE APT 130:Deerfield Beach:FL:34035:9545849320:lhines@my.mdc.edu:61:12/2016
+Z23131877:Karen:Korte:1922 W. FRONT ST:Boynton Beach:FL:34222:5619156357:kkorte1@my.mdc.edu:52:12/2017
+Z23131902:Diane:Wessenauer:930 ARNOLD RD:Deerfield Beach:FL:34034:9545672186:dwessenau@my.mdc.edu:140:8/2018
+Z23132001:Diane:Propst:4309 SCOTLAND LANE:Aventura:FL:33842:9545615845:dpropst@my.mdc.edu:102:8/2019
+Z23132024:George:Smith:620 WELLINGTON:Boca Raton:FL:33423:5618319587:gsmith@my.mdc.edu:78:8/2018
+Z23132084:Natalie:Keys:1734 SANDALWOOD DRIVE SW:Deerfield Beach:FL:34035:9544524992:nkeys@my.mdc.edu:72:5/2017
+Z23132113:Lisa:Howard:12881 COYOTE RUN:Boynton Beach:FL:34036:5618488175:lhoward@my.mdc.edu:98:5/2016
+Z23132122:Chuck:Waegerle:8309 PENNY RD.:Miami Gardens:FL:33853:9544943820:cwaegerle@my.mdc.edu:73:8/2018
+Z23132173:Kathy:Murray:320 DUPONT CIRCLE:Oakland Park:FL:33900:9547943648:kmurray@my.mdc.edu:82:5/2019
+Z23132237:Jim:Heyl:1180 BOWMER CT:Deerfield Beach:FL:34086:9544241337:jheyl@my.mdc.edu:12:8/2018
+Z23132245:June:Occhetti:3416 WALTHAM CIR:Coral Spring:FL:33032:9547999975:jocchetti@my.mdc.edu:135:8/2019
+Z23132288:Doris:Monroe:307 RODGERS LAKE ROAD:Boynton Beach:FL:34226:5619412536:dmonroe@my.mdc.edu:62:5/2017
+Z23132315:Jack & Dorie:Kluttz:183 DOVEFIELD DR.:Ft. Lauderdale:FL:34227:9544812554:jkluttz@my.mdc.edu:123:8/2017
+Z23132318:Frank:Spence:6320 LANHAM DRIVE:Boca Raton:FL:33429:5616891515:fspence@my.mdc.edu:59:5/2018
+Z23132374:Alicia:Huff:1316 AMY LEE TRAIL:Boca Raton:FL:33429:5619815345:ahuff@my.mdc.edu:111:12/2017
+Z23132468:Glenn:Lyerly:230 SEMINOLE TRAIL:Boca Raton:FL:33428:5615689324:glyerly@my.mdc.edu:87:5/2018
+Z23132471:Dick:Pierce:4104 STONEBROOK FARMS RD:Boca Raton:FL:33421:5616424775:dpierce@my.mdc.edu:34:5/2018
+Z23132478:Gail:Skoor:609 DOVE CT:Boca Raton:FL:33430:5616331039:gskoor@my.mdc.edu:3:12/2017
+Z23132560:Bill:Hogshire:1220 LOCKCARRON LN:Plantation:FL:33066:9543879377:bhogshire@my.mdc.edu:11:8/2018
+Z23132626:Janet:Kieft:18 BROOKGLEN DR:Delray Beach:FL:33749:5617710335:jkieft@my.mdc.edu:70:12/2017
+Z23132666:Mary Lynn:Williams:P. O. BOX 507:Deerfield Beach:FL:34033:9548975235:mwilliams@my.mdc.edu:15:12/2017
+Z23132752:Jennifer:King:1805 HERMITAGE RD:Boca Raton:FL:33430:5612828905:jking@my.mdc.edu:40:5/2017
+Z23132816:Judy:Young:PO BOX 94:Wellington:FL:33079:5619236878:jyoung1@my.mdc.edu:96:8/2018
+Z23132916:Greg:Shue:5906 MARSHBANK LANE:Boca Raton:FL:33432:5618915485:gshue@my.mdc.edu:34:8/2017
+Z23132956:Mona:Kennard:1636 MOUNT EVANS DRIVER:Ft. Lauderdale:FL:34262:9548945158:mkennard@my.mdc.edu:28:12/2016
+Z23133034:Al:Hansen:10729 TRAPPERS CREEK DR:Deerfield Beach:FL:34029:9542642008:ahansen@my.mdc.edu:49:8/2019
+Z23133112:Carol:Woodham:PO BOX 391:Wellington:FL:34030:5614778373:cwoodham@my.mdc.edu:59:8/2019
+Z23133153:John:PETREE:405 PINE COURT:Boca Raton:FL:33432:5619317000:jpetree@my.mdc.edu:1:8/2018
+Z23133204:Laura:Russell:511 CLARIDGE CIR:Boca Raton:FL:33429:5617524715:lrussell@my.mdc.edu:90:12/2016
+Z23133218:Connie:Pittman:4118 ENCHANTED LN:Aventura:FL:33844:9544846295:cpittman@my.mdc.edu:120:8/2019
+Z23133276:David:Milling:302 W. GREENWAY DR:Oakland Park:FL:33993:9544325745:dmilling@my.mdc.edu:120:5/2017
+Z23133356:Grace:Layman:205 CHOWAN DR:Ft. Lauderdale:FL:33994:9545382020:glayman@my.mdc.edu:94:5/2016
+Z23133407:Jenny:Weis:907 MERRILL DR:Deerfield Beach:FL:33524:9542584965:jweis@my.mdc.edu:16:5/2019
+Z23133507:Karen:Pedersen:3906 RED CHIEF ST:Ft. Lauderdale:FL:33525:9542724769:kpedersen@my.mdc.edu:25:8/2017
+Z23133548:Kim:Hemma:113 PENNY RD:Deerfield Beach:FL:34029:9542661998:khemma@my.mdc.edu:37:8/2018
+Z23133600:Ben:O'Connell:346 BRICKYARD RD:Boca Raton:FL:33432:5616627760:bo'connel@my.mdc.edu:139:8/2018
+Z23133627:Mike:Vogelpohl:8211 SCHOONER PL.:Deerfield Beach:FL:34034:9545377648:mvogelpoh@my.mdc.edu:17:5/2018
+Z23133692:Jackie:Shue:5907 McCLENNY DR.:Deerfield Beach:FL:34035:9548522801:jshue@my.mdc.edu:74:5/2019
+Z23133768:Bev:Ostby:360 SEVEN CREEKS DRIVE:Deerfield Beach:FL:34035:9544895612:bostby@my.mdc.edu:57:8/2017
+Z23133808:Bill:Odom:3500 GREYWOOD DR:Aventura:FL:34036:9545530263:bodom@my.mdc.edu:64:5/2019
+Z23133821:Gary:Koester:1906 WENDOVER DR:Ft. Lauderdale:FL:33963:9546430417:gkoester@my.mdc.edu:108:8/2018
+Z23133920:Jackie:Shumpert:5913 McCLENNY DR.:Deerfield Beach:FL:34034:9548131589:jshumpert@my.mdc.edu:25:12/2016
+Z23133963:Jimmy:Skinner:609 DOVE CT:Pompano Beach:FL:34246:9546026960:jskinner@my.mdc.edu:19:5/2018
+Z23133979:Nancy:Northrup:3409 CANTERBURY ST:Wellington:FL:33761:5614268339:nnorthrup@my.mdc.edu:35:12/2017
+Z23134002:Mary:Lambie:202 GLENTOWER DR:Oakland Park:FL:33762:9547894537:mlambie@my.mdc.edu:111:5/2018
+Z23134016:Mary Neal:Rector:4550 S. HWY 62:Boynton Beach:FL:34229:5614789435:mrector@my.mdc.edu:126:8/2018
+Z23134018:Lucy:Hoyle:1300 BIRD DOG CT.:Hollywood:FL:34125:9544789564:lhoyle@my.mdc.edu:44:8/2019
+Z23134072:Mel:Ritchie:4914 COTTONWOOD:Boynton Beach:FL:34228:5617946431:mritchie@my.mdc.edu:63:5/2019
+Z23134161:Pat:Matthias:2424 BRASSFIELD RD:Davie:FL:34229:9546396779:pmatthias@my.mdc.edu:28:12/2016
+Z23134202:Harriett:Thompson:728 WESTWOOD DR:Deerfield Beach:FL:34035:9547586435:hthompson@my.mdc.edu:18:12/2018
+Z23134241:Dottie:Walton:8809 WEATHERSFIELD CT:Deerfield Beach:FL:34034:9545789486:dwalton@my.mdc.edu:126:12/2017
+Z23134262:Colette:Tonneson:7524 BRIGHTON HILL LN:Deerfield Beach:FL:34044:9545457321:ctonneson@my.mdc.edu:98:8/2018
+Z23134352:Jenny:Hitchcock:1201 PICCADILLY DR:Boynton Beach:FL:34222:5612568189:jhitchcoc@my.mdc.edu:69:8/2018
