@@ -2,6 +2,7 @@ package Controllers;
 import java.io.IOException;
 import Main.Main;
 import Utils.SceneManager;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -50,17 +51,17 @@ public class MainController implements SceneManager{
 
     @FXML
     void ExitButton(ActionEvent event) {
-        System.exit(0);
+        Platform.exit();
     }
 
     @FXML
-    void AddStudentToCourse(ActionEvent event) {
-
+    void AddStudentToCourse(ActionEvent event) throws IOException{
+        main.loadAddStudentToCourseView();
     }
 
     @FXML
-    void createNewCourse(ActionEvent event) {
-
+    void createNewCourse(ActionEvent event) throws IOException {
+        main.loadcreateCourseView();
     }
 
     @FXML
@@ -69,13 +70,13 @@ public class MainController implements SceneManager{
     }
 
     @FXML
-    void printCourseListForStudent(ActionEvent event) {
-
+    void printCourseListForStudent(ActionEvent event) throws IOException {
+        main.loadCourseListView();
     }
 
     @FXML
-    void viewCourseSchedule(ActionEvent event) {
-
+    void viewCourseSchedule(ActionEvent event) throws IOException {
+        main.loadCourseScheduleView();
     }
 
     @FXML

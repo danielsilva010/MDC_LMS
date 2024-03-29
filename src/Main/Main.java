@@ -2,6 +2,9 @@ package Main;
 import java.io.IOException;
 
 import Controllers.AddStudentViewController;
+import Controllers.CourseScheduleController;
+import Controllers.CreateNewCourseController;
+import Controllers.MainController;
 import Controllers.StudentSearchController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -44,6 +47,8 @@ public class Main extends Application {
      */
 
     public void loadMainView(Stage primaryStage) throws IOException {
+        MainController controller = new MainController();
+        controller.setMain(this);
         Parent root = FXMLLoader.load(getClass().getResource("/View/MainView.fxml"));
         primaryStage.setTitle("Course Registration System");
         primaryStage.setScene(new Scene(root, 650, 400));
@@ -61,10 +66,40 @@ public class Main extends Application {
         controller.setMain(this);
         Parent root = FXMLLoader.load(getClass().getResource("/View/StudentSearchView.fxml"));
         secondaryStage.setTitle("Student Information");
-        secondaryStage.setScene(new Scene(root, 350, 200));
-        secondaryStage.setResizable(false);
+        secondaryStage.setScene(new Scene(root, 650, 458));
+        secondaryStage.setResizable(true);
         secondaryStage.show();
     }
 
-    
+    public void loadCourseScheduleView() throws IOException {
+        CourseScheduleController controller = new CourseScheduleController();
+        controller.setMain(this);
+        Parent root = FXMLLoader.load(getClass().getResource("/View/CourseScheduleView.fxml"));
+        secondaryStage.setTitle("Course List");
+        secondaryStage.setScene(new Scene(root,650,280));
+        secondaryStage.show();
+    }
+
+    public void loadcreateCourseView() throws IOException {
+        CreateNewCourseController controller = new CreateNewCourseController();
+        controller.setMain(this);
+        Parent root = FXMLLoader.load(getClass().getResource("/View/CreateNewCourseView.fxml"));
+        secondaryStage.setTitle("Create New Course");
+        secondaryStage.setScene(new Scene(root, 650, 400));
+        secondaryStage.show();
+    }
+
+    public void loadCourseListView() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/View/CourseListView.fxml"));
+        secondaryStage.setTitle("Course List for Student");
+        secondaryStage.setScene(new Scene(root, 650,450));
+        secondaryStage.show();
+    }
+
+    public void loadAddStudentToCourseView() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/View/AddStudentToCourseView.fxml"));
+        secondaryStage.setTitle("Add Student to Course");
+        secondaryStage.setScene(new Scene(root, 650, 400));
+        secondaryStage.show();
+    }
 }

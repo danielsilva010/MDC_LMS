@@ -2,49 +2,102 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
 
-<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentSearchController">
-   <left>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="21.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: grey;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Detailed information for Student: " />
+            <TextField prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Enter Student ID Here" />
+         </children>
+      </HBox>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
             <VBox alignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-insets: 20;" text="Enter Student ID#:" translateY="-20.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" fillWidth="false">
+            <VBox alignment="CENTER" GridPane.rowIndex="1">
                <children>
-                  <TextField fx:id="tfIDField" minHeight="80.0" minWidth="100.0" onMouseClicked="#tfIDFieldClicked" prefHeight="80.0" prefWidth="208.0" style="-fx-background-radius: 20;" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" GridPane.rowIndex="2">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" GridPane.rowIndex="3">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" GridPane.rowIndex="4">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Major:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" GridPane.rowIndex="5">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Graduation Date:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1">
+               <children>
+                  <TextField editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <TextField editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <TextField editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <TextField editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <TextField />
                </children>
             </VBox>
          </children>
-      </VBox>
-   </left>
-   <right>
-      <Pane prefHeight="315.0" prefWidth="235.0" BorderPane.alignment="CENTER">
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
-            <Text layoutX="27.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="Search" />
          </children>
-      </Pane>
-   </right>
-   <top>
-      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
-         <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search For a Student" />
-         </children>
-      </VBox>
-   </top>
-   <bottom>
-      <AnchorPane prefHeight="37.0" prefWidth="560.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button fx:id="searchButton" layoutX="251.0" layoutY="-20.0" mnemonicParsing="false" onAction="#search" style="-fx-background-insets: 0; -fx-border-style: dashed;" text="Search" translateY="20.0" />
-         </children>
-      </AnchorPane>
-   </bottom>
-</BorderPane>
+      </HBox>
+   </children>
+</VBox>

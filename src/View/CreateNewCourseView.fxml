@@ -4,26 +4,25 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
 
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER" prefHeight="21.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: grey;">
+      <VBox alignment="CENTER" prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Detailed information for Student: " />
-            <TextField prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Enter Student ID Here" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Course" />
          </children>
-      </HBox>
-      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      </VBox>
+      <GridPane prefHeight="341.0" prefWidth="600.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -34,57 +33,62 @@
          <children>
             <VBox alignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course ID" />
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="1">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="2">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Term" />
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="3">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Room" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="300.0" GridPane.rowIndex="6">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty" />
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="4">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Major:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity" />
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="5">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Graduation Date:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Hours" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1">
                <children>
-                  <TextField editable="false" />
+                  <TextField />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <TextField editable="false" />
+                  <TextField />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <TextField editable="false" />
+                  <TextField />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <TextField editable="false" />
+                  <TextField />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <TextField editable="false" />
+                  <TextField />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
@@ -92,12 +96,17 @@
                   <TextField />
                </children>
             </VBox>
+            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <TextField />
+               </children>
+            </VBox>
          </children>
       </GridPane>
-      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: grey;">
+      <VBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="Search" />
+            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="Button" />
          </children>
-      </HBox>
+      </VBox>
    </children>
 </VBox>
