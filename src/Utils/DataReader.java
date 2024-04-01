@@ -15,6 +15,9 @@ import javafx.scene.control.Alert.AlertType;
 
 public class DataReader {
 
+    /***
+     * Paths to data files
+     */
     private static final String courseRosterPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/CourseRoster.txt";
     private static final String departmentPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Department.txt";
     private static final String facultyPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Faculty.txt";
@@ -22,6 +25,10 @@ public class DataReader {
     private static final String schedulePath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Schedule.txt";
     private static final String studentsPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Students.txt";
 
+    /***
+     * Read the course roster
+     * @param courseRoster an arrayList to hold the courseRosters
+     */
     public static void readCourseRoster(ArrayList<CourseRoster> courseRoster) {
         try (Scanner scanner = new Scanner(new File(courseRosterPath))) {
             String line = null;
@@ -42,6 +49,10 @@ public class DataReader {
         }
     }
 
+    /***
+     * Read the schedule
+     * @param schedule an arrayList to hold the schedules
+     */
     public static void readSchedule(ArrayList<Schedule> schedule) {
         try (Scanner scanner = new Scanner(new File(schedulePath))) {
             String line = null;
@@ -67,6 +78,10 @@ public class DataReader {
         }
     }
 
+    /***
+     * Read the department
+     * @param departments an arrayList to hold the departments
+     */
     public static void readDepartment(ArrayList<Department> departments) {
         try (Scanner scanner = new Scanner(new File(departmentPath))) {
             String line = null;
@@ -86,6 +101,10 @@ public class DataReader {
         }
     }
 
+    /***
+     * Read the major
+     * @param majors an arrayList to hold the majors
+     */
     public static void readMajor(ArrayList<Major> majors) {
         try (Scanner scanner = new Scanner(new File(majorPath))) {
             String line = null;
@@ -106,6 +125,10 @@ public class DataReader {
         }
     }
 
+    /***
+     * Read the faculty
+     * @param faculty an arrayList to hold the faculty
+     */
     public static void readFaculty(ArrayList<Faculty> faculty) {
         try (Scanner scanner = new Scanner(new File(facultyPath))) {
             String line = null;
@@ -136,6 +159,10 @@ public class DataReader {
         }
     }
 
+    /***
+     * Read the students
+     * @param students an arrayList to hold the students
+     */
     public static void readStudents(ArrayList<Students> students) {
         try (Scanner scanner = new Scanner(new File(studentsPath))) {
             String line = null;

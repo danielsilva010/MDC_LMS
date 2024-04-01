@@ -24,12 +24,18 @@ public class Main extends Application {
 
     private static final String addStudentToCourseView = "/View/AddStudentToCourseView.fxml";
 
-
     private Stage secondaryStage = new Stage();
+
     public static void main(String[] args) {
         launch(args);
     }
     
+    /**
+     * Start the application
+     * @param primaryStage the primary stage
+     * @throws IOException if the FXML file is not found
+     */
+
     @Override
     public void start(Stage primaryStage) throws IOException {
         loadMainView(primaryStage);
@@ -77,6 +83,11 @@ public class Main extends Application {
         secondaryStage.show();
     }
 
+    /***
+     * Load the course schedule view
+     * @throws IOException if the FXML file is not found
+     */
+
     public void loadCourseScheduleView() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(courseScheduleViewPath));
         secondaryStage.setTitle("Course List");
@@ -84,6 +95,10 @@ public class Main extends Application {
         secondaryStage.show();
     }
 
+    /**
+     * Load the create course view
+     * @throws IOException if the FXML file is not found
+     */
     public void loadcreateCourseView() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(createCourseViewPath));
         secondaryStage.setTitle("Create New Course");
@@ -91,12 +106,22 @@ public class Main extends Application {
         secondaryStage.show();
     }
 
+    /**
+     * Load the course list view
+     * @throws IOException if the FXML file is not found
+     */
+
     public void loadCourseListView() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(courseListViewPath));
         secondaryStage.setTitle("Course List for Student");
         secondaryStage.setScene(new Scene(root, 650,450));
         secondaryStage.show();
     }
+
+    /**
+     * Load the add student to course view
+     * @throws IOException if the FXML file is not found
+     */
 
     public void loadAddStudentToCourseView() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(addStudentToCourseView));

@@ -6,6 +6,11 @@ import Models.Schedule;
 import Models.Students;
 
 public class DataUtil {
+    /***
+     * Get the courses for a student
+     * @param studentID the student ID
+     * @return an array list of schedules
+     */
     public static ArrayList<Schedule> getStudentCourses(String studentID) {
         ArrayList<CourseRoster> courseRoster = new ArrayList<>();
         DataReader.readCourseRoster(courseRoster);
@@ -28,6 +33,12 @@ public class DataUtil {
 
     }
 
+    /***
+     * Get the student name
+     * @param studentID the student ID
+     * @return the student name
+     */
+
     public static String getStudentName(String studentID) {
         String name = null;
         ArrayList<Students> studentList = new ArrayList<>();
@@ -40,5 +51,5 @@ public class DataUtil {
         }
         return name;
     }
-    
+
 }

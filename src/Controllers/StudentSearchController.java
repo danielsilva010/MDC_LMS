@@ -49,8 +49,11 @@ public class StudentSearchController{
     @FXML
     private Text tfIDField;
 
+    /***
+     * Search for a student by ID when the user clicks the search button
+     */
     @FXML
-    void search(ActionEvent event) throws IOException {
+    void search(ActionEvent event) {
         DataReader.readStudents(students);
         String id = tfStudentID.getText();
         for (Students student : students) {
@@ -82,6 +85,10 @@ public class StudentSearchController{
         tfMajor.textProperty().bind(major);
     }
 
+    /***
+     * Clear the text field if the default text is present
+     * @param event the mouse event
+     */
     @FXML
     void ClearIfDefaultText(MouseEvent event) {
         if(tfStudentID.getText().equals("Enter Student ID Here")) {
@@ -89,9 +96,6 @@ public class StudentSearchController{
         }
     }
 
-    @FXML
-    void tfIDFieldClicked(MouseEvent event) {
-    }
 
 }
 
