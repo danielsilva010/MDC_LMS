@@ -16,10 +16,8 @@ import Utils.DataReader;
 
 public class StudentSearchController{
 
-    private DataReader dataReader = new DataReader();
     private Students student = new Students();
     private ArrayList<Students> students = new ArrayList<>();
-    private String filePath = "/Users/danielsilva/Desktop/code/java/MDC-LMS-GUI/MDC_LMS/src/Data/Students.txt";
 
     @FXML
     private Button SearchButton;
@@ -53,7 +51,7 @@ public class StudentSearchController{
 
     @FXML
     void search(ActionEvent event) throws IOException {
-        dataReader.readStudents(students, filePath);
+        DataReader.readStudents(students);
         String id = tfStudentID.getText();
         for (Students student : students) {
             if(student.getStudentID().equals(id)) {
@@ -63,7 +61,7 @@ public class StudentSearchController{
         }
         String majorName = "";
         ArrayList<Major> majorList = new ArrayList<>();
-        dataReader.readMajor(majorList, "/Users/danielsilva/Desktop/code/java/MDC-LMS-GUI/MDC_LMS/src/Data/Major.txt");
+        DataReader.readMajor(majorList);
         for(Major oneMajor: majorList) {
             if(oneMajor.getMajorID() == student.getMajorID()) {
                 majorName = oneMajor.getMajorName();

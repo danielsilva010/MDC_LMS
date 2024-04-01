@@ -55,8 +55,7 @@ public class AddStudentViewController {
     void Submit(ActionEvent event) throws IOException {
         FileWriter fw = new FileWriter(new File("src/Data/Students.txt"), true);
         ArrayList<Students> studentList = new ArrayList<>();
-        DataReader dataReader = new DataReader();
-        dataReader.readStudents(studentList);
+        DataReader.readStudents(studentList);
         PrintWriter pw = new PrintWriter(fw);
         boolean isValid = true;
         if(tfStuID.getText().length() == ID_LENGTH) {

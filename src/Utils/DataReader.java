@@ -15,7 +15,7 @@ import javafx.scene.control.Alert.AlertType;
 
 public class DataReader {
 
-    private static final String courseRosterPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/CourseRooster.txt";
+    private static final String courseRosterPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/CourseRoster.txt";
     private static final String departmentPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Department.txt";
     private static final String facultyPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Faculty.txt";
     private static final String majorPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Major.txt";

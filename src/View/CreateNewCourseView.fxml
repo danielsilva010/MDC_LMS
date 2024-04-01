@@ -10,9 +10,9 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreateNewCourseController">
    <children>
-      <VBox alignment="CENTER" prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
+      <VBox alignment="CENTER" prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Course" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Course" />
          </children>
       </VBox>
       <GridPane prefHeight="341.0" prefWidth="600.0">
@@ -102,9 +102,9 @@
             </VBox>
          </children>
       </GridPane>
-      <VBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
+      <VBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
-            <Button fx:id="CreateButton" mnemonicParsing="false" style="-fx-background-radius: 20;" text="Create" />
+            <Button fx:id="CreateButton" mnemonicParsing="false" style="-fx-background-radius: 20;" text="Create" textFill="WHITE" />
          </children>
       </VBox>
    </children>

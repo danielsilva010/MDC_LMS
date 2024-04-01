@@ -9,17 +9,17 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CourseListController">
    <children>
-      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" spacing="15.0">
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: grey;">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course list for Student" />
-            <TextField fx:id="tfStudentID" onMouseClicked="#Clear" style="-fx-background-color: clear;" text="Enter Student ID here..." />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course list for Student" />
+            <TextField fx:id="tfStudentID" onMouseClicked="#Clear" style="-fx-background-color: clear; -fx-text-fill: white;" text="Enter Student ID here..." />
             <Text fx:id="textStudentName" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </HBox>
       <ListView fx:id="ListView" prefHeight="382.0" prefWidth="600.0" />
-      <VBox alignment="CENTER" prefHeight="43.0" prefWidth="600.0" style="-fx-border-radius: 20;">
+      <VBox alignment="CENTER" prefHeight="52.0" prefWidth="596.0" style="-fx-border-radius: 20; -fx-background-color: grey;">
          <children>
-            <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#Search" style="-fx-background-radius: 20;" text="Search" />
+            <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#Search" style="-fx-background-radius: 20;" text="Search" textFill="WHITE" />
          </children>
       </VBox>
    </children>

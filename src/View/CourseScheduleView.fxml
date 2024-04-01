@@ -2,21 +2,37 @@
 
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CourseScheduleController">
-   <children>
-      <TableView fx:id="tableView" prefHeight="682.0" prefWidth="600.0">
-        <columns>
-          <TableColumn fx:id="courseID" prefWidth="75.0" text="Course ID" />
-          <TableColumn fx:id="CRN" prefWidth="75.0" text="CRN" />
-            <TableColumn fx:id="Title" prefWidth="75.0" text="Title" />
-            <TableColumn fx:id="Term" prefWidth="75.0" text="Term" />
-            <TableColumn fx:id="FacultyID" prefWidth="75.0" text="Faculty ID" />
-            <TableColumn fx:id="Room" prefWidth="75.0" text="Room" />
-            <TableColumn fx:id="Capacity" prefWidth="75.0" text="Capacity" />
-            <TableColumn fx:id="CreditHours" prefWidth="75.0" text="Credit Hours" />
-        </columns>
-      </TableView>
-   </children>
-</VBox>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CourseScheduleController">
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="682.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="courseID" prefWidth="75.0" text="Course ID" />
+                <TableColumn fx:id="CRN" prefWidth="75.0" text="CRN" />
+                  <TableColumn fx:id="Title" prefWidth="75.0" text="Title" />
+                  <TableColumn fx:id="Term" prefWidth="75.0" text="Term" />
+                  <TableColumn fx:id="FacultyID" prefWidth="75.0" text="Faculty ID" />
+                  <TableColumn fx:id="Room" prefWidth="75.0" text="Room" />
+                  <TableColumn fx:id="Capacity" prefWidth="75.0" text="Capacity" />
+                  <TableColumn fx:id="CreditHours" prefWidth="75.0" text="Credit Hours" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox alignment="CENTER" prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Schedule" />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

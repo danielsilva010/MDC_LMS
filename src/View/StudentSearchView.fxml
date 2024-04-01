@@ -95,7 +95,7 @@
       </GridPane>
       <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
-            <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#search" style="-fx-background-radius: 20;" text="Search" />
+            <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#search" style="-fx-background-radius: 20;" text="Search" textFill="WHITE" />
          </children>
       </HBox>
    </children>

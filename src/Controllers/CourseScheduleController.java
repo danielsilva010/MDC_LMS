@@ -1,18 +1,14 @@
 package Controllers;
 
-import java.io.IOException;
 import java.util.ArrayList;
-
 import Models.Schedule;
 import Utils.DataReader;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.Alert.AlertType;
 
 public class CourseScheduleController {
 
@@ -45,10 +41,8 @@ public class CourseScheduleController {
     private TableColumn<Schedule, String> courseID;
 
     public void initialize() {
-        try {
-            DataReader dR = new DataReader();
             ArrayList<Schedule> scheduleList = new ArrayList<>();
-            dR.readSchedule(scheduleList);
+            DataReader.readSchedule(scheduleList);
             ObservableList<Schedule> scheduleObvList = FXCollections.observableArrayList(scheduleList);
             tableView.setItems(scheduleObvList);
 
@@ -60,14 +54,6 @@ public class CourseScheduleController {
             Term.setCellValueFactory(new PropertyValueFactory<>("Term"));
             Title.setCellValueFactory(new PropertyValueFactory<>("CourseName"));
             courseID.setCellValueFactory(new PropertyValueFactory<>("CourseID"));
-            
-            
-        }
-        catch(IOException e) {
-            Alert fnfAlert = new Alert(AlertType.ERROR);
-            fnfAlert.setContentText("File not found");
-            fnfAlert.showAndWait();
-        }
     }
 
    

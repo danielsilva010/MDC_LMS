@@ -1,9 +1,7 @@
 package Controllers;
 
-import Main.Main;
-import Models.CourseRoster;
-import Models.Students;
-import Utils.DataReader;
+import Models.Schedule;
+import Utils.DataUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -18,7 +16,7 @@ import java.util.ArrayList;
 public class CourseListController{
 
     @FXML
-    private ListView<CourseRoster> ListView;
+    private ListView<Schedule> ListView;
 
     @FXML
     private Button SearchButton;
@@ -38,25 +36,10 @@ public class CourseListController{
 
     @FXML
     void Search(ActionEvent event) throws FileNotFoundException {
-        DataReader dataReader = new DataReader();
-        ArrayList<Students> students = new ArrayList<>();
-        dataReader.readStudents(students);
-        for(Students student : students) {
-            if(student.getStudentID().equals(tfStudentID.getText())) {
-                textStudentName.setText(student.getFirstName() + " " + student.getLastName());
-            }
-        }
-        ArrayList<CourseRoster> courseRosters = new ArrayList<>();
-        dataReader.readCourseRoster(courseRosters);
-        String id = tfStudentID.getText();
-        ArrayList<CourseRoster> courses = new ArrayList<>();
-        for (CourseRoster courseRoster : courseRosters) {
-            if(courseRoster.getStudentID().equals(id)) {
-                courses.add(courseRoster);
-            }
-        }
-        ListView.getItems().addAll(courses);
-
+        ArrayList<Schedule> schedule = DataUtil.getStudentCourses(tfStudentID.getText());
+        String name = DataUtil.getStudentName(tfStudentID.getText());
+        textStudentName.setText(name);
+        ListView.getItems().addAll(schedule);
     }
 
 }
