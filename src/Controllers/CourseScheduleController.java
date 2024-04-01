@@ -40,6 +40,9 @@ public class CourseScheduleController {
     @FXML
     private TableColumn<Schedule, String> courseID;
 
+    /***
+     * Initialize the course schedule controller
+     */
     public void initialize() {
             ArrayList<Schedule> scheduleList = new ArrayList<>();
             DataReader.readSchedule(scheduleList);

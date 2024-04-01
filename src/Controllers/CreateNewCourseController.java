@@ -32,6 +32,11 @@ public class CreateNewCourseController{
     @FXML
     private TextField tfTitle;
 
+    /***
+     * The ActionEvent for creating a new course
+     * @param event the event
+     */
+
      @FXML
     void CreateCourse(ActionEvent event) {
 

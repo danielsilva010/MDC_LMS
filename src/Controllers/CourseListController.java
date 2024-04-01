@@ -9,8 +9,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.scene.control.ListView;
-
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class CourseListController{
@@ -27,6 +25,10 @@ public class CourseListController{
     @FXML
     private TextField tfStudentID;
 
+    /***
+     * Clear the text field if the default text is present
+     * @param event the mouse click
+     */
     @FXML
     void Clear(MouseEvent event) {
         if(tfStudentID.getText().equals("Enter Student ID here...")) {
@@ -34,8 +36,12 @@ public class CourseListController{
         }
     }
 
+    /***
+     * Search for a student by ID when the user clicks the search button
+     * @param event the button click
+     */
     @FXML
-    void Search(ActionEvent event) throws FileNotFoundException {
+    void Search(ActionEvent event) {
         ArrayList<Schedule> schedule = DataUtil.getStudentCourses(tfStudentID.getText());
         String name = DataUtil.getStudentName(tfStudentID.getText());
         textStudentName.setText(name);
