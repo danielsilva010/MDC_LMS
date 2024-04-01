@@ -37,6 +37,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <VBox fx:id="VBOX" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
@@ -60,7 +61,10 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT, FACULTY AND COURSE INFORMATION MENU" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT, FACULTY AND COURSE INFORMATION MENU">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font></Text>
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="1">

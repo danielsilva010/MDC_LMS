@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreateNewCourseController">
    <children>
       <VBox alignment="CENTER" prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
          <children>
@@ -68,44 +67,44 @@
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfCourseID" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfTitle" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfTerm" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfRoom" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfCapacity" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfCreditHours" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfFaculty" />
                </children>
             </VBox>
          </children>
       </GridPane>
       <VBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="Button" />
+            <Button fx:id="CreateButton" mnemonicParsing="false" style="-fx-background-radius: 20;" text="Create" />
          </children>
       </VBox>
    </children>

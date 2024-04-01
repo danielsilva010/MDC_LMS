@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentSearchController">
    <children>
       <HBox alignment="CENTER" prefHeight="21.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: grey;">
          <children>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Detailed information for Student: " />
-            <TextField prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Enter Student ID Here" />
+            <TextField fx:id="tfStudentID" onMouseClicked="#ClearIfDefaultText" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Enter Student ID Here" />
          </children>
       </HBox>
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
@@ -64,39 +63,39 @@
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1">
                <children>
-                  <TextField editable="false" />
+                  <Text fx:id="tfName" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <TextField editable="false" />
+                  <Text fx:id="tfAddress" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <TextField editable="false" />
+                  <Text fx:id="tfPhone" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <TextField editable="false" />
+                  <Text fx:id="tfEmail" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <TextField editable="false" />
+                  <Text fx:id="tfMajor" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <children>
-                  <TextField />
+                  <Text fx:id="tfExpectedGraduation" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
          </children>
       </GridPane>
       <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="Search" />
+            <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#search" style="-fx-background-radius: 20;" text="Search" />
          </children>
       </HBox>
    </children>

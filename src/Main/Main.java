@@ -73,7 +73,6 @@ public class Main extends Application {
 
     public void loadCourseScheduleView() throws IOException {
         CourseScheduleController controller = new CourseScheduleController();
-        controller.setMain(this);
         Parent root = FXMLLoader.load(getClass().getResource("/View/CourseScheduleView.fxml"));
         secondaryStage.setTitle("Course List");
         secondaryStage.setScene(new Scene(root,650,280));
