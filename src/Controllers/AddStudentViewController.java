@@ -11,12 +11,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
-import Utils.SceneManager;
-import Main.Main;
 
-public class AddStudentViewController implements SceneManager {
-
-    private Main main;
+public class AddStudentViewController {
 
     private static final int ID_LENGTH = 9;
     
@@ -53,20 +49,14 @@ public class AddStudentViewController implements SceneManager {
     @FXML
     private TextField tfZipCode;
 
-    public void setMain(Main main) {
-        this.main = main;
-    }
 
-    public void initialize() {
-        main = new Main();
-    }
 
     @FXML
     void Submit(ActionEvent event) throws IOException {
         FileWriter fw = new FileWriter(new File("src/Data/Students.txt"), true);
         ArrayList<Students> studentList = new ArrayList<>();
         DataReader dataReader = new DataReader();
-        dataReader.readStudents(studentList,"/Users/danielsilva/Desktop/code/java/MDC-LMS-GUI/MDC_LMS/src/Data/Students.txt");
+        dataReader.readStudents(studentList);
         PrintWriter pw = new PrintWriter(fw);
         boolean isValid = true;
         if(tfStuID.getText().length() == ID_LENGTH) {

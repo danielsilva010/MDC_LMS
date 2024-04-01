@@ -3,23 +3,19 @@ package Controllers;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import Main.Main;
 import Models.Schedule;
 import Utils.DataReader;
-import Utils.SceneManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Dialog;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.Alert.AlertType;
 
-public class CourseScheduleController implements SceneManager{
+public class CourseScheduleController {
 
-    private Main main;
 
     @FXML
     private TableView<Schedule> tableView;
@@ -52,7 +48,7 @@ public class CourseScheduleController implements SceneManager{
         try {
             DataReader dR = new DataReader();
             ArrayList<Schedule> scheduleList = new ArrayList<>();
-            dR.readSchedule(scheduleList, "/Users/danielsilva/Desktop/code/java/MDC-LMS-GUI/MDC_LMS/src/Data/Schedule.txt");
+            dR.readSchedule(scheduleList);
             ObservableList<Schedule> scheduleObvList = FXCollections.observableArrayList(scheduleList);
             tableView.setItems(scheduleObvList);
 
@@ -74,8 +70,5 @@ public class CourseScheduleController implements SceneManager{
         }
     }
 
-    @Override
-    public void setMain(Main main) {
-        this.main = main;
-    }
+   
 }

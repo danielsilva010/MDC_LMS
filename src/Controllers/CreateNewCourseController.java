@@ -1,15 +1,12 @@
 package Controllers;
 
-import Main.Main;
-import Utils.SceneManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class CreateNewCourseController implements SceneManager{
+public class CreateNewCourseController{
 
-    private Main main;
 
     @FXML
     private Button CreateButton;
@@ -34,11 +31,6 @@ public class CreateNewCourseController implements SceneManager{
 
     @FXML
     private TextField tfTitle;
-
-    @Override
-    public void setMain(Main main) {
-        this.main = main;
-    }
 
      @FXML
     void CreateCourse(ActionEvent event) {

@@ -1,11 +1,7 @@
 package Main;
 import java.io.IOException;
 
-import Controllers.AddStudentViewController;
-import Controllers.CourseScheduleController;
-import Controllers.CreateNewCourseController;
 import Controllers.MainController;
-import Controllers.StudentSearchController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,6 +9,21 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+
+    private static final String mainViewPath = "/View/MainView.fxml";
+
+    private static final String addStudentViewPath = "/View/AddStudentView.fxml";
+
+    private static final String searchStudentViewPath = "/View/StudentSearchView.fxml";
+
+    private static final String courseScheduleViewPath = "/View/CourseScheduleView.fxml";
+
+    private static final String createCourseViewPath = "/View/CreateNewCourseView.fxml";
+
+    private static final String courseListViewPath = "/View/CourseListView.fxml";
+
+    private static final String addStudentToCourseView = "/View/AddStudentToCourseView.fxml";
+
 
     private Stage secondaryStage = new Stage();
     public static void main(String[] args) {
@@ -30,10 +41,7 @@ public class Main extends Application {
      */
 
     public void loadAddStudentView() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/AddStudentView.fxml"));
-        AddStudentViewController controller = new AddStudentViewController();
-        controller.setMain(this);
-        secondaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource(addStudentViewPath));
         secondaryStage.setTitle("Course Registration System");
         secondaryStage.setScene(new Scene(root, 650, 400));
         secondaryStage.setResizable(false);
@@ -49,7 +57,7 @@ public class Main extends Application {
     public void loadMainView(Stage primaryStage) throws IOException {
         MainController controller = new MainController();
         controller.setMain(this);
-        Parent root = FXMLLoader.load(getClass().getResource("/View/MainView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(mainViewPath));
         primaryStage.setTitle("Course Registration System");
         primaryStage.setScene(new Scene(root, 650, 400));
         primaryStage.setResizable(false);
@@ -62,9 +70,7 @@ public class Main extends Application {
      */
 
     public void loadStudentSearchView() throws IOException {
-        StudentSearchController controller = new StudentSearchController();
-        controller.setMain(this);
-        Parent root = FXMLLoader.load(getClass().getResource("/View/StudentSearchView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(searchStudentViewPath));
         secondaryStage.setTitle("Student Information");
         secondaryStage.setScene(new Scene(root, 650, 458));
         secondaryStage.setResizable(true);
@@ -72,31 +78,28 @@ public class Main extends Application {
     }
 
     public void loadCourseScheduleView() throws IOException {
-        CourseScheduleController controller = new CourseScheduleController();
-        Parent root = FXMLLoader.load(getClass().getResource("/View/CourseScheduleView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(courseScheduleViewPath));
         secondaryStage.setTitle("Course List");
         secondaryStage.setScene(new Scene(root,650,280));
         secondaryStage.show();
     }
 
     public void loadcreateCourseView() throws IOException {
-        CreateNewCourseController controller = new CreateNewCourseController();
-        controller.setMain(this);
-        Parent root = FXMLLoader.load(getClass().getResource("/View/CreateNewCourseView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(createCourseViewPath));
         secondaryStage.setTitle("Create New Course");
         secondaryStage.setScene(new Scene(root, 650, 400));
         secondaryStage.show();
     }
 
     public void loadCourseListView() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/CourseListView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(courseListViewPath));
         secondaryStage.setTitle("Course List for Student");
         secondaryStage.setScene(new Scene(root, 650,450));
         secondaryStage.show();
     }
 
     public void loadAddStudentToCourseView() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/AddStudentToCourseView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(addStudentToCourseView));
         secondaryStage.setTitle("Add Student to Course");
         secondaryStage.setScene(new Scene(root, 650, 400));
         secondaryStage.show();

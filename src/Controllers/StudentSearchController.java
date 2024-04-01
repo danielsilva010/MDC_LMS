@@ -3,27 +3,19 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import Main.Main;
 import Models.Major;
 import Models.Students;
 import Utils.DataReader;
-import Utils.SceneManager;
 
-public class StudentSearchController implements SceneManager{
+public class StudentSearchController{
 
-    private Main main;
     private DataReader dataReader = new DataReader();
     private Students student = new Students();
     private ArrayList<Students> students = new ArrayList<>();
@@ -101,15 +93,6 @@ public class StudentSearchController implements SceneManager{
 
     @FXML
     void tfIDFieldClicked(MouseEvent event) {
-        tfIDField.clear();
-    }
-
-    public void setMain(Main main) {
-        this.main = main;
-    }
-
-    public void initialize() {
-        main = new Main();
     }
 
 }

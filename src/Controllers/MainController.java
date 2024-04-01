@@ -5,19 +5,12 @@ import Utils.SceneManager;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 public class MainController implements SceneManager{
 
     private Main main;
-
-    private Stage stage = new Stage();
 
     @FXML
     private Button AddStudentToCourseButton;
@@ -45,10 +38,13 @@ public class MainController implements SceneManager{
 
     @FXML
     public void initialize() {
-        VBOX.setAlignment(Pos.CENTER);
         main = new Main();
     }
 
+    @Override
+    public void setMain(Main main) {
+        this.main = main;
+    }
     @FXML
     void ExitButton(ActionEvent event) {
         Platform.exit();
@@ -84,10 +80,6 @@ public class MainController implements SceneManager{
         main.loadStudentSearchView();
     }
 
-    @Override
-    public void setMain(Main main) {
-        this.main = main;
-    }
 
 
 }

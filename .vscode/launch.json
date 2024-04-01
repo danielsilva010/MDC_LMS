@@ -9,8 +9,16 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Main.Main",
+            "projectName": "MDC_LMS_e15bef78",
+            "vmArgs": "--module-path /Users/danielsilva/Downloads/javafx-sdk-21.0.1/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main.Main",
             "projectName": "MDC_LMS_8b0169ce",
-            "vmArgs": "--module-path /Users/danielsilva/Downloads/javafx-sdk-21.0.1/lib --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path /Users/danielsilva/Downloads/javafx-sdk-21.0.1/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",

@@ -1,8 +1,6 @@
 package Controllers;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
-
 import Models.Students;
 import Utils.DataReader;
 import javafx.collections.FXCollections;
