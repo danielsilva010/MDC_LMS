@@ -24,7 +24,10 @@ public class FacultyCourses {
     }
 
     public String getTerm() {
-        return schedule.getTerm();
+        String term = schedule.getTerm();
+        term = term.replaceAll("(?<=\\D)(?=\\d)", "$0#");
+        String[] partsOfTerm = term.split("#");
+        return partsOfTerm[0] + " " + partsOfTerm[1];
     }
 
     public String getGrade() {

@@ -36,22 +36,59 @@ public class Main extends Application {
 
     /**
      * Start the application
-     * 
      * @param primaryStage the primary stage
-     * @throws IOException if the FXML file is not found
      */
-
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) {
         loadMainView(primaryStage);
     }
 
     /**
-     * Load the add student view
-     * 
-     * @throws IOException if the FXML file is not found
+     * Load the main view
+     * @param primaryStage the primary stage
      */
+     public void loadMainView(Stage primaryStage) {
+        try {
+            MainController controller = new MainController();
+            controller.setMain(this);
+            Parent root = FXMLLoader.load(getClass().getResource(mainViewPath));
+            primaryStage.setTitle("Course Registration System");
+            primaryStage.setScene(new Scene(root, 650, 400));
+            primaryStage.setResizable(false);
+            primaryStage.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the main view");
+            alert.showAndWait();
+        }
+    }
 
+    /**
+     * Load the view courses by CRN view
+     */
+    public void loadViewCoursesByCRNView() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/View/ViewCoursesByCRNView.fxml"));
+            secondaryStage.setTitle("View Courses by CRN");
+            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setResizable(false);
+            secondaryStage.setX(100);
+            secondaryStage.setY(100);
+            secondaryStage.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the view courses by CRN view");
+            alert.showAndWait();
+        }
+    }
+
+    /**
+     * Load the add student view
+     */
     public void loadAddStudentView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(addStudentViewPath));
@@ -70,37 +107,9 @@ public class Main extends Application {
         }
     }
 
-    /**
-     * Load the main view
-     * 
-     * @param primaryStage the primary stage
-     * @throws IOException if the FXML file is not found
-     */
-
-    public void loadMainView(Stage primaryStage) {
-        try {
-            MainController controller = new MainController();
-            controller.setMain(this);
-            Parent root = FXMLLoader.load(getClass().getResource(mainViewPath));
-            primaryStage.setTitle("Course Registration System");
-            primaryStage.setScene(new Scene(root, 650, 400));
-            primaryStage.setResizable(false);
-            primaryStage.show();
-        } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Error loading view");
-            alert.setContentText("An error occurred while loading the main view");
-            alert.showAndWait();
-        }
-    }
-
     /***
      * Load the student search view
-     * 
-     * @throws IOException if the FXML file is not found
      */
-
     public void loadStudentSearchView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(searchStudentViewPath));
@@ -121,10 +130,7 @@ public class Main extends Application {
 
     /***
      * Load the course schedule view
-     * 
-     * @throws IOException if the FXML file is not found
      */
-
     public void loadCourseScheduleView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(courseScheduleViewPath));
@@ -145,8 +151,6 @@ public class Main extends Application {
 
     /**
      * Load the create course view
-     * 
-     * @throws IOException if the FXML file is not found
      */
     public void loadcreateCourseView() {
         try {
@@ -167,10 +171,7 @@ public class Main extends Application {
 
     /**
      * Load the course list view
-     * 
-     * @throws IOException if the FXML file is not found
      */
-
     public void loadCourseListView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(courseListViewPath));
@@ -191,7 +192,6 @@ public class Main extends Application {
     /**
      * Load the add student to course view
      */
-
     public void loadAddStudentToCourseView() {
         Parent root;
         try {
@@ -210,6 +210,9 @@ public class Main extends Application {
         }
     }
 
+    /**
+     * Load the faculty courses view
+     */
     public void loadFacultyCoursesView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(facultyCoursesView));

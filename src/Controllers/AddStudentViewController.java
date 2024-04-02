@@ -1,22 +1,18 @@
 package Controllers;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import Models.Major;
 import Models.Students;
 import Utils.DataReader;
-import Utils.DataUtil;
+import Utils.DataWriter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
 
 public class AddStudentViewController {
 
@@ -73,31 +69,46 @@ public class AddStudentViewController {
      */
     @FXML
     void Submit(ActionEvent event) {
-        // Disable the submit button
         submitButton.setDisable(true);
+        if(isValid()) {
+            String studentID = tfStuID.getText();
+            String email = tfEmail.getText();
+            String firstName = tfFirstName.getText();
+            String lastName = tfLastName.getText();
+            String address = tfAddress.getText();
+            String city = tfCity.getText();
+            String state = tfState.getText();
+            String zipCode = tfZipCode.getText();
+            String phone = tfPhone.getText();
+            String expectedGrad = tfExpectedGrad.getText();
+            String majorID = cbMajorID.getValue().split(":")[0].trim();
 
-        try (FileWriter fw = new FileWriter(new File("src/Data/Students.txt"), true)) {
-            PrintWriter pw = new PrintWriter(fw);
-            if (isValid()) {
-                pw.print("\n" + tfStuID.getText() + ":" + tfFirstName.getText() + ":" + tfLastName.getText() +
-                        ":" + tfAddress.getText() + ":" + tfCity.getText() + ":" + tfState.getText() + ":" +
-                        tfZipCode.getText() + ":" + tfPhone.getText() + ":" + tfEmail.getText() + ":"
-                        + (cbMajorID.getSelectionModel().getSelectedIndex() + 1) + ":" + tfExpectedGrad.getText());
-            }
-        } catch (IOException e) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Error writing to file");
-            alert.setContentText(
-                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            if(DataWriter.writeNewStudent(studentID, firstName, lastName, address, city, state, zipCode, phone, email, Integer.parseInt(majorID), expectedGrad)) {
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Success");
+            alert.setHeaderText("Student added");
+            alert.setContentText("Student " + studentID + " has been added");
             alert.showAndWait();
+            }
+            else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error adding student");
+                alert.setContentText("An error occurred while adding student " + studentID);
+                alert.showAndWait();
+            }
         }
 
-        // Re-enable the submit button
         submitButton.setDisable(false);
     }
 
-    public boolean isUnique(String id) {
+    /***
+     * Check if the student ID is unique
+     * 
+     * @param id the student ID
+     * @return true if the student ID is unique, false otherwise
+     */
+    private boolean isUnique(String id) {
         ArrayList<Students> students = DataReader.readStudents();
         for (Students student : students) {
             if (student.getStudentID().equals(id)) {
@@ -107,7 +118,7 @@ public class AddStudentViewController {
         return true;
     }
 
-    public boolean isValid() {
+    private boolean isValid() {
         boolean isValid = false;
 
         String studentID = tfStuID.getText();
@@ -151,7 +162,13 @@ public class AddStudentViewController {
         return isValid;
     }
 
-    public boolean validFormatID(String id) {
+    /***
+     * Check if the student ID has the correct format
+     * 
+     * @param id the student ID
+     * @return true if the student ID has the correct format, false otherwise
+     */
+    private boolean validFormatID(String id) {
         if (id.charAt(0) == 'Z') {
             for (int i = 1; i < id.length(); i++) {
                 if(Character.isDigit(id.charAt(i))) {

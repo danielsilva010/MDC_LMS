@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 import Models.CourseRoster;
 import Models.Department;
 import Models.Faculty;

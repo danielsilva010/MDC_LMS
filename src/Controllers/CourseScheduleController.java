@@ -51,9 +51,9 @@ public class CourseScheduleController {
             CRN.setCellValueFactory(new PropertyValueFactory<>("CRN"));
             Capacity.setCellValueFactory(new PropertyValueFactory<>("Capacity"));
             CreditHours.setCellValueFactory(new PropertyValueFactory<>("CreditHours"));
-            FacultyID.setCellValueFactory(new PropertyValueFactory<>("FacultyID"));
+            FacultyID.setCellValueFactory(new PropertyValueFactory<>("Faculty"));
             Room.setCellValueFactory(new PropertyValueFactory<>("Room"));
-            Term.setCellValueFactory(new PropertyValueFactory<>("Term"));
+            Term.setCellValueFactory(new PropertyValueFactory<>("TermFormatted"));
             Title.setCellValueFactory(new PropertyValueFactory<>("CourseName"));
             courseID.setCellValueFactory(new PropertyValueFactory<>("CourseID"));
     }

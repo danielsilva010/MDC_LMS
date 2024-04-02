@@ -1,4 +1,7 @@
 package Models;
+
+import Utils.DataUtil;
+
 public class Schedule {
     private String courseID;
     private long CRN;
@@ -22,6 +25,17 @@ public class Schedule {
 
     public Schedule() {
         
+    }
+
+    public String getFaculty() {
+        return DataUtil.getFaculty(facultyID).getFirstName() + " " + DataUtil.getFaculty(facultyID).getLastName(); 
+    }
+
+    public String getTermFormatted() {
+        String term = this.term;
+        term = term.replaceAll("(?<=\\D)(?=\\d)", "$0#");
+        String[] partsOfTerm = term.split("#");
+        return partsOfTerm[0] + " " + partsOfTerm[1];
     }
 
     public Schedule(String courseID, long cRN, String courseName, String term, String facultyID, String room, int capacity,

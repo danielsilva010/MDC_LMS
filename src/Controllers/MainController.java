@@ -66,7 +66,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void viewCoursesByCRN(ActionEvent event) {
-
+        main.loadViewCoursesByCRNView();
     }
 
     @FXML
