@@ -52,9 +52,8 @@ public class AddStudentViewController {
 
 
     /***
-     * Submit the student information to the database
+     * Submit the student information to the "database"
      * @param event the button click
-     * @throws IOException 
      */
     @FXML
     void Submit(ActionEvent event) {

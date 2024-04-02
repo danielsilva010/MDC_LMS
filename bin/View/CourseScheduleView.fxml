@@ -26,13 +26,13 @@
       </VBox>
    </center>
    <top>
-      <VBox alignment="CENTER" prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Schedule" />
          </children>
       </VBox>
    </top>
    <bottom>
-      <VBox prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

@@ -1,29 +1,51 @@
 package Controllers;
 
-import Models.Schedule;
+import Models.StudentCourses;
 import Utils.DataUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
-import javafx.scene.control.ListView;
+import javafx.scene.control.TableView;
+
 import java.util.ArrayList;
 
 public class CourseListController{
 
     @FXML
-    private ListView<Schedule> ListView;
+    private TableColumn<StudentCourses, Long> CRNColumn;
+
+    @FXML
+    private TableColumn<StudentCourses, String> FacultyColumn;
+
+    @FXML
+    private TableColumn<StudentCourses, String> CourseIDColumn;
+
+    @FXML
+    private TableColumn<StudentCourses, String> GradeColumn;
 
     @FXML
     private Button SearchButton;
+
+    @FXML
+    private TableColumn<StudentCourses, String> TermColumn;
+
+    @FXML
+    private TableColumn<StudentCourses, String> courseNameColumn;
+
+    @FXML
+    private TableView<StudentCourses> tableView;
 
     @FXML
     private Text textStudentName;
 
     @FXML
     private TextField tfStudentID;
+
 
     /***
      * Clear the text field if the default text is present
@@ -42,10 +64,16 @@ public class CourseListController{
      */
     @FXML
     void Search(ActionEvent event) {
-        ArrayList<Schedule> schedule = DataUtil.getStudentCourses(tfStudentID.getText());
+        ArrayList<StudentCourses> schedule = DataUtil.getCourses(tfStudentID.getText());
         String name = DataUtil.getStudentName(tfStudentID.getText());
         textStudentName.setText(name);
-        ListView.getItems().addAll(schedule);
+        CRNColumn.setCellValueFactory(new PropertyValueFactory<>("CRN"));
+        FacultyColumn.setCellValueFactory(new PropertyValueFactory<>("Faculty"));
+        GradeColumn.setCellValueFactory(new PropertyValueFactory<>("Grade"));
+        CourseIDColumn.setCellValueFactory(new PropertyValueFactory<>("CourseID"));
+        TermColumn.setCellValueFactory(new PropertyValueFactory<>("Term"));
+        courseNameColumn.setCellValueFactory(new PropertyValueFactory<>("CourseName"));
+        tableView.getItems().setAll(schedule);
     }
 
 }
