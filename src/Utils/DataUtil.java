@@ -2,7 +2,9 @@ package Utils;
 
 import java.util.ArrayList;
 import Models.CourseRoster;
+import Models.Department;
 import Models.Faculty;
+import Models.Major;
 import Models.Schedule;
 import Models.StudentCourses;
 import Models.Students;
@@ -111,5 +113,39 @@ public class DataUtil {
         }
         return className;
     } 
+
+    /***
+     * Get the major name
+     * @param majorID the major ID
+     * @return the major name
+     */
+    public static String getMajorName(String majorID) {
+        String majorName = null;
+        ArrayList<Major> majorList = DataReader.readMajor();
+        for(Major major: majorList) {
+            if(major.getMajorID() == Integer.parseInt(majorID)) {
+                majorName = major.getMajorName();
+                break;
+            }
+        }
+        return majorName;
+    }
+
+    /***
+     * Get the department name
+     * @param departmentID the department ID
+     * @return the department name
+     */
+    public static String getDepartmentName(int departmentID) {
+        ArrayList<Department> departments = DataReader.readDepartment();
+        String departmentName = null;
+        for(Department department: departments) {
+            if(department.getDepartmentID() == departmentID) {
+                departmentName = department.getDepartmentName();
+                break;
+            }
+        }
+        return departmentName;
+    }
 
 }
