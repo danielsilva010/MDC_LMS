@@ -13,6 +13,15 @@ public class MainController implements SceneManager{
     private Main main;
 
     @FXML
+    private Button viewFacultyCoursesButton;
+
+    @FXML
+    private Button modifyGradesButton;
+
+    @FXML
+    private Button calculateGPAButton;
+
+    @FXML
     private Button AddStudentToCourseButton;
 
     @FXML
@@ -48,6 +57,21 @@ public class MainController implements SceneManager{
     @FXML
     void ExitButton(ActionEvent event) {
         Platform.exit();
+    }
+
+    @FXML
+    void viewFacultyCourses(ActionEvent event) {
+
+    }
+
+    @FXML
+    void modifyGrades(ActionEvent event) {
+
+    }
+
+    @FXML
+    void calculateGPA(ActionEvent event) {
+
     }
 
     @FXML

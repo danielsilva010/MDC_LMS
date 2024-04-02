@@ -54,11 +54,12 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <VBox alignment="CENTER" GridPane.rowIndex="2">
                <children>
-                  <Button fx:id="createNewCourseButton1" alignment="CENTER" mnemonicParsing="false" onAction="#createNewCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new course">
+                  <Button fx:id="createNewCourseButton" alignment="CENTER" mnemonicParsing="false" onAction="#createNewCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new course">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font></Button>
@@ -74,7 +75,7 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="viewStudentInformationButton1" mnemonicParsing="false" onAction="#viewStudentInformation" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View student information">
+                  <Button fx:id="viewStudentInformationButton" mnemonicParsing="false" onAction="#viewStudentInformation" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View student information">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font></Button>
@@ -82,7 +83,7 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="viewCourseScheduleButton1" mnemonicParsing="false" onAction="#viewCourseSchedule" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View course schedule">
+                  <Button fx:id="viewCourseScheduleButton" mnemonicParsing="false" onAction="#viewCourseSchedule" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View course schedule">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font></Button>
@@ -90,7 +91,7 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="createNewStudentButton1" mnemonicParsing="false" onAction="#createNewStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new student">
+                  <Button fx:id="createNewStudentButton" mnemonicParsing="false" onAction="#createNewStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new student">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font></Button>
@@ -98,7 +99,7 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button fx:id="printCourseListForStudentButton1" alignment="CENTER" mnemonicParsing="false" onAction="#printCourseListForStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Print course list for a student">
+                  <Button fx:id="printCourseListForStudentButton" alignment="CENTER" mnemonicParsing="false" onAction="#printCourseListForStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Print course list for a student">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font></Button>
@@ -106,18 +107,42 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
-                  <Button fx:id="AddStudentToCourseButton1" alignment="CENTER" mnemonicParsing="false" onAction="#AddStudentToCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Add a student to a course">
+                  <Button fx:id="AddStudentToCourseButton" alignment="CENTER" mnemonicParsing="false" onAction="#AddStudentToCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Add a student to a course">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="3">
+            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="4">
                <children>
-                  <Button fx:id="ExitButton1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExitButton" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: clear;" text="EXIT">
-                  <font>
-                     <Font name="Times New Roman" size="13.0" />
-                  </font></Button>
+                  <Button fx:id="ExitButton1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExitButton" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: clear;" text="EXIT" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="viewFacultyCoursesButton" alignment="CENTER" mnemonicParsing="false" onAction="#viewFacultyCourses" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View Faculty Courses">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="calculateGPAButton" alignment="CENTER" mnemonicParsing="false" onAction="#calculateGPA" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Calculate GPA">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="modifyGradesButton" alignment="CENTER" mnemonicParsing="false" onAction="#modifyGrades" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Modify Grades">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Button>
                </children>
             </VBox>
          </children>
