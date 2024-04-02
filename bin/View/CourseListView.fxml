@@ -14,7 +14,7 @@
          <children>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course list for Student" />
             <TextField fx:id="tfStudentID" onMouseClicked="#Clear" style="-fx-background-color: clear; -fx-text-fill: white;" text="Enter Student ID here..." />
-            <Text fx:id="textStudentName" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="textStudentName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </HBox>
       <TableView fx:id="tableView" prefHeight="340.0" prefWidth="600.0">

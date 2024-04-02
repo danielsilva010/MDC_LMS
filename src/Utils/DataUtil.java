@@ -1,8 +1,6 @@
 package Utils;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-
 import Models.CourseRoster;
 import Models.Faculty;
 import Models.Schedule;
@@ -10,32 +8,6 @@ import Models.StudentCourses;
 import Models.Students;
 
 public class DataUtil {
-    /***
-     * Get the courses for a student
-     * @param studentID the student ID
-     * @return an array list of schedules
-     */
-    public static ArrayList<Schedule> getStudentCourses(String studentID) {
-        ArrayList<CourseRoster> courseRoster = new ArrayList<>();
-        DataReader.readCourseRoster(courseRoster);
-        for (int index = courseRoster.size() - 1; index >= 0; index--) {
-            if (!courseRoster.get(index).getStudentID().equals(studentID)) {
-                courseRoster.remove(index);
-            }
-        }
-        ArrayList<Schedule> scheduleList = new ArrayList<>();
-        DataReader.readSchedule(scheduleList);
-        ArrayList<Schedule> classes = new ArrayList<>();
-        for (int i = 0; i < scheduleList.size(); i++) {
-            for (int j = 0; j < courseRoster.size(); j++) {
-                if (courseRoster.get(j).getCRN() == scheduleList.get(i).getCRN()) {
-                    classes.add(scheduleList.get(i));
-                }
-            }
-        }
-        return classes;
-
-    }
 
     /***
      * Get the courses for a student
@@ -73,26 +45,6 @@ public class DataUtil {
             }
         }
         return studentCourses;
-    }
-
-    /***
-     * Map the classes to the course roster
-     * @return a hash map of course roster and schedule
-     */
-    public static HashMap<CourseRoster, Schedule> mapClasses() {
-        ArrayList<CourseRoster> courseRoster = new ArrayList<>();
-        DataReader.readCourseRoster(courseRoster);
-        ArrayList<Schedule> scheduleList = new ArrayList<>();
-        DataReader.readSchedule(scheduleList);
-        HashMap<CourseRoster, Schedule> map = new HashMap<>();
-        for (int i = 0; i < scheduleList.size(); i++) {
-            for (int j = 0; j < courseRoster.size(); j++) {
-                if (courseRoster.get(j).getCRN() == scheduleList.get(i).getCRN()) {
-                    map.put(courseRoster.get(j), scheduleList.get(i));
-                }
-            }
-        }
-        return map;
     }
 
     /***

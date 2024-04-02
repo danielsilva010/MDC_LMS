@@ -89,7 +89,7 @@ public class StudentSearchController{
      * @param event the mouse event
      */
     @FXML
-    void ClearIfDefaultText(MouseEvent event) {
+    public void ClearIfDefaultText(MouseEvent event) {
         if(tfStudentID.getText().equals("Enter Student ID Here")) {
             tfStudentID.clear();
         }

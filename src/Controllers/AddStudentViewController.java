@@ -62,11 +62,11 @@ public class AddStudentViewController {
             DataReader.readStudents(studentList);
             PrintWriter pw = new PrintWriter(fw);
             boolean isValid = true;
-            if(tfStuID.getText().length() == ID_LENGTH) {
+            if(tfStuID.getText().length() == ID_LENGTH && isUnique(tfStuID.getText())) {
                 for(Students student: studentList) {
 
                     //Validate for duplicate fields on students, each field should be unique, except name, last name and major
-                    if(!student.getFirstName().equals(tfFirstName.getText()) && !student.getLastName().equals(tfLastName.getText()) && !student.getStudentID().equals(tfStuID.getText())){
+                    if(!student.getFirstName().equals(tfFirstName.getText()) && !student.getLastName().equals(tfLastName.getText())){
                         
                         isValid = true;
                     }
@@ -94,6 +94,17 @@ public class AddStudentViewController {
             alert.setContentText("Error writing to file");
             alert.showAndWait();
         }
+    }
+
+    public boolean isUnique(String id) {
+        ArrayList<Students> students = new ArrayList<>();
+        DataReader.readStudents(students);
+        for (Students student : students) {
+            if(student.getStudentID().equals(id)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
