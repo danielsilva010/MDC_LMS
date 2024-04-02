@@ -2,6 +2,7 @@ package Controllers;
 
 import Models.StudentCourses;
 import Utils.DataUtil;
+import Utils.DataWriter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -74,6 +75,8 @@ public class CourseListController{
         TermColumn.setCellValueFactory(new PropertyValueFactory<>("Term"));
         courseNameColumn.setCellValueFactory(new PropertyValueFactory<>("CourseName"));
         tableView.getItems().setAll(schedule);
+
+        DataWriter.writeStudentCourses(tfStudentID.getText());
     }
 
 }
