@@ -15,12 +15,9 @@ public class DataUtil {
      * @return an array list of student courses
      */
     public static ArrayList<StudentCourses> getCourses(String studentID) {
-        ArrayList<CourseRoster> courseRoster = new ArrayList<>();
-        DataReader.readCourseRoster(courseRoster);
-        ArrayList<Faculty> facultyList = new ArrayList<>();
-        DataReader.readFaculty(facultyList);
-        ArrayList<Schedule> scheduleList = new ArrayList<>();
-        DataReader.readSchedule(scheduleList);
+        ArrayList<CourseRoster> courseRoster = DataReader.readCourseRoster();
+        ArrayList<Faculty> facultyList = DataReader.readFaculty();
+        ArrayList<Schedule> scheduleList = DataReader.readSchedule();
 
         ArrayList<StudentCourses> studentCourses = new ArrayList<>();
         for (int index = courseRoster.size() - 1; index >= 0; index--) {
@@ -68,8 +65,7 @@ public class DataUtil {
 
     public static String getFacultyName(String facultyID) {
         String name = null;
-        ArrayList<Faculty> facultyList = new ArrayList<>();
-        DataReader.readFaculty(facultyList);
+        ArrayList<Faculty> facultyList = DataReader.readFaculty();
         for(Faculty faculty: facultyList) {
             if(faculty.getFacultyID().equals(facultyID)) {
                 name = faculty.getFirstName() + " " + faculty.getLastName();

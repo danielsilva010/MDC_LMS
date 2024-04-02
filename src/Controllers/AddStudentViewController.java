@@ -58,8 +58,7 @@ public class AddStudentViewController {
     @FXML
     void Submit(ActionEvent event) {
         try (FileWriter fw = new FileWriter(new File("src/Data/Students.txt"), true)) {
-            ArrayList<Students> studentList = new ArrayList<>();
-            DataReader.readStudents(studentList);
+            ArrayList<Students> studentList = DataReader.readStudents();
             PrintWriter pw = new PrintWriter(fw);
             boolean isValid = true;
             if(tfStuID.getText().length() == ID_LENGTH && isUnique(tfStuID.getText())) {
@@ -97,8 +96,7 @@ public class AddStudentViewController {
     }
 
     public boolean isUnique(String id) {
-        ArrayList<Students> students = new ArrayList<>();
-        DataReader.readStudents(students);
+        ArrayList<Students> students = DataReader.readStudents();
         for (Students student : students) {
             if(student.getStudentID().equals(id)) {
                 return false;

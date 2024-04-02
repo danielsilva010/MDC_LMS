@@ -26,10 +26,37 @@ public class DataReader {
     private static final String studentsPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Students.txt";
 
     /***
+     * Instance ArrayList to hold all data
+     */
+
+    private ArrayList<CourseRoster> courseRoster;
+    private ArrayList<Department> departments;
+    private ArrayList<Faculty> faculty;
+    private ArrayList<Major> majors;
+    private ArrayList<Schedule> schedule;
+    private ArrayList<Students> students;
+
+
+    /***
+     * Constructor to initialize the ArrayLists
+     */
+
+     public DataReader() {
+        courseRoster = readCourseRoster();
+        departments = readDepartment();
+        faculty = readFaculty();
+        majors = readMajor();
+        schedule = readSchedule();
+        students = readStudents();
+     }
+
+    /***
      * Read the course roster
+     * 
      * @param courseRoster an arrayList to hold the courseRosters
      */
-    public static void readCourseRoster(ArrayList<CourseRoster> courseRoster) {
+    public static ArrayList<CourseRoster> readCourseRoster() {
+        ArrayList<CourseRoster> courseRoster = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(courseRosterPath))) {
             String line = null;
             String[] parts = null;
@@ -47,13 +74,16 @@ public class DataReader {
             error.setContentText("File not found: " + courseRosterPath);
             error.showAndWait();
         }
+        return courseRoster;
     }
 
     /***
      * Read the schedule
+     * 
      * @param schedule an arrayList to hold the schedules
      */
-    public static void readSchedule(ArrayList<Schedule> schedule) {
+    public static ArrayList<Schedule> readSchedule() {
+        ArrayList<Schedule> schedule = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(schedulePath))) {
             String line = null;
             String[] parts = null;
@@ -76,13 +106,16 @@ public class DataReader {
             error.setContentText("File not found: " + schedulePath);
             error.showAndWait();
         }
+        return schedule;
     }
 
     /***
      * Read the department
+     * 
      * @param departments an arrayList to hold the departments
      */
-    public static void readDepartment(ArrayList<Department> departments) {
+    public static ArrayList<Department> readDepartment() {
+        ArrayList<Department> departments = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(departmentPath))) {
             String line = null;
             String[] parts = null;
@@ -99,13 +132,16 @@ public class DataReader {
             error.setContentText("File not found: " + departmentPath);
             error.showAndWait();
         }
+        return departments;
     }
 
     /***
      * Read the major
+     * 
      * @param majors an arrayList to hold the majors
      */
-    public static void readMajor(ArrayList<Major> majors) {
+    public static ArrayList<Major> readMajor() {
+        ArrayList<Major> majors = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(majorPath))) {
             String line = null;
             String[] parts = null;
@@ -123,13 +159,16 @@ public class DataReader {
             error.setContentText("File not found: " + majorPath);
             error.showAndWait();
         }
+        return majors;
     }
 
     /***
      * Read the faculty
+     * 
      * @param faculty an arrayList to hold the faculty
      */
-    public static void readFaculty(ArrayList<Faculty> faculty) {
+    public static ArrayList<Faculty> readFaculty() {
+        ArrayList<Faculty> faculty = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(facultyPath))) {
             String line = null;
             String[] parts = null;
@@ -157,13 +196,16 @@ public class DataReader {
             error.setContentText("File not found: " + facultyPath);
             error.showAndWait();
         }
+        return faculty;
     }
 
     /***
      * Read the students
+     * 
      * @param students an arrayList to hold the students
      */
-    public static void readStudents(ArrayList<Students> students) {
+    public static ArrayList<Students> readStudents() {
+        ArrayList<Students> students = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(studentsPath))) {
             String line = null;
             String[] parts = null;
@@ -189,5 +231,6 @@ public class DataReader {
             error.setContentText("File not found: " + studentsPath);
             error.showAndWait();
         }
+        return students;
     }
 }

@@ -44,8 +44,7 @@ public class CourseScheduleController {
      * Initialize the course schedule controller
      */
     public void initialize() {
-            ArrayList<Schedule> scheduleList = new ArrayList<>();
-            DataReader.readSchedule(scheduleList);
+            ArrayList<Schedule> scheduleList = DataReader.readSchedule();
             ObservableList<Schedule> scheduleObvList = FXCollections.observableArrayList(scheduleList);
             tableView.setItems(scheduleObvList);
 

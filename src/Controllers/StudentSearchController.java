@@ -53,7 +53,7 @@ public class StudentSearchController{
      */
     @FXML
     void search(ActionEvent event) {
-        DataReader.readStudents(students);
+        students = DataReader.readStudents();
         String id = tfStudentID.getText();
         for (Students student : students) {
             if(student.getStudentID().equals(id)) {
@@ -62,8 +62,7 @@ public class StudentSearchController{
             }
         }
         String majorName = "";
-        ArrayList<Major> majorList = new ArrayList<>();
-        DataReader.readMajor(majorList);
+        ArrayList<Major> majorList = DataReader.readMajor();
         for(Major oneMajor: majorList) {
             if(oneMajor.getMajorID() == student.getMajorID()) {
                 majorName = oneMajor.getMajorName();

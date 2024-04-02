@@ -197,7 +197,7 @@ public class Main extends Application {
         try {
             root = FXMLLoader.load(getClass().getResource(addStudentToCourseView));
             secondaryStage.setTitle("Add Student to Course");
-            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setScene(new Scene(root, 650, 430));
             secondaryStage.setX(100);
             secondaryStage.setY(100);
             secondaryStage.show();
