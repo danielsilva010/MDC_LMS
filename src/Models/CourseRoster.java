@@ -13,6 +13,12 @@ public class CourseRoster {
         this.grade = grade;
     }
 
+    public CourseRoster(CourseRoster courseRoster) {
+        this.CRN = courseRoster.getCRN();
+        this.studentID = courseRoster.getStudentID();
+        this.grade = courseRoster.getGrade();
+    }
+
     public long getCRN() {
         return CRN;
     }

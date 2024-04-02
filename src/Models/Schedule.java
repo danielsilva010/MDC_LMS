@@ -9,7 +9,19 @@ public class Schedule {
     private int capacity;
     private int creditHours;
 
+    public Schedule(Schedule otherSchedule) {
+        this.courseID = otherSchedule.courseID;
+        this.CRN = otherSchedule.CRN;
+        this.courseName = otherSchedule.courseName;
+        this.term = otherSchedule.term;
+        this.facultyID = otherSchedule.facultyID;
+        this.room = otherSchedule.room;
+        this.capacity = otherSchedule.capacity;
+        this.creditHours = otherSchedule.creditHours;
+    }
+
     public Schedule() {
+        
     }
 
     public Schedule(String courseID, long cRN, String courseName, String term, String facultyID, String room, int capacity,

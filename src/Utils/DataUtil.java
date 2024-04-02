@@ -1,9 +1,11 @@
 package Utils;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import Models.CourseRoster;
 import Models.Department;
 import Models.Faculty;
+import Models.FacultyCourses;
 import Models.Major;
 import Models.Schedule;
 import Models.StudentCourses;
@@ -146,6 +148,56 @@ public class DataUtil {
             }
         }
         return departmentName;
+    }
+
+    public static ArrayList<FacultyCourses> getFacultyCourses(String FacultyID) {
+        ArrayList<Schedule> schedule = DataReader.readSchedule();
+
+        for(int index = schedule.size() - 1; index >= 0; index--) {
+            if(!schedule.get(index).getFacultyID().equals(FacultyID)) {
+                schedule.remove(index);
+            }
+        }
+
+        ArrayList<Long> crnList = new ArrayList<>();
+
+        for(Schedule oneClass: schedule) {
+            crnList.add(oneClass.getCRN());
+        }
+
+        ArrayList<CourseRoster> courseRoster = DataReader.readCourseRoster();
+        for(int index = courseRoster.size() - 1; index >= 0; index--) {
+            if(!crnList.contains(courseRoster.get(index).getCRN())) {
+                courseRoster.remove(index);
+            }
+        }
+
+        Faculty faculty = getFaculty(FacultyID);
+
+        ArrayList<FacultyCourses> facultyCourses = new ArrayList<>();
+        for(int i = 0; i < schedule.size(); i++) {
+            for(int j = 0; j < courseRoster.size(); j++) {
+                if(courseRoster.get(j).getCRN() == schedule.get(i).getCRN()) {
+                    FacultyCourses facultyCourse = new FacultyCourses();
+                    facultyCourse.setSchedule(schedule.get(i));
+                    facultyCourse.setCourseRoster(courseRoster.get(j));
+                    facultyCourse.setFaculty(faculty);
+                    facultyCourses.add(facultyCourse);
+                }
+            }
+        }
+        return facultyCourses;
+    }
+
+
+    public static Faculty getFaculty(String ID) {
+        ArrayList<Faculty> facultyList = DataReader.readFaculty();
+        for(Faculty faculty: facultyList) {
+            if(faculty.getFacultyID().equals(ID)) {
+                return faculty;
+            }
+        }
+        return null;
     }
 
 }

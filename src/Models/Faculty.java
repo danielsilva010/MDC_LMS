@@ -32,6 +32,22 @@ public class Faculty {
         this.departmentID = departmentID;
     }
 
+    public Faculty(Faculty faculty) {
+        FacultyID = faculty.getFacultyID();
+        this.firstName = faculty.getFirstName();
+        this.lastName = faculty.getLastName();
+        this.hireDate = faculty.getHireDate();
+        this.title = faculty.getTitle();
+        this.salary = faculty.getSalary();
+        this.street = faculty.getStreet();
+        this.city = faculty.getCity();
+        this.state = faculty.getState();
+        this.zipCode = faculty.getZipCode();
+        this.phone = faculty.getPhone();
+        this.email = faculty.getEmail();
+        this.departmentID = faculty.getDepartmentID();
+    }
+
     public Faculty() {
 
     }
