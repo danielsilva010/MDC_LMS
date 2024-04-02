@@ -49,11 +49,9 @@ public class DataUtil {
      * @param studentID the student ID
      * @return the student name
      */
-
     public static String getStudentName(String studentID) {
         String name = null;
-        ArrayList<Students> studentList = new ArrayList<>();
-        DataReader.readStudents(studentList);
+        ArrayList<Students> studentList = DataReader.readStudents();
         for(Students student: studentList) {
             if(student.getStudentID().equals(studentID)) {
                 name = student.getFirstName() + " " + student.getLastName();
@@ -63,6 +61,11 @@ public class DataUtil {
         return name;
     }
 
+    /***
+     * Get the faculty name
+     * @param facultyID the faculty ID
+     * @return the faculty name
+     */
     public static String getFacultyName(String facultyID) {
         String name = null;
         ArrayList<Faculty> facultyList = DataReader.readFaculty();
@@ -74,5 +77,39 @@ public class DataUtil {
         }
         return name;
     }
+
+    /***
+     * Get the course name
+     * @param CRN the course registration number
+     * @return the course name
+     */
+    public static String getCourseName(String CRN) {
+        ArrayList<Schedule> scheduleList = DataReader.readSchedule();
+        String className = null;
+        for(Schedule oneClass: scheduleList) {
+            if(oneClass.getCRN() == Long.parseLong(CRN)) {
+                className = oneClass.getCourseName();
+                break;
+            }
+        }
+        return className;
+    } 
+
+    /***
+     * Get the course name
+     * @param CRN the course registration number
+     * @return the course name
+     */
+    public static String getCourseName(long CRN) {
+        ArrayList<Schedule> scheduleList = DataReader.readSchedule();
+        String className = null;
+        for(Schedule oneClass: scheduleList) {
+            if(oneClass.getCRN() == CRN) {
+                className = oneClass.getCourseName();
+                break;
+            }
+        }
+        return className;
+    } 
 
 }
