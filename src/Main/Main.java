@@ -26,6 +26,8 @@ public class Main extends Application {
 
     private static final String addStudentToCourseView = "/View/AddStudentToCourseView.fxml";
 
+    private static final String facultyCoursesView = "/View/FacultyCoursesView.fxml";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -188,8 +190,6 @@ public class Main extends Application {
 
     /**
      * Load the add student to course view
-     * 
-     * @throws IOException if the FXML file is not found
      */
 
     public void loadAddStudentToCourseView() {
@@ -205,9 +205,25 @@ public class Main extends Application {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Error loading view");
-            alert.setContentText("An error occurred while loading theadd student to course view");
+            alert.setContentText("An error occurred while loading the add student to course view");
             alert.showAndWait();
         }
+    }
 
+    public void loadFacultyCoursesView() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(facultyCoursesView));
+            secondaryStage.setTitle("Faculty Courses");
+            secondaryStage.setScene(new Scene(root, 650, 430));
+            secondaryStage.setX(100);
+            secondaryStage.setY(100);
+            secondaryStage.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the faculty courses view");
+            alert.showAndWait();
+        }
     }
 }

@@ -15,6 +15,10 @@ public class DataWriter {
     public static void writeStudentCourses(String studentID) {
         ArrayList<StudentCourses> courses = DataUtil.getCourses(studentID);
         File file = new File("src/Data/Courses-" + studentID);
+        if (file.exists()) {
+            file.delete();
+        }
+
         try (FileWriter fw = new FileWriter(file, true)) {
             PrintWriter pw = new PrintWriter(fw);
             pw.println("Course list for Student " + studentID + ", " + DataUtil.getStudentName(studentID));
@@ -27,6 +31,7 @@ public class DataWriter {
                             course.getCourseName(), course.getTerm(), course.getFaculty(), course.getGrade()));
                 }
             }
+
         } catch (IOException e) {
             Alert error = new Alert(AlertType.ERROR);
             error.setTitle("Error");
@@ -42,6 +47,10 @@ public class DataWriter {
 
         File file = new File("src/Data/FacultyCourses-" + facultyID);
 
+        if (file.exists()) {
+            file.delete();
+        }
+
         try (FileWriter fw = new FileWriter(file, true)) {
             PrintWriter pw = new PrintWriter(fw);
             pw.println("Course list for Faculty " + facultyID + ", " + DataUtil.getFacultyName(facultyID));
@@ -54,6 +63,7 @@ public class DataWriter {
                             course.getCourseName(), course.getTerm(), course.getGrade()));
                 }
             }
+
         } catch (IOException e) {
             Alert error = new Alert(AlertType.ERROR);
             error.setTitle("Error");
