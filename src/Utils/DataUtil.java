@@ -1,6 +1,5 @@
 package Utils;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import Models.CourseRoster;
 import Models.Department;
@@ -46,6 +45,36 @@ public class DataUtil {
             }
         }
         return studentCourses;
+    }
+
+    /***
+     * Get the student
+     * @param studentID the student ID
+     * @return the student
+     */
+    public static Students getStudent(String studentID) {
+        ArrayList<Students> studentList = DataReader.readStudents();
+        for(Students student: studentList) {
+            if(student.getStudentID().equals(studentID)) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    /***
+     * Get the schedule
+     * @param CRN the course registration number
+     * @return the schedule
+     */
+    public static Schedule getSchedule(long CRN) {
+        ArrayList<Schedule> scheduleList = DataReader.readSchedule();
+        for(Schedule schedule: scheduleList) {
+            if(schedule.getCRN() == CRN) {
+                return schedule;
+            }
+        }
+        return null;
     }
 
     /***
@@ -150,6 +179,12 @@ public class DataUtil {
         return departmentName;
     }
 
+
+    /***
+     * Get the faculty courses
+     * @param FacultyID the faculty ID
+     * @return an array list of faculty courses
+     */
     public static ArrayList<FacultyCourses> getFacultyCourses(String FacultyID) {
         ArrayList<Schedule> schedule = DataReader.readSchedule();
 
@@ -190,6 +225,11 @@ public class DataUtil {
     }
 
 
+    /***
+     * Get the faculty
+     * @param ID the faculty ID
+     * @return the faculty
+     */
     public static Faculty getFaculty(String ID) {
         ArrayList<Faculty> facultyList = DataReader.readFaculty();
         for(Faculty faculty: facultyList) {

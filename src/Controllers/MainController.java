@@ -1,4 +1,5 @@
 package Controllers;
+
 import java.io.IOException;
 import Main.Main;
 import Utils.SceneManager;
@@ -8,7 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 
-public class MainController implements SceneManager{
+public class MainController implements SceneManager {
 
     private Main main;
 
@@ -46,6 +47,29 @@ public class MainController implements SceneManager{
     private Button viewStudentInformationButton;
 
     @FXML
+    private Button createNewFacultyButton;
+
+    @FXML
+    private Button viewCoursesByCRNButton;
+    @FXML
+    private Button EditFacultyOrStudentButton;
+
+    @FXML
+    void EditFacultyOrStudent(ActionEvent event) {
+
+    }
+
+    @FXML
+    void createNewFaculty(ActionEvent event) {
+
+    }
+
+    @FXML
+    void viewCoursesByCRN(ActionEvent event) {
+
+    }
+
+    @FXML
     public void initialize() {
         main = new Main();
     }
@@ -54,6 +78,7 @@ public class MainController implements SceneManager{
     public void setMain(Main main) {
         this.main = main;
     }
+
     @FXML
     void ExitButton(ActionEvent event) {
         Platform.exit();
@@ -75,7 +100,7 @@ public class MainController implements SceneManager{
     }
 
     @FXML
-    void AddStudentToCourse(ActionEvent event) throws IOException{
+    void AddStudentToCourse(ActionEvent event) throws IOException {
         main.loadAddStudentToCourseView();
     }
 
@@ -104,7 +129,4 @@ public class MainController implements SceneManager{
         main.loadStudentSearchView();
     }
 
-
-
 }
-

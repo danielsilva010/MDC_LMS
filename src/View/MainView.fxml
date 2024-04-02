@@ -32,6 +32,7 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -55,6 +56,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <VBox alignment="CENTER" GridPane.rowIndex="2">
@@ -62,7 +64,13 @@
                   <Button fx:id="createNewCourseButton" alignment="CENTER" mnemonicParsing="false" onAction="#createNewCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new course">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
-                     </font></Button>
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
@@ -78,7 +86,13 @@
                   <Button fx:id="viewStudentInformationButton" mnemonicParsing="false" onAction="#viewStudentInformation" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View student information">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
-                     </font></Button>
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -86,7 +100,13 @@
                   <Button fx:id="viewCourseScheduleButton" mnemonicParsing="false" onAction="#viewCourseSchedule" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View course schedule">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
-                     </font></Button>
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -94,7 +114,13 @@
                   <Button fx:id="createNewStudentButton" mnemonicParsing="false" onAction="#createNewStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new student">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
-                     </font></Button>
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -102,7 +128,13 @@
                   <Button fx:id="printCourseListForStudentButton" alignment="CENTER" mnemonicParsing="false" onAction="#printCourseListForStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Print course list for a student">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
-                     </font></Button>
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -110,12 +142,18 @@
                   <Button fx:id="AddStudentToCourseButton" alignment="CENTER" mnemonicParsing="false" onAction="#AddStudentToCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Add a student to a course">
                      <font>
                         <Font name="Times New Roman" size="13.0" />
-                     </font></Button>
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="4">
+            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="5">
                <children>
-                  <Button fx:id="ExitButton1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExitButton" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: clear;" text="EXIT" />
+                  <Button fx:id="ExitButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExitButton" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: clear;" text="EXIT" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
@@ -124,6 +162,12 @@
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
                   </Button>
                </children>
             </VBox>
@@ -133,6 +177,12 @@
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
                   </Button>
                </children>
             </VBox>
@@ -142,6 +192,57 @@
                      <font>
                         <Font name="Times New Roman" size="13.0" />
                      </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="createNewFacultyButton" alignment="CENTER" mnemonicParsing="false" onAction="#createNewFaculty" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create New Faculty">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="viewCoursesByCRNButton" alignment="CENTER" mnemonicParsing="false" onAction="#viewCoursesByCRN" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View Courses By CRN">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="EditFacultyOrStudentButton" alignment="CENTER" mnemonicParsing="false" onAction="#EditFacultyOrStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Edit Faculty/Student">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
                   </Button>
                </children>
             </VBox>

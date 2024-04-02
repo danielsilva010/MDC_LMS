@@ -22,22 +22,22 @@ public class StudentSearchController{
     private Button SearchButton;
 
     @FXML
-    private Text tfAddress;
+    private Text tAddress;
 
     @FXML
-    private Text tfEmail;
+    private Text tEmail;
 
     @FXML
-    private Text tfExpectedGraduation;
+    private Text tExpectedGraduation;
 
     @FXML
-    private Text tfMajor;
+    private Text tMajor;
 
     @FXML
-    private Text tfName;
+    private Text tName;
 
     @FXML
-    private Text tfPhone;
+    private Text tPhone;
 
     @FXML
     private TextField tfStudentID;
@@ -75,12 +75,12 @@ public class StudentSearchController{
         StringProperty email = new SimpleStringProperty(student.getEmail());
         StringProperty expectedGrad = new SimpleStringProperty(student.getExpectedGraduationDate());
         StringProperty major = new SimpleStringProperty(majorName);
-        tfName.textProperty().bind(name);
-        tfAddress.textProperty().bind(address);
-        tfPhone.textProperty().bind(phoneNumber);
-        tfEmail.textProperty().bind(email);
-        tfExpectedGraduation.textProperty().bind(expectedGrad);
-        tfMajor.textProperty().bind(major);
+        tName.textProperty().bind(name);
+        tAddress.textProperty().bind(address);
+        tPhone.textProperty().bind(phoneNumber);
+        tEmail.textProperty().bind(email);
+        tExpectedGraduation.textProperty().bind(expectedGrad);
+        tMajor.textProperty().bind(major);
     }
 
     /***
