@@ -52,6 +52,24 @@ public class Main extends Application {
         loadMainView(primaryStage);
     }
 
+    public void loadCalculateGPAView() {
+    try {
+            Parent root = FXMLLoader.load(getClass().getResource(calculateGPAView));
+            secondaryStage.setTitle("Calculate GPA");
+            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setResizable(false);
+            secondaryStage.setX(100);
+            secondaryStage.setY(100);
+            secondaryStage.showAndWait();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the Calculate GPA view");
+            alert.showAndWait();
+        }
+    }
+
     public void loadEditFacultyOrStudentView() {
     try {
             Parent root = FXMLLoader.load(getClass().getResource(editFacultyOrStudentView));
