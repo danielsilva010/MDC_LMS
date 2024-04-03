@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddStudentToCourseController">
    <children>
       <VBox prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: grey;" />
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
@@ -36,12 +36,12 @@
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfStudentID" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <TextField />
+                  <TextField fx:id="tfCRN" />
                </children>
             </VBox>
             <VBox alignment="CENTER" GridPane.rowIndex="1">
@@ -64,7 +64,7 @@
             </VBox>
             <VBox alignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="3">
                <children>
-                  <Button mnemonicParsing="false" text="Add" />
+                  <Button mnemonicParsing="false" onAction="#add" text="Add" />
                </children>
             </VBox>
          </children>

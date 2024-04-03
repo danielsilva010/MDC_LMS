@@ -14,7 +14,6 @@ public class DataUtil {
 
     /***
      * Get the courses for a student
-     * 
      * @param studentID the student ID
      * @return an array list of student courses
      */
@@ -50,7 +49,6 @@ public class DataUtil {
 
     /***
      * Get the student
-     * 
      * @param studentID the student ID
      * @return the student
      */
@@ -99,6 +97,37 @@ public class DataUtil {
     }
 
     /***
+     * Check if a student exists
+     * @param studentID the student ID
+     * @return true if the student exists, false otherwise
+     */
+    public static boolean studentExists(String studentID) {
+        ArrayList<Students> studentList = DataReader.readStudents();
+        for (Students student : studentList) {
+            if (student.getStudentID().equals(studentID)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     * Check if a course exists
+     * @param CRN the course registration number
+     * @return true if the course exists, false otherwise
+     */
+    public static boolean courseExists(long CRN) {
+        ArrayList<Schedule> scheduleList = DataReader.readSchedule();
+        for (Schedule schedule : scheduleList) {
+            if (schedule.getCRN() == CRN) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /***
      * Get the faculty name
      * 
      * @param facultyID the faculty ID
@@ -114,24 +143,6 @@ public class DataUtil {
             }
         }
         return name;
-    }
-
-    /***
-     * Get the course name
-     * 
-     * @param CRN the course registration number
-     * @return the course name
-     */
-    public static String getCourseName(String CRN) {
-        ArrayList<Schedule> scheduleList = DataReader.readSchedule();
-        String className = null;
-        for (Schedule oneClass : scheduleList) {
-            if (oneClass.getCRN() == Long.parseLong(CRN)) {
-                className = oneClass.getCourseName();
-                break;
-            }
-        }
-        return className;
     }
 
     /***

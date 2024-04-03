@@ -50,6 +50,25 @@ public class DataWriter {
         }
     }
 
+    public static boolean writeCourseRoster(String studentID, long CRN) {
+        File file = new File("src/Data/CourseRoster-" + studentID + "-" + CRN);
+
+        try (FileWriter fw = new FileWriter(file, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            pw.print("\n" + studentID + ":" + CRN + ":A+");
+            return true;
+
+        } catch (IOException e) {
+            Alert error = new Alert(AlertType.ERROR);
+            error.setTitle("Error");
+            error.setHeaderText("Error writing to file");
+            error.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            error.showAndWait();
+            return false;
+        }
+    }
+
     /***
      * Write the faculty courses to a file
      * 
