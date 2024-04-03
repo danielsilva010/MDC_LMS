@@ -36,21 +36,21 @@ public class DataReader {
     private ArrayList<Schedule> schedule;
     private ArrayList<Students> students;
 
-
     /***
      * Constructor to initialize the ArrayLists
      */
-     public DataReader() {
+    public DataReader() {
         courseRoster = readCourseRoster();
         departments = readDepartment();
         faculty = readFaculty();
         majors = readMajor();
         schedule = readSchedule();
         students = readStudents();
-     }
+    }
 
     /***
      * Read the course roster
+     * 
      * @param courseRoster an arrayList to hold the courseRosters
      */
     public static ArrayList<CourseRoster> readCourseRoster() {
@@ -75,8 +75,35 @@ public class DataReader {
         return courseRoster;
     }
 
+    public static ArrayList<CourseRoster> readCourseRoster(long CRN, String studentID, String grade) {
+        ArrayList<CourseRoster> courseRoster = new ArrayList<>();
+        try (Scanner scanner = new Scanner(new File(courseRosterPath))) {
+            String line = null;
+            String[] parts = null;
+            while (scanner.hasNextLine()) {
+                line = scanner.nextLine();
+                parts = line.split(":");
+                if (CRN == Long.parseLong(parts[0]) && studentID.equals(parts[1]) && grade.equals(parts[2])) {
+                    continue;
+                } else {
+                    CourseRoster cr = new CourseRoster();
+                    cr.setCRN(Long.parseLong(parts[0]));
+                    cr.setStudentID(parts[1]);
+                    cr.setGrade(parts[2]);
+                    courseRoster.add(cr);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            Alert error = new Alert(AlertType.ERROR);
+            error.setContentText("File not found: " + courseRosterPath);
+            error.showAndWait();
+        }
+        return courseRoster;
+    }
+
     /***
      * Read the schedule
+     * 
      * @param schedule an arrayList to hold the schedules
      */
     public static ArrayList<Schedule> readSchedule() {
@@ -108,6 +135,7 @@ public class DataReader {
 
     /***
      * Read the department
+     * 
      * @param departments an arrayList to hold the departments
      */
     public static ArrayList<Department> readDepartment() {

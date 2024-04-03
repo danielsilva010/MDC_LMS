@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import Models.CourseRoster;
 import Models.FacultyCourses;
 import Models.StudentCourses;
 import javafx.scene.control.Alert;
@@ -217,5 +218,49 @@ public class DataWriter {
             return false;
         }
 
+    }
+
+    public static boolean writeCourseRoster(long CRN, String studentID, String grade) {
+        ArrayList<CourseRoster> course = DataReader.readCourseRoster(CRN, studentID, grade);
+        File tempFile = new File("src/Data/temp.txt");
+        File originalFile = new File("src/Data/CourseRoster.txt");
+        try (FileWriter fw = new FileWriter(tempFile, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            for (CourseRoster roster : course) {
+                pw.print("\n" + roster.getCRN() + ":" + roster.getStudentID() + ":" + roster.getGrade());
+            }
+            // Write the new course roster
+            pw.print("\n" + CRN + ":" + studentID + ":" + grade);
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+
+        // Delete the original file
+        if (originalFile.delete()) {
+            // Rename the new file to the filename the original file had.
+            if (tempFile.renameTo(originalFile)) {
+                return true;
+            } else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error renaming file");
+                alert.setContentText("Could not rename temporary file to " + originalFile.getName());
+                alert.showAndWait();
+                return false;
+            }
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error deleting file");
+            alert.setContentText("Could not delete original file " + originalFile.getName());
+            alert.showAndWait();
+            return false;
+        }
     }
 }

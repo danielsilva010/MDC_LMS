@@ -21,9 +21,12 @@ import java.util.ArrayList;
 import Models.CourseRoster;
 import Utils.DataReader;
 import Utils.DataUtil;
+import Utils.DataWriter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 
 public class ModifyGradesController {
 
@@ -38,12 +41,38 @@ public class ModifyGradesController {
 
     @FXML
     void modify(ActionEvent event) {
-
+        String studentID = tfStudentID.getText();
+        long crn = Long.parseLong(tfCRN.getText());
+        String grade = tfGrade.getText();
+        if(DataWriter.writeCourseRoster(crn, studentID, grade)) {
+            Alert alert = new Alert(AlertType.CONFIRMATION);
+            alert.setTitle("Success");
+            alert.setHeaderText("Successfully changed grade.");
+            alert.setContentText("Succesfully changed " + DataUtil.getStudentName(studentID) + "'s grade in course " + crn);
+            alert.showAndWait();
+        }
+        else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error changing grade.");
+            alert.setContentText("Error changing " + DataUtil.getStudentName(studentID) + "'s grade in course " + crn);
+            alert.showAndWait();
+        }
     }
 
     @FXML
     void search(ActionEvent event) {
-
+        ArrayList<CourseRoster> courses = DataReader.readCourseRoster();
+        for(CourseRoster course: courses) {
+            if(course.getCRN() == Long.parseLong(tfCRN.getText()) && course.getStudentID().equals(tfStudentID.getText()) ) {
+                tfGrade.setText(course.getGrade());
+                tfCRN.setDisable(true);
+                tfStudentID.setDisable(true);
+                break;
+            }
+        }
+        tfCRN.setDisable(true);
+        tfStudentID.setDisable(true);
     }
 
 }
