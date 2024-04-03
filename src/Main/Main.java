@@ -14,6 +14,8 @@ public class Main extends Application {
 
     private static final String mainViewPath = "/View/MainView.fxml";
 
+    private static final String calculateGPAView= "/View/CalculateGPAView.fxml";
+
     private static final String addStudentViewPath = "/View/AddStudentView.fxml";
 
     private static final String searchStudentViewPath = "/View/StudentSearchView.fxml";
