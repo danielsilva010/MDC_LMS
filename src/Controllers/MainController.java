@@ -71,7 +71,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void EditFacultyOrStudent(ActionEvent event) {
-
+        main.loadEditFacultyOrStudentView();
     }
 
     @FXML
@@ -111,7 +111,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void calculateGPA(ActionEvent event) {
-
+        main.loadCalculateGPAView();
     }
 
     @FXML
