@@ -29,7 +29,6 @@ public class DataReader {
     /***
      * Instance ArrayList to hold all data
      */
-
     private ArrayList<CourseRoster> courseRoster;
     private ArrayList<Department> departments;
     private ArrayList<Faculty> faculty;
@@ -41,7 +40,6 @@ public class DataReader {
     /***
      * Constructor to initialize the ArrayLists
      */
-
      public DataReader() {
         courseRoster = readCourseRoster();
         departments = readDepartment();
@@ -53,7 +51,6 @@ public class DataReader {
 
     /***
      * Read the course roster
-     * 
      * @param courseRoster an arrayList to hold the courseRosters
      */
     public static ArrayList<CourseRoster> readCourseRoster() {
@@ -80,7 +77,6 @@ public class DataReader {
 
     /***
      * Read the schedule
-     * 
      * @param schedule an arrayList to hold the schedules
      */
     public static ArrayList<Schedule> readSchedule() {
@@ -112,7 +108,6 @@ public class DataReader {
 
     /***
      * Read the department
-     * 
      * @param departments an arrayList to hold the departments
      */
     public static ArrayList<Department> readDepartment() {

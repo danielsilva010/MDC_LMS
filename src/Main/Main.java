@@ -30,6 +30,8 @@ public class Main extends Application {
 
     private static final String createFacultyView = "/View/CreateFacultyView.fxml";
 
+    private static final String modifyGradesView = "/View/ModifyGradesView.fxml";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -44,6 +46,27 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         loadMainView(primaryStage);
+    }
+
+    /**
+     * Load the modify grades view
+     */
+    public void loadModifyGradesView() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(modifyGradesView));
+            secondaryStage.setTitle("Modify Grades");
+            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setResizable(false);
+            secondaryStage.setX(100);
+            secondaryStage.setY(100);
+            secondaryStage.showAndWait();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the modify grades view");
+            alert.showAndWait();
+        }
     }
 
     /**

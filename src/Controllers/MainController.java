@@ -91,7 +91,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void modifyGrades(ActionEvent event) {
-
+        main.loadModifyGradesView();
     }
 
     @FXML
