@@ -1,6 +1,7 @@
 package Controllers;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import Models.Faculty;
 import Models.Schedule;
@@ -49,8 +50,10 @@ public class CreateNewCourseController {
     public void initialize() {
         ArrayList<Faculty> faculties = DataReader.readFaculty();
         for (Faculty faculty : faculties) {
-            cbFaculty.getItems().add(faculty.getFirstName() + " " + faculty.getLastName() + ": " + faculty.getFacultyID());
-        } }
+            cbFaculty.getItems()
+                    .add(faculty.getFirstName() + " " + faculty.getLastName() + ": " + faculty.getFacultyID());
+        }
+    }
 
     /***
      * The ActionEvent for creating a new course
@@ -96,6 +99,18 @@ public class CreateNewCourseController {
     }
 
     /***
+     * Generate a random CRN
+     * 
+     * @param event the event
+     */
+    @FXML
+    void generate(ActionEvent event) {
+        Random rand = new Random();
+        long number = 11111 + (long) (rand.nextDouble() * (99999 - 11111));
+        tfCRN.setText(Long.toString(number));
+    }
+
+    /***
      * Validate the course
      * 
      * @return true if the course is valid, false otherwise
@@ -117,10 +132,14 @@ public class CreateNewCourseController {
             return false;
         }
 
-        // Check that the CRN is exactly 5 digits long
         String crn = tfCRN.getText();
         if (!crn.matches("^\\d{5}$")) {
             return false;
+        }
+        for (Schedule course : courses) {
+            if (course.getCRN() == Long.parseLong(crn)) {
+                return false;
+            }
         }
 
         return true;

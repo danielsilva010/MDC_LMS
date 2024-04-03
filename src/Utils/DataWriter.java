@@ -14,8 +14,9 @@ import javafx.scene.control.Alert.AlertType;
 public class DataWriter {
     /***
      * Write the student courses to a file
+     * 
      * @param studentID the student ID
-     * */
+     */
     public static boolean writeStudentCourses(String studentID) {
         ArrayList<StudentCourses> courses = DataUtil.getCourses(studentID);
         File file = new File("src/Data/Courses-" + studentID);
@@ -34,7 +35,7 @@ public class DataWriter {
                     pw.println(String.format("%d\t%s\t%s\t%s\t%s\t%s", course.getCRN(), course.getCourseID(),
                             course.getCourseName(), course.getTerm(), course.getFaculty(), course.getGrade()));
                 }
-            
+
             }
             return true;
 
@@ -51,8 +52,9 @@ public class DataWriter {
 
     /***
      * Write the faculty courses to a file
+     * 
      * @param facultyID the faculty
-     * */
+     */
     public static boolean writeFacultyCourses(String facultyID) {
         ArrayList<FacultyCourses> courses = DataUtil.getFacultyCourses(facultyID);
 
@@ -89,13 +91,14 @@ public class DataWriter {
 
     /***
      * Write a new course to the Schedule.txt file
-     * @param courseID the course ID
-     * @param CRN the course CRN
-     * @param title the course title
-     * @param term the course term
-     * @param faculty the course faculty
-     * @param room the course room
-     * @param capacity the course capacity
+     * 
+     * @param courseID    the course ID
+     * @param CRN         the course CRN
+     * @param title       the course title
+     * @param term        the course term
+     * @param faculty     the course faculty
+     * @param room        the course room
+     * @param capacity    the course capacity
      * @param creditHours the course credit hours
      * @return true if the course was written successfully, false otherwise
      */
@@ -122,19 +125,19 @@ public class DataWriter {
         }
     }
 
-
     /***
      * Write a new student to the Students.txt file
-     * @param studentID the student's ID
-     * @param firstName the student's first name
-     * @param lastName the student's last name
-     * @param address the student's address
-     * @param city the student's city
-     * @param state the student's state
-     * @param zipCode the student's zip code
-     * @param phone the student's phone number
-     * @param email the student's email 
-     * @param majorID the major ID
+     * 
+     * @param studentID    the student's ID
+     * @param firstName    the student's first name
+     * @param lastName     the student's last name
+     * @param address      the student's address
+     * @param city         the student's city
+     * @param state        the student's state
+     * @param zipCode      the student's zip code
+     * @param phone        the student's phone number
+     * @param email        the student's email
+     * @param majorID      the major ID
      * @param expectedGrad the student's expected graduation date
      * @return true if the student was written successfully, false otherwise
      */
@@ -158,4 +161,42 @@ public class DataWriter {
         }
     }
 
+    /***
+     * Write a new faculty to the Faculty.txt file
+     * 
+     * @param facultyID    the faculty ID
+     * @param firstName    the faculty's first name
+     * @param lastName     the faculty's last name
+     * @param email        the faculty's email
+     * @param phone        the faculty's phone number
+     * @param hireDate     the faculty's hire date
+     * @param salary       the faculty's salary
+     * @param title        the faculty's title
+     * @param street       the faculty's street
+     * @param city         the faculty's city
+     * @param state        the faculty's state
+     * @param zipCode      the faculty's zip code
+     * @param departmentID the faculty's department ID
+     * @return true if the faculty was written successfully, false otherwise
+     */
+    public static boolean writeFaculty(String facultyID, String firstName, String lastName, String email, String phone,
+            String hireDate, String salary, String title, String street, String city, String state, String zipCode,
+            String departmentID) {
+        try (FileWriter fw = new FileWriter(new File("src/Data/Faculty.txt"), true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            pw.print("\n" + facultyID + ":" + firstName + ":" + lastName + ":" + hireDate + ":" + title + ":" + salary
+                    + ":" + street + ":" + city + ":" + state + ":" + zipCode + ":" + phone + ":" + email + ":"
+                    + departmentID);
+            return true;
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+
+    }
 }

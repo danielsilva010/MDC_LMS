@@ -1,6 +1,7 @@
 package Controllers;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import Models.Major;
 import Models.Students;
@@ -58,7 +59,7 @@ public class AddStudentViewController {
     public void initialize() {
         ArrayList<Major> majors = DataReader.readMajor();
         for (Major major : majors) {
-            cbMajorID.getItems().add(major.getMajorID()+ ": "+ major.getMajorName());
+            cbMajorID.getItems().add(major.getMajorID() + ": " + major.getMajorName());
         }
     }
 
@@ -70,7 +71,7 @@ public class AddStudentViewController {
     @FXML
     void Submit(ActionEvent event) {
         submitButton.setDisable(true);
-        if(isValid()) {
+        if (isValid()) {
             String studentID = tfStuID.getText();
             String email = tfEmail.getText();
             String firstName = tfFirstName.getText();
@@ -83,14 +84,14 @@ public class AddStudentViewController {
             String expectedGrad = tfExpectedGrad.getText();
             String majorID = cbMajorID.getValue().split(":")[0].trim();
 
-            if(DataWriter.writeNewStudent(studentID, firstName, lastName, address, city, state, zipCode, phone, email, Integer.parseInt(majorID), expectedGrad)) {
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Success");
-            alert.setHeaderText("Student added");
-            alert.setContentText("Student " + studentID + " has been added");
-            alert.showAndWait();
-            }
-            else {
+            if (DataWriter.writeNewStudent(studentID, firstName, lastName, address, city, state, zipCode, phone, email,
+                    Integer.parseInt(majorID), expectedGrad)) {
+                Alert alert = new Alert(AlertType.INFORMATION);
+                alert.setTitle("Success");
+                alert.setHeaderText("Student added");
+                alert.setContentText("Student " + studentID + " has been added");
+                alert.showAndWait();
+            } else {
                 Alert alert = new Alert(AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText("Error adding student");
@@ -118,6 +119,23 @@ public class AddStudentViewController {
         return true;
     }
 
+    /***
+     * Generate a random student ID
+     * 
+     * @param event the button click event
+     */
+    @FXML
+    void generate(ActionEvent event) {
+        Random rand = new Random();
+        int number = rand.nextInt(88888889) + 11111111;
+        tfStuID.setText("Z" + number);
+    }
+
+    /***
+     * Check if the student information is valid
+     * 
+     * @return true if the student information is valid, false otherwise
+     */
     private boolean isValid() {
         boolean isValid = false;
 
@@ -132,10 +150,11 @@ public class AddStudentViewController {
         String phone = tfPhone.getText();
         String expectedGrad = tfExpectedGrad.getText();
 
-        if (isUnique(studentID) && !studentID.isEmpty() && studentID.length() == ID_LENGTH && studentID.startsWith("Z") && validFormatID(studentID)) {
+        if (isUnique(studentID) && !studentID.isEmpty() && studentID.length() == ID_LENGTH && studentID.startsWith("Z")
+                && validFormatID(studentID)) {
             if (email.contains("@my.mdc.edu") && !email.isEmpty()) {
-                if (!firstName.isEmpty() && !lastName.isEmpty() && !address.isEmpty() && !city.isEmpty() && 
-                    !state.isEmpty() && !zipCode.isEmpty() && !phone.isEmpty() && !expectedGrad.isEmpty()) {
+                if (!firstName.isEmpty() && !lastName.isEmpty() && !address.isEmpty() && !city.isEmpty() &&
+                        !state.isEmpty() && !zipCode.isEmpty() && !phone.isEmpty() && !expectedGrad.isEmpty()) {
                     isValid = true;
                 } else {
                     Alert alert = new Alert(AlertType.ERROR);
@@ -171,14 +190,12 @@ public class AddStudentViewController {
     private boolean validFormatID(String id) {
         if (id.charAt(0) == 'Z') {
             for (int i = 1; i < id.length(); i++) {
-                if(Character.isDigit(id.charAt(i))) {
+                if (Character.isDigit(id.charAt(i))) {
                     return true;
                 }
             }
         }
         return false;
     }
-
-   
 
 }

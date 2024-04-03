@@ -17,7 +17,7 @@ public class Faculty {
     
     public Faculty (String facultyID, String firstName, String lastName, String hireDate, String title, double salary,
             String street, String city, String state, int zipCode, String phone, String email, int departmentID) {
-        FacultyID = facultyID;
+        this.FacultyID = facultyID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.hireDate = hireDate;

@@ -61,7 +61,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void createNewFaculty(ActionEvent event) {
-
+        main.loadCreateFacultyView();
     }
 
     @FXML

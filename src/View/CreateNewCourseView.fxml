@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
@@ -67,11 +69,6 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Hours" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1">
-               <children>
-                  <TextField fx:id="tfCourseID" />
-               </children>
-            </VBox>
             <VBox alignment="CENTER" fillWidth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <TextField fx:id="tfTitle" />
@@ -107,11 +104,31 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CRN" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                <children>
-                  <TextField fx:id="tfCRN" />
+                  <TextField fx:id="tfCourseID" />
                </children>
             </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="tfCRN" prefHeight="26.0" prefWidth="99.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#generate" text="Generate">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </GridPane>
       <VBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: grey;">

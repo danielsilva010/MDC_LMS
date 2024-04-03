@@ -28,6 +28,8 @@ public class Main extends Application {
 
     private static final String facultyCoursesView = "/View/FacultyCoursesView.fxml";
 
+    private static final String createFacultyView = "/View/CreateFacultyView.fxml";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -36,6 +38,7 @@ public class Main extends Application {
 
     /**
      * Start the application
+     * 
      * @param primaryStage the primary stage
      */
     @Override
@@ -45,9 +48,10 @@ public class Main extends Application {
 
     /**
      * Load the main view
+     * 
      * @param primaryStage the primary stage
      */
-     public void loadMainView(Stage primaryStage) {
+    public void loadMainView(Stage primaryStage) {
         try {
             MainController controller = new MainController();
             controller.setMain(this);
@@ -61,6 +65,27 @@ public class Main extends Application {
             alert.setTitle("Error");
             alert.setHeaderText("Error loading view");
             alert.setContentText("An error occurred while loading the main view");
+            alert.showAndWait();
+        }
+    }
+
+    /**
+     * Load the create faculty view
+     */
+    public void loadCreateFacultyView() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(createFacultyView));
+            secondaryStage.setTitle("Create New Faculty");
+            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setResizable(false);
+            secondaryStage.setX(100);
+            secondaryStage.setY(100);
+            secondaryStage.showAndWait();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the create faculty view");
             alert.showAndWait();
         }
     }
@@ -159,6 +184,7 @@ public class Main extends Application {
             secondaryStage.setScene(new Scene(root, 650, 400));
             secondaryStage.setX(100);
             secondaryStage.setY(100);
+            secondaryStage.setResizable(false);
             secondaryStage.show();
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
