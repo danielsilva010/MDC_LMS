@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ModifyGradesController">
    <children>
       <VBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: grey;">
@@ -31,22 +30,22 @@
          <children>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CRN/Course Name:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student ID:" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                <children>
-                  <Text fx:id="tCRNCourseName" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="tfStudentID" prefHeight="13.0" prefWidth="141.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter CRN:" />
                </children>
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Text fx:id="tStudentID" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="tfCRN" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
@@ -56,23 +55,24 @@
             </VBox>
             <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Text fx:id="tGrade" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="tfGrade" />
                </children>
             </VBox>
          </children>
       </GridPane>
       <HBox alignment="CENTER" prefHeight="89.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student ID:">
+            <Button mnemonicParsing="false" onAction="#modify" text="Modify" textFill="WHITE" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
             </Text>
-            <TextField fx:id="tfStudentID" prefHeight="13.0" prefWidth="141.0" promptText="here..." style="-fx-background-color: grey; -fx-text-fill: white;">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
-            </TextField>
+            </Text>
             <Button mnemonicParsing="false" onAction="#search" text="Search" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
