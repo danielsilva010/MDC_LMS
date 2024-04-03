@@ -71,7 +71,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void EditFacultyOrStudent(ActionEvent event) {
-        main.loadEditFacultyOrStudentView();
+        main.loadSelectEditView();;
     }
 
     @FXML

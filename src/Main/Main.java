@@ -3,6 +3,7 @@ package Main;
 import java.io.IOException;
 
 import Controllers.MainController;
+import Controllers.SelectEditController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -34,7 +35,9 @@ public class Main extends Application {
 
     private static final String modifyGradesView = "/View/ModifyGradesView.fxml";
 
-    private static final String editFacultyOrStudentView = "/View/EditFacultyOrStudentView.fmxl";
+    private static final String editStudentView = "/View/EditStudentView.fxml";
+
+    private static final String selectEditView = "/View/SelectEditView.fxml";
 
     private Stage secondaryStage = new Stage();
 
@@ -70,9 +73,9 @@ public class Main extends Application {
         }
     }
 
-    public void loadEditFacultyOrStudentView() {
+    public void loadEditStudentView() {
     try {
-            Parent root = FXMLLoader.load(getClass().getResource(editFacultyOrStudentView));
+            Parent root = FXMLLoader.load(getClass().getResource(editStudentView));
             secondaryStage.setTitle("Edit Faculty/Student");
             secondaryStage.setScene(new Scene(root, 650, 400));
             secondaryStage.setResizable(false);
@@ -108,6 +111,28 @@ public class Main extends Application {
             alert.showAndWait();
         }
     }
+
+    /**
+     * Load the select edit view
+     */
+    public void loadSelectEditView() {
+        try {
+            SelectEditController controller = new SelectEditController();
+            controller.setMain(this);
+            Parent root = FXMLLoader.load(getClass().getResource(selectEditView));
+            secondaryStage.setTitle("Select Edit");
+            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setResizable(false);
+            secondaryStage.setX(100);
+            secondaryStage.setY(100);
+            secondaryStage.showAndWait();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the select edit view");
+            alert.showAndWait();
+        }
 
     /**
      * Load the main view
