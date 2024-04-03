@@ -19,12 +19,12 @@ public class DataReader {
     /***
      * Paths to data files
      */
-    private static final String courseRosterPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/CourseRoster.txt";
-    private static final String departmentPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Department.txt";
-    private static final String facultyPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Faculty.txt";
-    private static final String majorPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Major.txt";
-    private static final String schedulePath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Schedule.txt";
-    private static final String studentsPath = "/Users/danielsilva/Desktop/LMS-Project/MDC_LMS/src/Data/Students.txt";
+    private static final String courseRosterPath = "src/Data/CourseRoster.txt";
+    private static final String departmentPath = "src/Data/Department.txt";
+    private static final String facultyPath = "src/Data/Faculty.txt";
+    private static final String majorPath = "src/Data/Major.txt";
+    private static final String schedulePath = "src/Data/Schedule.txt";
+    private static final String studentsPath = "src/Data/Students.txt";
 
     /***
      * Instance ArrayList to hold all data
