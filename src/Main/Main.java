@@ -32,6 +32,8 @@ public class Main extends Application {
 
     private static final String modifyGradesView = "/View/ModifyGradesView.fxml";
 
+    private static final String editFacultyOrStudentView = "/View/EditFacultyOrStudentView.fmxl";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -46,6 +48,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         loadMainView(primaryStage);
+    }
+
+    public void loadEditFacultyOrStudentView() {
+    
     }
 
     /**
