@@ -15,7 +15,7 @@ public class Main extends Application {
 
     private static final String mainViewPath = "/View/MainView.fxml";
 
-    private static final String calculateGPAView= "/View/CalculateGPAView.fxml";
+    private static final String calculateGPAView = "/View/CalculateGPAView.fxml";
 
     private static final String addStudentViewPath = "/View/AddStudentView.fxml";
 
@@ -56,7 +56,7 @@ public class Main extends Application {
     }
 
     public void loadCalculateGPAView() {
-    try {
+        try {
             Parent root = FXMLLoader.load(getClass().getResource(calculateGPAView));
             secondaryStage.setTitle("Calculate GPA");
             secondaryStage.setScene(new Scene(root, 650, 400));
@@ -74,7 +74,7 @@ public class Main extends Application {
     }
 
     public void loadEditStudentView() {
-    try {
+        try {
             Parent root = FXMLLoader.load(getClass().getResource(editStudentView));
             secondaryStage.setTitle("Edit Faculty/Student");
             secondaryStage.setScene(new Scene(root, 650, 400));
@@ -133,6 +133,7 @@ public class Main extends Application {
             alert.setContentText("An error occurred while loading the select edit view");
             alert.showAndWait();
         }
+    }
 
     /**
      * Load the main view
