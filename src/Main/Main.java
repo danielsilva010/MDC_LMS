@@ -127,7 +127,7 @@ public class Main extends Application {
             controller.setMain(this);
             Parent root = FXMLLoader.load(getClass().getResource(selectEditView));
             secondaryStage.setTitle("Select Edit");
-            secondaryStage.setScene(new Scene(root, 650, 600));
+            secondaryStage.setScene(new Scene(root, 600, 400));
             secondaryStage.setResizable(false);
             secondaryStage.setX(100);
             secondaryStage.setY(100);
