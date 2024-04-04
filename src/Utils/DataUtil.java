@@ -145,6 +145,38 @@ public class DataUtil {
         return name;
     }
 
+    /**
+     * Check if a student exists
+     * 
+     * @param ID the student ID
+     * @return true if the student exists, false otherwise
+     */
+    public static boolean isStudent(String ID) {
+        ArrayList<Students> studentList = DataReader.readStudents();
+        for (Students student : studentList) {
+            if (student.getStudentID().equals(ID)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /***
+     * Check if a faculty exists
+     * 
+     * @param ID the faculty ID
+     * @return true if the faculty exists, false otherwise
+     */
+    public static boolean isFaculty(String ID) {
+        ArrayList<Faculty> facultyList = DataReader.readFaculty();
+        for (Faculty faculty : facultyList) {
+            if (faculty.getFacultyID().equals(ID)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /***
      * Get the course name
      * 

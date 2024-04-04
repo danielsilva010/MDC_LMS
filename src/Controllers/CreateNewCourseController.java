@@ -83,7 +83,7 @@ public class CreateNewCourseController {
             String title = tfTitle.getText();
             String term = tfTerm.getText();
             long CRN = Long.parseLong(tfCRN.getText());
-            String faculty = cbFaculty.getValue();
+            String faculty = cbFaculty.getValue().split(": ")[1];
             String room = tfRoom.getText();
             int capacity = Integer.parseInt(tfCapacity.getText());
             int creditHours = Integer.parseInt(tfCreditHours.getText());

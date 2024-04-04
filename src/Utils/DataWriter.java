@@ -7,8 +7,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import Models.CourseRoster;
+import Models.Faculty;
 import Models.FacultyCourses;
 import Models.StudentCourses;
+import Models.Students;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
@@ -220,17 +222,189 @@ public class DataWriter {
 
     }
 
+    public static boolean writeFacultyToTempFile(String facultyID, String firstName, String lastName, String email,
+            String phone, String hireDate, double salary, String title, String street, String city, String state,
+            int zipCode, int departmentID) {
+        ArrayList<Faculty> faculties = DataReader.readFaculty(facultyID, firstName, lastName, hireDate, title, salary,
+                street, city, state, zipCode, phone, email, departmentID);
+        File tempFile = new File("src/Data/temp.txt");
+        File originalFile = new File("src/Data/Faculty.txt");
+        try (FileWriter fw = new FileWriter(tempFile, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            for (Faculty faculty : faculties) {
+                pw.print(
+                        "\n" + faculty.getFacultyID() + ":" + faculty.getFirstName() + ":" + faculty.getLastName() + ":"
+                                + faculty.getHireDate() + ":" + faculty.getTitle() + ":" + faculty.getSalary() + ":"
+                                + faculty.getStreet() + ":" + faculty.getCity() + ":" + faculty.getState() + ":"
+                                + faculty.getZipCode() + ":" + faculty.getPhone() + ":" + faculty.getEmail() + ":"
+                                + faculty.getDepartmentID());
+            }
+            pw.print("\n" + facultyID + ":" + firstName + ":" + lastName + ":" + hireDate + ":" + title + ":" + salary
+                    + ":" + street + ":" + city + ":" + state + ":" + zipCode + ":" + phone + ":" + email + ":"
+                    + departmentID);
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+        // Delete the original file and rename the temp file
+        if (originalFile.delete()) {
+            if (tempFile.renameTo(originalFile)) {
+                return true;
+            } else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error renaming file");
+                alert.setContentText("Could not rename temporary file to " + originalFile.getName());
+                alert.showAndWait();
+                return false;
+            }
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error deleting file");
+            alert.setContentText("Could not delete original file " + originalFile.getName());
+            alert.showAndWait();
+            return false;
+        }
+    }
+
+    public static boolean writeStudentExceptThis(String studentID, String firstName, String lastName, String address,
+            String city,
+            String state, int zipCode, String phone, String email, int majorID, String expectedGrad) {
+        ArrayList<Students> students = DataReader.readStudents(studentID, firstName, lastName, address, city, state,
+                zipCode, phone, email, majorID, expectedGrad);
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getStudentID().equals(studentID)) {
+                students.remove(i);
+                break;
+            }
+        }
+        File tempFile = new File("src/Data/temp.txt");
+        File originalFile = new File("src/Data/Students.txt");
+        try (FileWriter fw = new FileWriter(tempFile, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            for (Students student : students) {
+                if (!student.getStudentID().equals(studentID)) {
+                    pw.print("\n" + student.getStudentID() + ":" + student.getFirstName() + ":" + student.getLastName()
+                            + ":"
+                            + student.getStreet() + ":" + student.getCity() + ":" + student.getState() + ":"
+                            + student.getZipCode() + ":" + student.getPhone() + ":" + student.getEmail() + ":"
+                            + student.getMajorID() + ":" + student.getExpectedGraduationDate());
+                }
+            }
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+        // Delete the original file and rename the temp file
+        if (originalFile.delete()) {
+            if (tempFile.renameTo(originalFile)) {
+                return true;
+            } else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error renaming file");
+                alert.setContentText("Could not rename temporary file to " + originalFile.getName());
+                alert.showAndWait();
+                return false;
+            }
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error deleting file");
+            alert.setContentText("Could not delete original file " + originalFile.getName());
+            alert.showAndWait();
+            return false;
+        }
+    }
+
+    public static boolean writeStudents(String studentID, String firstName, String lastName, String address,
+            String city,
+            String state, int zipCode, String phone, String email, int majorID, String expectedGrad) {
+        ArrayList<Students> students = DataReader.readStudents(studentID, firstName, lastName, address, city, state,
+                zipCode, phone, email, majorID, expectedGrad);
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getStudentID().equals(studentID)) {
+                students.remove(i);
+                break;
+            }
+        }
+        File tempFile = new File("src/Data/temp.txt");
+        File originalFile = new File("src/Data/Students.txt");
+        try (FileWriter fw = new FileWriter(tempFile, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            for (int i = 0; i < students.size(); i++) {
+                Students student = students.get(i);
+                if (i > 0) {
+                    pw.print("\n");
+                }
+                pw.print(student.getStudentID() + ":" + student.getFirstName() + ":" + student.getLastName() + ":"
+                        + student.getStreet() + ":" + student.getCity() + ":" + student.getState() + ":"
+                        + student.getZipCode() + ":" + student.getPhone() + ":" + student.getEmail() + ":"
+                        + student.getMajorID() + ":" + student.getExpectedGraduationDate());
+            }
+            pw.print(
+                    "\n" + studentID + ":" + firstName + ":" + lastName + ":" + address + ":" + city + ":" + state + ":"
+                            + zipCode + ":" + phone + ":" + email + ":" + majorID + ":" + expectedGrad);
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+        // Delete the original file and rename the temp file
+        if (originalFile.delete()) {
+            if (tempFile.renameTo(originalFile)) {
+                return true;
+            } else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error renaming file");
+                alert.setContentText("Could not rename temporary file to " + originalFile.getName());
+                alert.showAndWait();
+                return false;
+            }
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error deleting file");
+            alert.setContentText("Could not delete original file " + originalFile.getName());
+            alert.showAndWait();
+            return false;
+        }
+    }
+
     public static boolean writeCourseRoster(long CRN, String studentID, String grade) {
         ArrayList<CourseRoster> course = DataReader.readCourseRoster(CRN, studentID, grade);
         File tempFile = new File("src/Data/temp.txt");
         File originalFile = new File("src/Data/CourseRoster.txt");
         try (FileWriter fw = new FileWriter(tempFile, true)) {
             PrintWriter pw = new PrintWriter(fw);
-            for (CourseRoster roster : course) {
-                pw.print("\n" + roster.getCRN() + ":" + roster.getStudentID() + ":" + roster.getGrade());
+            for (int i = 0; i < course.size(); i++) {
+                CourseRoster roster = course.get(i);
+                if (i != 0) {
+                    pw.print("\n"); // Add newline character before the 2nd and subsequent lines
+                }
+                pw.print(roster.getCRN() + ":" + roster.getStudentID() + ":" + roster.getGrade());
             }
             // Write the new course roster
-            pw.print("\n" + CRN + ":" + studentID + ":" + grade);
+            if (!course.isEmpty()) {
+                pw.print("\n"); // Add newline character before the new course roster if the list is not empty
+            }
+            pw.print(CRN + ":" + studentID + ":" + grade);
         } catch (IOException e) {
             Alert alert = new Alert(AlertType.ERROR);
             alert.setTitle("Error");

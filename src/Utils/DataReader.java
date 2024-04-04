@@ -223,6 +223,103 @@ public class DataReader {
         return faculty;
     }
 
+    /**
+     * Read the faculty in the faculty file
+     * @param facultyID the ID of the faculty that should not be included in the arrayList
+     * @param firstName the first name of the faculty that should not be included in the arrayList
+     * @param lastName the last name of the faculty that should not be included in the arrayList
+     * @param hireDate the hire date of the faculty that should not be included in the arrayList
+     * @param title the title of the faculty that should not be included in the arrayList
+     * @param salary the salary of the faculty that should not be included in the arrayList
+     * @param street the street of the faculty that should not be included in the arrayList
+     * @param city the city of the faculty that should not be included in the arrayList
+     * @param state the state of the faculty that should not be included in the arrayList
+     * @param zipCode the zip code of the faculty that should not be included in the arrayList
+     * @param phone the phone number of the faculty that should not be included in the arrayList
+     * @param email the email of the faculty that should not be included in the arrayList
+     * @param departmentID the department ID of the faculty that should not be included in the arrayList
+     * @return an arrayList of faculty that do not match the parameters
+     */
+    public static ArrayList<Faculty> readFaculty(String facultyID, String firstName, String lastName, String hireDate,
+            String title, double salary, String street, String city, String state, int zipCode, String phone,
+            String email, int departmentID) {
+        ArrayList<Faculty> faculty = new ArrayList<>();
+        try (Scanner scanner = new Scanner(new File(facultyPath))) {
+            String line = null;
+            String[] parts = null;
+            while (scanner.hasNext()) {
+                line = scanner.nextLine();
+                parts = line.split(":");
+                if (facultyID.equals(parts[0]) && firstName.equals(parts[1]) && lastName.equals(parts[2])
+                        && hireDate.equals(parts[3]) && title.equals(parts[4]) && salary == Double.parseDouble(parts[5])
+                        && street.equals(parts[6]) && city.equals(parts[7]) && state.equals(parts[8])
+                        && zipCode == Integer.parseInt(parts[9]) && phone.equals(parts[10]) && email.equals(parts[11])
+                        && departmentID == Integer.parseInt(parts[12])) {
+                    continue;
+                } else {
+                    Faculty fac = new Faculty();
+                    fac.setFacultyID(parts[0]);
+                    fac.setFirstName(parts[1]);
+                    fac.setLastName(parts[2]);
+                    fac.setHireDate(parts[3]);
+                    fac.setTitle(parts[4]);
+                    fac.setSalary(Double.parseDouble(parts[5]));
+                    fac.setStreet(parts[6]);
+                    fac.setCity(parts[7]);
+                    fac.setState(parts[8]);
+                    fac.setZipCode(Integer.parseInt(parts[9]));
+                    fac.setPhone(parts[10]);
+                    fac.setEmail(parts[11]);
+                    fac.setDepartmentID(Integer.parseInt(parts[12]));
+                    faculty.add(fac);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            Alert error = new Alert(AlertType.ERROR);
+            error.setContentText("File not found: " + facultyPath);
+            error.showAndWait();
+        }
+        return faculty;
+    }
+
+    public static ArrayList<Students> readStudents(String studentID, String firstName, String lastName, String street,
+            String city, String state, int zipCode, String phone, String email, int majorID, String expectedGraduationDate) {
+        ArrayList<Students> students = new ArrayList<>();
+        try (Scanner scanner = new Scanner(new File(studentsPath))) {
+            String line = null;
+            String[] parts = null;
+            while (scanner.hasNext()) {
+                line = scanner.nextLine();
+                parts = line.split(":");
+                if (studentID.equals(parts[0]) && firstName.equals(parts[1]) && lastName.equals(parts[2])
+                        && street.equals(parts[3]) && city.equals(parts[4]) && state.equals(parts[5])
+                        && zipCode == Integer.parseInt(parts[6]) && phone.equals(parts[7]) && email.equals(parts[8])
+                        && majorID == Integer.parseInt(parts[9]) && expectedGraduationDate.equals(parts[10])) {
+                    continue;
+                } else {
+                    Students student = new Students();
+                    student.setStudentID(parts[0]);
+                    student.setFirstName(parts[1]);
+                    student.setLastName(parts[2]);
+                    student.setStreet(parts[3]);
+                    student.setCity(parts[4]);
+                    student.setState(parts[5]);
+                    student.setZipCode(Integer.parseInt(parts[6]));
+                    student.setPhone(parts[7]);
+                    student.setEmail(parts[8]);
+                    student.setMajorID(Integer.parseInt(parts[9]));
+                    student.setExpectedGraduationDate(parts[10]);
+                    students.add(student);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            Alert error = new Alert(AlertType.ERROR);
+            error.setContentText("File not found: " + studentsPath);
+            error.showAndWait();
+        }
+        return students;
+    }
+
     /***
      * Read the students
      * 

@@ -55,6 +55,9 @@ public class Main extends Application {
         loadMainView(primaryStage);
     }
 
+    /**
+     * Load the calculate GPA view
+     */
     public void loadCalculateGPAView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(calculateGPAView));
@@ -73,6 +76,9 @@ public class Main extends Application {
         }
     }
 
+    /**
+     * Load the edit student view
+     */
     public void loadEditStudentView() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(editStudentView));
@@ -121,7 +127,7 @@ public class Main extends Application {
             controller.setMain(this);
             Parent root = FXMLLoader.load(getClass().getResource(selectEditView));
             secondaryStage.setTitle("Select Edit");
-            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setScene(new Scene(root, 650, 600));
             secondaryStage.setResizable(false);
             secondaryStage.setX(100);
             secondaryStage.setY(100);
