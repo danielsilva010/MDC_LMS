@@ -2,6 +2,7 @@ package Main;
 
 import java.io.IOException;
 
+import Controllers.LogInController;
 import Controllers.MainController;
 import Controllers.SelectEditController;
 import javafx.application.Application;
@@ -14,6 +15,8 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     private static final String mainViewPath = "/View/MainView.fxml";
+
+    private static final String logInViewPath = "/View/LogInView.fxml";
 
     private static final String calculateGPAView = "/View/CalculateGPAView.fxml";
 
@@ -39,6 +42,8 @@ public class Main extends Application {
 
     private static final String selectEditView = "/View/SelectEditView.fxml";
 
+    private static final String registerViewPath = "/View/RegisterView.fxml";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -52,7 +57,47 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage primaryStage) {
-        loadMainView(primaryStage);
+        loadLogInView();
+    }
+
+    /**
+     * Load the register view
+     */
+    public void loadRegisterView() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(registerViewPath));
+            secondaryStage.setTitle("Register");
+            secondaryStage.setScene(new Scene(root, 450, 425));
+            secondaryStage.setResizable(false);
+            secondaryStage.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the register view");
+            alert.showAndWait();
+        }
+    }
+
+    /**
+     * Load the log in view
+     */
+    public void loadLogInView() {
+        try {
+            LogInController controller = new LogInController();
+            controller.setMain(this);
+            Parent root = FXMLLoader.load(getClass().getResource(logInViewPath));
+            secondaryStage.setTitle("Log In");
+            secondaryStage.setScene(new Scene(root, 400, 280));
+            secondaryStage.setResizable(false);
+            secondaryStage.showAndWait();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the log in view");
+            alert.showAndWait();
+        }
     }
 
     /**
@@ -146,11 +191,13 @@ public class Main extends Application {
      * 
      * @param primaryStage the primary stage
      */
-    public void loadMainView(Stage primaryStage) {
+    public void loadMainView(Stage primaryStage, String name) {
         try {
-            MainController controller = new MainController();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(mainViewPath));
+            Parent root = loader.load();
+            MainController controller = loader.getController();
+            controller.setName(name);
             controller.setMain(this);
-            Parent root = FXMLLoader.load(getClass().getResource(mainViewPath));
             primaryStage.setTitle("Course Registration System");
             primaryStage.setScene(new Scene(root, 650, 400));
             primaryStage.setResizable(false);

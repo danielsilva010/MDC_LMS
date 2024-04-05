@@ -437,4 +437,29 @@ public class DataWriter {
             return false;
         }
     }
+
+    public static boolean writeCredentials(String email, String password, String role) {
+        if (role == null) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Invalid role");
+            alert.setContentText("Role cannot be null");
+            alert.showAndWait();
+            return false;
+        }
+
+        String filename = role.equals("Student") ? "src/Data/StudentsCredentials.txt" : "src/Data/FacultyCredentials.txt";
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {
+            pw.print("\n" + email + ":" + password);
+            return true;
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    e.getMessage() + "\nThe file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+    }
 }

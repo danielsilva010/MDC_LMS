@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LogInController">
    <children>
       <VBox alignment="CENTER" prefHeight="31.0" prefWidth="480.0" style="-fx-background-color: grey;">
          <children>
@@ -16,19 +15,19 @@
       </VBox>
       <VBox alignment="CENTER" prefHeight="129.0" prefWidth="491.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="113.0" prefWidth="261.0">
+            <VBox alignment="CENTER" prefHeight="43.0" prefWidth="495.0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" fillWidth="false" prefHeight="90.0" prefWidth="231.0">
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="47.0" prefWidth="495.0">
                <children>
                   <TextField fx:id="tfEmail" />
                </children>
             </VBox>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="91.0" prefWidth="491.0">
+      <VBox alignment="CENTER" prefHeight="105.0" prefWidth="495.0">
          <children>
             <VBox alignment="CENTER" prefHeight="48.0" prefWidth="496.0">
                <children>
@@ -42,7 +41,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="46.0" prefWidth="495.0">
                <children>
-                  <Text fill="#cf4e1b" onMouseClicked="#loadRegisterView" strokeType="OUTSIDE" strokeWidth="0.0" text="Register here" underline="true" />
+                  <Text fx:id="textRegister" fill="#cf4e1b" onMouseClicked="#loadRegisterView" strokeType="OUTSIDE" strokeWidth="0.0" text="Register here" underline="true" />
                </children>
             </VBox>
          </children>
@@ -51,7 +50,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="34.0" prefWidth="496.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#logIn" text="Log In" />
+                  <Button fx:id="bLogIn" mnemonicParsing="false" onAction="#logIn" text="Log In" />
                </children>
             </VBox>
             <VBox />

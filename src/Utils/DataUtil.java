@@ -1,7 +1,9 @@
 package Utils;
 
 import java.util.ArrayList;
+
 import Models.CourseRoster;
+import Models.Credentials;
 import Models.Department;
 import Models.Faculty;
 import Models.FacultyCourses;
@@ -109,6 +111,26 @@ public class DataUtil {
             }
         }
         return false;
+    }
+
+    public static String getName(String email) {
+        if(email.endsWith("@my.mdc.edu")) {
+            ArrayList<Students> studentList = DataReader.readStudents();
+            for (Students student : studentList) {
+                if (student.getEmail().equals(email)) {
+                    return student.getFirstName() + " " + student.getLastName();
+                }
+            }
+        }
+        else if(email.endsWith("@mdc.edu")) {
+            ArrayList<Faculty> facultyList = DataReader.readFaculty();
+            for (Faculty faculty : facultyList) {
+                if (faculty.getEmail().equals(email)) {
+                    return faculty.getFirstName() + " " + faculty.getLastName();
+                }
+            }
+        }
+        return null;
     }
 
 
@@ -308,4 +330,16 @@ public class DataUtil {
         return -1;
     }
 
-}
+    public static boolean validateCredentials(String email, String password) {
+        ArrayList<Credentials> credentials = DataReader.readCredentials();
+        for (Credentials c : credentials) {
+            if (c.getEmail().equals(email) && c.getPassword().equals(password)) {
+                return false;  // return false when a match is found
+            }
+        }
+        if(email != null && password != null && (email.endsWith("@my.mdc.edu") || email.endsWith("@mdc.edu")) && password.length() >= 8) {
+            return true;  // return true when the email and password meet your validity conditions
+        }
+        return false;  // return false otherwise
+    }
+ }

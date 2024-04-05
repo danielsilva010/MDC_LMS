@@ -16,15 +16,24 @@
 package Controllers;
 
 import java.io.IOException;
+
 import Main.Main;
 import Utils.SceneManager;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 
 public class MainController implements SceneManager {
+
+    @FXML
+    private GridPane gridpane;
+
+    @FXML
+    private Text tName;
 
     private Main main;
 
@@ -71,7 +80,7 @@ public class MainController implements SceneManager {
 
     @FXML
     void EditFacultyOrStudent(ActionEvent event) {
-        main.loadSelectEditView();;
+        main.loadSelectEditView();
     }
 
     @FXML
@@ -96,7 +105,13 @@ public class MainController implements SceneManager {
 
     @FXML
     void ExitButton(ActionEvent event) {
-        Platform.exit();
+        ExitButton.setOnAction(e -> {
+            try {
+                Platform.exit();
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        });
     }
 
     @FXML
@@ -142,6 +157,10 @@ public class MainController implements SceneManager {
     @FXML
     void viewStudentInformation(ActionEvent event) throws IOException {
         main.loadStudentSearchView();
+    }
+
+    public void setName(String name) {
+        tName.setText("Welcome " + name);
     }
 
 }

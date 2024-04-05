@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import Models.CourseRoster;
+import Models.Credentials;
 import Models.Department;
 import Models.Faculty;
 import Models.Major;
@@ -225,19 +226,33 @@ public class DataReader {
 
     /**
      * Read the faculty in the faculty file
-     * @param facultyID the ID of the faculty that should not be included in the arrayList
-     * @param firstName the first name of the faculty that should not be included in the arrayList
-     * @param lastName the last name of the faculty that should not be included in the arrayList
-     * @param hireDate the hire date of the faculty that should not be included in the arrayList
-     * @param title the title of the faculty that should not be included in the arrayList
-     * @param salary the salary of the faculty that should not be included in the arrayList
-     * @param street the street of the faculty that should not be included in the arrayList
-     * @param city the city of the faculty that should not be included in the arrayList
-     * @param state the state of the faculty that should not be included in the arrayList
-     * @param zipCode the zip code of the faculty that should not be included in the arrayList
-     * @param phone the phone number of the faculty that should not be included in the arrayList
-     * @param email the email of the faculty that should not be included in the arrayList
-     * @param departmentID the department ID of the faculty that should not be included in the arrayList
+     * 
+     * @param facultyID    the ID of the faculty that should not be included in the
+     *                     arrayList
+     * @param firstName    the first name of the faculty that should not be included
+     *                     in the arrayList
+     * @param lastName     the last name of the faculty that should not be included
+     *                     in the arrayList
+     * @param hireDate     the hire date of the faculty that should not be included
+     *                     in the arrayList
+     * @param title        the title of the faculty that should not be included in
+     *                     the arrayList
+     * @param salary       the salary of the faculty that should not be included in
+     *                     the arrayList
+     * @param street       the street of the faculty that should not be included in
+     *                     the arrayList
+     * @param city         the city of the faculty that should not be included in
+     *                     the arrayList
+     * @param state        the state of the faculty that should not be included in
+     *                     the arrayList
+     * @param zipCode      the zip code of the faculty that should not be included
+     *                     in the arrayList
+     * @param phone        the phone number of the faculty that should not be
+     *                     included in the arrayList
+     * @param email        the email of the faculty that should not be included in
+     *                     the arrayList
+     * @param departmentID the department ID of the faculty that should not be
+     *                     included in the arrayList
      * @return an arrayList of faculty that do not match the parameters
      */
     public static ArrayList<Faculty> readFaculty(String facultyID, String firstName, String lastName, String hireDate,
@@ -282,8 +297,44 @@ public class DataReader {
         return faculty;
     }
 
+    public static ArrayList<Credentials> readCredentials() {
+        ArrayList<Credentials> credentials = new ArrayList<>();
+        try (Scanner scanner = new Scanner(new File("src/Data/StudentsCredentials.txt"))) {
+            String line = null;
+            String[] parts = null;
+            while (scanner.hasNext()) {
+                line = scanner.nextLine();
+                parts = line.split(":");
+                Credentials credential = new Credentials();
+                credential.setEmail(parts[0]);
+                credential.setPassword(parts[1]);
+                credentials.add(credential);
+            }
+            try (Scanner scanner2 = new Scanner(new File("src/Data/FacultyCredentials.txt"))) {
+                while (scanner2.hasNext()) {
+                    line = scanner2.nextLine();
+                    parts = line.split(":");
+                    Credentials credential = new Credentials();
+                    credential.setEmail(parts[0]);
+                    credential.setPassword(parts[1]);
+                    credentials.add(credential);
+                }
+            } catch (FileNotFoundException e) {
+                Alert error = new Alert(AlertType.ERROR);
+                error.setContentText("File not found: src/Data/FacultyCredentials.txt");
+                error.showAndWait();
+            }
+        } catch (FileNotFoundException e) {
+            Alert error = new Alert(AlertType.ERROR);
+            error.setContentText("File not found: src/Data/Credentials.txt");
+            error.showAndWait();
+        }
+        return credentials;
+    }
+
     public static ArrayList<Students> readStudents(String studentID, String firstName, String lastName, String street,
-            String city, String state, int zipCode, String phone, String email, int majorID, String expectedGraduationDate) {
+            String city, String state, int zipCode, String phone, String email, int majorID,
+            String expectedGraduationDate) {
         ArrayList<Students> students = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(studentsPath))) {
             String line = null;

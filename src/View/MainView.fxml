@@ -44,7 +44,7 @@
 <VBox fx:id="VBOX" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
   <children>
       <VBox prefHeight="45.0" prefWidth="640.0" style="-fx-background-color: grey;" />
-      <GridPane prefHeight="391.0" prefWidth="640.0">
+      <GridPane fx:id="gridpane" prefHeight="391.0" prefWidth="640.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -52,6 +52,7 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -59,7 +60,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" GridPane.rowIndex="2">
+            <VBox alignment="CENTER" GridPane.rowIndex="3">
                <children>
                   <Button fx:id="createNewCourseButton" alignment="CENTER" mnemonicParsing="false" onAction="#createNewCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new course" wrapText="true">
                      <font>
@@ -81,7 +82,7 @@
                      </font></Text>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" GridPane.rowIndex="2">
                <children>
                   <Button fx:id="viewStudentInformationButton" mnemonicParsing="false" onAction="#viewStudentInformation" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View student information" wrapText="true">
                      <font>
@@ -95,7 +96,7 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <Button fx:id="viewCourseScheduleButton" mnemonicParsing="false" onAction="#viewCourseSchedule" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View course schedule" wrapText="true">
                      <font>
@@ -109,7 +110,7 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
                   <Button fx:id="createNewStudentButton" mnemonicParsing="false" onAction="#createNewStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create a new student" wrapText="true">
                      <font>
@@ -123,7 +124,7 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
                   <Button fx:id="printCourseListForStudentButton" alignment="CENTER" mnemonicParsing="false" onAction="#printCourseListForStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Course list for a student" wrapText="true">
                      <font>
@@ -137,7 +138,7 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
                   <Button fx:id="AddStudentToCourseButton" alignment="CENTER" mnemonicParsing="false" onAction="#AddStudentToCourse" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Add a student to a course" wrapText="true">
                      <font>
@@ -151,12 +152,12 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="5">
+            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="6">
                <children>
                   <Button fx:id="ExitButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExitButton" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: clear;" text="EXIT" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
                <children>
                   <Button fx:id="viewFacultyCoursesButton" alignment="CENTER" mnemonicParsing="false" onAction="#viewFacultyCourses" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View Faculty Courses" wrapText="true">
                      <font>
@@ -171,7 +172,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
                   <Button fx:id="calculateGPAButton" alignment="CENTER" mnemonicParsing="false" onAction="#calculateGPA" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Calculate GPA" wrapText="true">
                      <font>
@@ -186,7 +187,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <children>
                   <Button fx:id="modifyGradesButton" alignment="CENTER" mnemonicParsing="false" onAction="#modifyGrades" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Modify Grades" wrapText="true">
                      <font>
@@ -201,7 +202,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5">
                <children>
                   <Button fx:id="createNewFacultyButton" alignment="CENTER" mnemonicParsing="false" onAction="#createNewFaculty" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Create New Faculty" wrapText="true">
                      <font>
@@ -216,7 +217,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <children>
                   <Button fx:id="viewCoursesByCRNButton" alignment="CENTER" mnemonicParsing="false" onAction="#viewCoursesByCRN" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View Courses By CRN" wrapText="true">
                      <font>
@@ -231,7 +232,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <children>
                   <Button fx:id="EditFacultyOrStudentButton" alignment="CENTER" mnemonicParsing="false" onAction="#EditFacultyOrStudent" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="Edit Faculty/Student" wrapText="true">
                      <font>
@@ -244,6 +245,11 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                   </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
+               <children>
+                  <Text fx:id="tName" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </VBox>
          </children>
