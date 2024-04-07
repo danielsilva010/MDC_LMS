@@ -152,7 +152,14 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+            <VBox alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="6">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="textTime" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                  </VBox>
+               </children></VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
                <children>
                   <Button fx:id="viewFacultyCoursesButton" alignment="CENTER" mnemonicParsing="false" onAction="#viewFacultyCourses" prefHeight="57.0" prefWidth="155.0" style="-fx-background-insets: -10; -fx-padding: 10;" text="View Faculty Courses" wrapText="true">

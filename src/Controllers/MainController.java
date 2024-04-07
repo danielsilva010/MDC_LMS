@@ -16,17 +16,25 @@
 package Controllers;
 
 import java.io.IOException;
+import java.util.Date;
 
 import Main.Main;
 import Utils.SceneManager;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 
 public class MainController implements SceneManager {
+
+    @FXML
+    private Text textTime;
 
     @FXML
     private GridPane gridpane;
@@ -92,6 +100,14 @@ public class MainController implements SceneManager {
     @FXML
     public void initialize() {
         main = new Main();
+
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> updateDate()));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+    }
+
+    private void updateDate() {
+        textTime.setText(new Date().toString());
     }
 
     @Override
