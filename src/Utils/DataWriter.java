@@ -438,6 +438,118 @@ public class DataWriter {
         }
     }
 
+    public static boolean writeFacultyExceptThis(Faculty faculty) {
+        ArrayList<Faculty> faculties = DataReader.readFaculty();
+        for (int i = 0; i < faculties.size(); i++) {
+            if (faculties.get(i).getFacultyID().equals(faculty.getFacultyID())) {
+                faculties.remove(i);
+                break;
+            }
+        }
+        File tempFile = new File("src/Data/temp.txt");
+        File originalFile = new File("src/Data/Faculty.txt");
+        try (FileWriter fw = new FileWriter(tempFile, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            for (int i = 0; i < faculties.size(); i++) {
+                Faculty f = faculties.get(i);
+                if (i > 0) {
+                    pw.print("\n");
+                }
+                pw.print(f.getFacultyID() + ":" + f.getFirstName() + ":" + f.getLastName() + ":" + f.getHireDate() + ":"
+                        + f.getTitle() + ":" + f.getSalary() + ":" + f.getStreet() + ":" + f.getCity() + ":"
+                        + f.getState() + ":" + f.getZipCode() + ":" + f.getPhone() + ":" + f.getEmail() + ":"
+                        + f.getDepartmentID());
+            }
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+        // Delete the original file and rename the temp file
+        if (originalFile.delete()) {
+            if (tempFile.renameTo(originalFile)) {
+                return true;
+            } else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error renaming file");
+                alert.setContentText("Could not rename temporary file to " + originalFile.getName());
+                alert.showAndWait();
+                return false;
+            }
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error deleting file");
+            alert.setContentText("Could not delete original file " + originalFile.getName());
+            alert.showAndWait();
+            return false;
+        }
+    }
+
+    public static boolean writeUpdatedFacultyFile(String ID, String firstName, String lastName, String hireDate,
+            String title, double salary, String street, String city, String state, int zipCode, String phone,
+            String email, int departmentID) {
+        ArrayList<Faculty> faculties = DataReader.readFaculty();
+        for (int i = 0; i < faculties.size(); i++) {
+            if (faculties.get(i).getFacultyID().equals(ID)) {
+                faculties.remove(i);
+                break;
+            }
+        }
+        File tempFile = new File("src/Data/temp.txt");
+        File originalFile = new File("src/Data/Faculty.txt");
+        try (FileWriter fw = new FileWriter(tempFile, true)) {
+            PrintWriter pw = new PrintWriter(fw);
+            for (int i = 0; i < faculties.size(); i++) {
+                Faculty faculty = faculties.get(i);
+                if (i > 0) {
+                    pw.print("\n");
+                }
+                pw.print(faculty.getFacultyID() + ":" + faculty.getFirstName() + ":" + faculty.getLastName() + ":"
+                        + faculty.getHireDate() + ":" + faculty.getTitle() + ":" + faculty.getSalary() + ":"
+                        + faculty.getStreet() + ":" + faculty.getCity() + ":" + faculty.getState() + ":"
+                        + faculty.getZipCode() + ":" + faculty.getPhone() + ":" + faculty.getEmail() + ":"
+                        + faculty.getDepartmentID());
+            }
+            pw.print("\n" + ID + ":" + firstName + ":" + lastName + ":" + hireDate + ":" + title + ":" + salary + ":"
+                    + street + ":" + city + ":" + state + ":" + zipCode + ":" + phone + ":" + email + ":"
+                    + departmentID);
+        } catch (IOException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error writing to file");
+            alert.setContentText(
+                    "The file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+            alert.showAndWait();
+            return false;
+        }
+        // Delete the original file and rename the temp file
+        if (originalFile.delete()) {
+            if (tempFile.renameTo(originalFile)) {
+                return true;
+            } else {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error renaming file");
+                alert.setContentText("Could not rename temporary file to " + originalFile.getName());
+                alert.showAndWait();
+                return false;
+            }
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error deleting file");
+            alert.setContentText("Could not delete original file " + originalFile.getName());
+            alert.showAndWait();
+            return false;
+        }
+    }
+
     public static boolean writeCredentials(String email, String password, String role) {
         if (role == null) {
             Alert alert = new Alert(AlertType.ERROR);
@@ -448,7 +560,8 @@ public class DataWriter {
             return false;
         }
 
-        String filename = role.equals("Student") ? "src/Data/StudentsCredentials.txt" : "src/Data/FacultyCredentials.txt";
+        String filename = role.equals("Student") ? "src/Data/StudentsCredentials.txt"
+                : "src/Data/FacultyCredentials.txt";
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {
             pw.print("\n" + email + ":" + password);
             return true;
@@ -457,7 +570,8 @@ public class DataWriter {
             alert.setTitle("Error");
             alert.setHeaderText("Error writing to file");
             alert.setContentText(
-                    e.getMessage() + "\nThe file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
+                    e.getMessage()
+                            + "\nThe file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason");
             alert.showAndWait();
             return false;
         }

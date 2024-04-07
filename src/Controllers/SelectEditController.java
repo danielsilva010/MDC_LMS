@@ -17,7 +17,7 @@ public class SelectEditController implements SceneManager {
 
     @FXML
     void loadEditFaculty(ActionEvent event) {
-
+        main.loadEditFacultyView();
     }
 
     @FXML

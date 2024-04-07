@@ -11,7 +11,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="400.0" prefWidth="302.0" style="-fx-border-color: grey; -fx-border-radius: 20;">
                <children>
-                  <Button mnemonicParsing="false" onAction="#loadEditFaculty" prefHeight="186.0" prefWidth="165.0" style="-fx-background-radius: 20; -fx-background-color: grey;" text="Faculty" textFill="WHITE">
+                  <Button mnemonicParsing="false" onAction="#loadEditFaculty" prefHeight="186.0" prefWidth="165.0" style="-fx-background-radius: 20; -fx-background-color: grey; -fx-background-insets: -20;" text="Faculty" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -20,7 +20,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="335.0" prefWidth="302.0" style="-fx-border-color: grey; -fx-border-radius: 20;">
                <children>
-                  <Button mnemonicParsing="false" onAction="#loadEditStudent" prefHeight="186.0" prefWidth="165.0" style="-fx-background-radius: 20; -fx-background-color: grey;" text="Student" textFill="WHITE">
+                  <Button mnemonicParsing="false" onAction="#loadEditStudent" prefHeight="186.0" prefWidth="165.0" style="-fx-background-radius: 20; -fx-background-color: grey; -fx-background-insets: -20;" text="Student" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>

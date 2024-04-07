@@ -44,6 +44,8 @@ public class Main extends Application {
 
     private static final String registerViewPath = "/View/RegisterView.fxml";
 
+    private static final String editFacultyViewPath = "/View/EditFacultyView.fxml";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -75,6 +77,23 @@ public class Main extends Application {
             alert.setTitle("Error");
             alert.setHeaderText("Error loading view");
             alert.setContentText("An error occurred while loading the register view");
+            alert.showAndWait();
+        }
+    }
+
+    public void loadEditFacultyView() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(editFacultyViewPath));
+            Parent root = loader.load();
+            secondaryStage.setTitle("Select Student/Faculty");
+            secondaryStage.setScene(new Scene(root, 650, 400));
+            secondaryStage.setResizable(false);
+            secondaryStage.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the select edit view");
             alert.showAndWait();
         }
     }

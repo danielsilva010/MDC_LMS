@@ -1,79 +1,79 @@
-Z23115435:Candace:Jurischk:8/1/2000:Assistant Professor:104545:15A FOUNTAIN MANOR DR:Boca Raton:FL:33431:5617889033:cjurischk@mdc.edu:2000
-Z23115476:Pat:Rowlett:11/9/2000:Associate Professor:90922:5063 CAMERONRD:Delray Beach:FL:33531:5618597155:prowlett@mdc.edu:2020
-Z23115511:Diane:Richardson:2/17/2001:Assistant Professor:41613:4824 FARMPOND LN:Boynton Beach:FL:34223:5617999078:drichards@mdc.edu:2011
-Z23115519:Martin:Healey:2/17/2001:Professor:104737:111 YEOPIMCIRCLE:Boynton Beach:FL:34223:5615098051:mhealey@mdc.edu:2011
-Z23115566:Melissa:Pratt:5/28/2001:Professor:96403:424 MCPHEE DRIVE:CoralSpring:FL:33033:9542270838:mpratt@mdc.edu:2024
-Z23115591:Carol:Ritchey:9/5/2001:Professor:90269:4912 LILES ROAD:BoyntonBeach:FL:34227:5617918786:critchey@mdc.edu:2012
-Z23115682:Betty:Herje:12/14/2001:Professor:142453:1137 CHILMARKAVE:Deerfield Beach:FL:34045:9545451730:bherje@mdc.edu:2019
-Z23115772:Barbara:Kuklentz:12/14/2001:Associate Professor:123325:201 WOODSREAM DR:Greenacres:FL:33329:5614812521:bkuklentz@mdc.edu:2025
-Z23115861:Bob:Lachner:3/24/2002:Professor:130237:2012 LAWRENCE DR:BoyntonBeach:FL:34229:5617922053:blachner@mdc.edu:2028
-Z23115912:Dianne:Michael:7/2/2002:Associate Professor:67019:2924 HICKORYHILL RD:Boca Raton:FL:33422:5618767990:dmichael@mdc.edu:2030
-Z23115964:Dick:Stallings:10/10/2002:Assistant Professor:86283:6424 PERNODWAY:Deerfield Beach:FL:34035:9542943568:dstalling@mdc.edu:2028
-Z23115967:Karen:Young:1/18/2003:Assistant Professor:92168:PO BOX93:Deerfield Beach:FL:34080:9545482085:kyoung@mdc.edu:2014
-Z23115996:Frederick:Thorson:1/18/2003:Assistant Professor:50711:738EVERETTS CREEK:Boca Raton:FL:33430:5617872828:fthorson@mdc.edu:2026
-Z23116032:Mandy:Walker:1/18/2003:Professor:148519:8411 CAMELOTDRIVE:Deerfield Beach:FL:34033:9542296047:mwalker@mdc.edu:2016
-Z23116080:Jane:Halfhill:4/28/2003:Associate Professor:37631:104 BARDSEYCT:Wellington:FL:33228:5612821818:jhalfhill@mdc.edu:2006
-Z23116082:Jo:Jacobs:8/6/2003:Professor:41432:1427 KEITH COURT:PompanoBeach:FL:34247:9546027462:jjacobs@mdc.edu:2015
-Z23116100:Debra:Hitchcock:8/6/2003:Professor:133280:1203 KINGSBROOKRD:Greenacres:FL:33329:5618596967:dhitchcoc@mdc.edu:2021
-Z23116151:John:Southern:8/6/2003:Associate Professor:148606:6311 RIVERHILLS DR:Lake Worth:FL:33062:5617849625:jsouthern@mdc.edu:2024
-Z23116246:Bridget:Whitener:11/14/2003:Professor:135530:9509 NW NEWGATEDR:Boynton Beach:FL:34225:5619625610:bwhitener@mdc.edu:2017
-Z23116257:Elinda:See:2/22/2004:Associate Professor:109016:5449 WHITINGAVE:Deerfield Beach:FL:34035:9542456789:esee@mdc.edu:2012
-Z23116317:Norm:Wilhide:2/22/2004:Professor:109241:B CO 407TH FSB:DeerfieldBeach:FL:34045:9546785295:nwilhide@mdc.edu:2031
-Z23116326:Carol:Pickard:6/1/2004:Professor:99000:4102 LEAFMORESTREET:Wellington:FL:33224:5611578946:cpickard@mdc.edu:2014
-Z23116368:Keith:Wilson:9/9/2004:Associate Professor:55102:PO BOX10636:Deerfield Beach:FL:34035:9544692587:kwilson@mdc.edu:2007
-Z23116411:Naomi:Oliphant:12/18/2004:Assistant Professor:14880:3504EDGEMONT RD:Deerfield Beach:FL:34036:9545269874:noliphant@mdc.edu:2000
-Z23116436:Jean:Neal:12/18/2004:Assistant Professor:61800:325 YORKSHIRELN:Boynton Beach:FL:34221:5617729223:jneal@mdc.edu:2012
-Z23116443:Fred:Terry:12/18/2004:Assistant Professor:72881:7208 SAINTLEDGER DR:Boca Raton:FL:33431:5618471763:fterry@mdc.edu:2003
-Z23116519:Larry:Parker:12/18/2004:Professor:141468:3721 DUXFORD DRIVE:PalmBeach Gardens:FL:33710:5617925831:lparker@mdc.edu:2005
-Z23116602:Janice:Hartis Jr.:12/18/2004:Associate Professor:108751:1100MAYBERRY PL:Riviera Beach:FL:35400:5612497509:jhartis j@mdc.edu:2011
-Z23116680:Carol:Mortenson:12/18/2004:Assistant Professor:37460:3116LANTERN WAY:Boca Raton:FL:33424:5618510531:cmortenso@mdc.edu:2020
-Z23116731:David:Matthews:12/18/2004:Associate Professor:42206:2420WENTWORTH ST:Ft. Lauderdale:FL:34275:9546027089:dmatthews@mdc.edu:2015
-Z23116744:Linda:Harrington:3/28/2005:Professor:31084:109 CAPE FEARDRIVE:Deerfield Beach:FL:34025:9543759601:lharringt@mdc.edu:2025
-Z23116745:Margaret:Phillips:3/28/2005:Assistant Professor:28873:4102LEAFMORE ST:Wellington:FL:33223:5613756562:mphillips@mdc.edu:2002
-Z23116800:Nancy:Rhynes:7/6/2005:Associate Professor:40091:481 MCCOPPINCT.:Boynton Beach:FL:34231:5618710347:nrhynes@mdc.edu:2009
-Z23116873:Karen:King:7/6/2005:Professor:92575:1805 HUNTINGTON RD:DeerfieldBeach:FL:34035:9541958125:kking@mdc.edu:2030
-Z23116962:Dan:Thorpe:10/14/2005:Associate Professor:90148:738 ARJEANDR:Deerfield Beach:FL:34036:9544812485:dthorpe@mdc.edu:2033
-Z23116998:Dave:Wall:10/14/2005:Associate Professor:75657:860 PELICANBAY:Oakland Park:FL:33901:9549333773:dwall@mdc.edu:2014
-Z23117003:Anne:Payne:1/22/2006:Assistant Professor:115476:3904 CASCADEDR:Deerfield Beach:FL:34030:9544891231:apayne@mdc.edu:2002
-Z23117062:Greg:Koehler:5/2/2006:Assistant Professor:16072:186 TRILLIUMPLACE:Boca Raton:FL:33433:5618471669:gkoehler@mdc.edu:2019
-Z23117099:Gail:Linn:5/2/2006:Professor:87505:2126 PINE DRIVE:BocaRaton:FL:33422:5618722824:glinn@mdc.edu:2009
-Z23117193:Leigh:Gurganus:8/10/2006:Assistant Professor:99210:1019 BROWNINGRD.:Dania Beach:FL:33423:9544564894:lgurganus@mdc.edu:2032
-Z23117247:Dot:Kiziah:11/18/2006:Professor:63687:1817 DEARMON DR.:BocaRaton:FL:33421:5619132489:dkiziah@mdc.edu:2010
-Z23117341:Jan:Kraft:2/26/2007:Professor:138034:19903 225TH ST:DeerfieldBeach:FL:34036:9541325784:jkraft@mdc.edu:2008
-Z23117430:Andrew:Lein:6/6/2007:Associate Professor:72580:207 TRAVISLN:Greenacres:FL:33329:5614695790:alein@mdc.edu:2034
-Z23117526:Dick:Weaver:6/6/2007:Professor:77444:9019 WILLOW TRACECOURT:Lauderhill:FL:33711:9542435846:dweaver@mdc.edu:2000
-Z23117602:Dianne:McNeice:9/14/2007:Professor:54978:2714 VON THURINGERCT:Boynton Beach:FL:34223:5617991734:dmcneice@mdc.edu:2023
-Z23117643:Martha Baker:Sael:9/14/2007:Assistant Professor:94235:512MEADOWOOD DRIVE:Boynton Beach:FL:34223:5615098343:msael@mdc.edu:2031
-Z23117672:Jeff:Steffen:9/14/2007:Associate Professor:37919:6521 GATERIDGEDRIVE #202:Boynton Beach:FL:34221:5614526027:jsteffen@mdc.edu:2032
-Z23117758:Carol:Myers:12/23/2007:Professor:91475:3203SANDBURG:Plantation:FL:33347:9547720766:cmyers@mdc.edu:2029
-Z23117819:Georgia:Miller:12/23/2007:Professor:85146:3015 COTTAGE PL APTG:Davie:FL:34891:9545613458:gmiller@mdc.edu:2013
-Z23117827:Ann:Weller:12/23/2007:Associate Professor:111971:9201 SulkirkDr.:Deerfield Beach:FL:34036:9543245789:aweller@mdc.edu:2010
-Z23117909:Bob:Schoolmeester:4/1/2008:Professor:119901:5307 HOLLY RIDGERD:Boynton Beach:FL:34221:5613956553:bschoolme@mdc.edu:2020
-Z23117944:Ed:Setzer:7/10/2008:Associate Professor:73069:555 WHISTLING SWANDRIVE:Hollywood:FL:34222:9543345505:esetzer@mdc.edu:2017
-Z23117959:Elaine:Hayes:10/18/2008:Professor:50867:111 KNOLLWOODCT:Deerfield Beach:FL:34034:9545647891:ehayes@mdc.edu:2016
-Z23117978:Kathleen:Stewart:1/26/2009:Professor:80449:662 ANSLEYCT:Deerfield Beach:FL:34036:9545187851:kstewart@mdc.edu:2002
-Z23118018:Carolyn:Holbrook:5/6/2009:Associate Professor:73388:12204QUEENSBRIDGE CT:Deerfield Beach:FL:34035:9542125851:cholbrook@mdc.edu:2002
-Z23118098:Gretchen:Johnson:5/6/2009:Assistant Professor:58693:1508 PAGANRD:Boca Raton:FL:33432:5618633898:gjohnson@mdc.edu:2006
-Z23118167:Karen:Sanford:5/6/2009:Associate Professor:73173:5201 FIELDBROOKDR:Tamarac:FL:33433:9545104855:ksanford@mdc.edu:2032
-Z23118258:Armenta:Pohlig:8/14/2009:Associate Professor:99050:4132 WHITNEYPL:Deerfield Beach:FL:34034:9544478784:apohlig@mdc.edu:2006
-Z23118322:Bernie:Kepley:11/22/2009:Assistant Professor:61308:1705 RIVERRD.:Deerfield Beach:FL:34035:9547824956:bkepley@mdc.edu:2024
-Z23118382:Lori:Kinlaw:11/22/2009:Professor:66581:1810 PARKDR:Sunrise:FL:34036:9547894567:lkinlaw@mdc.edu:2027
-Z23118411:Dorothy:Shade:3/2/2010:Associate Professor:70183:5700 DUMFRIESDR:Greenacres:FL:33331:5616781079:dshade@mdc.edu:2033
-Z23118424:Doris:RUSSELL:6/10/2010:Associate Professor:47150:5105HUNTINGDON DR:Cooper City:FL:33349:9545956317:drussell@mdc.edu:2003
-Z23118473:Jeff:Mitchell:6/10/2010:Assistant Professor:76575:3043MARLBOROUGH RD:Wellington:FL:33273:5612187720:jmitchell@mdc.edu:2003
-Z23118499:Faye (Liz):Snyder:6/10/2010:Assistant Professor:47093:624KANKAKEE CT:Miami:FL:35932:9544962366:fsnyder@mdc.edu:2030
-Z23118569:Brian:Peterson:6/10/2010:Assistant Professor:21994:403 THE CAPEBLVD.:Miami Gardens:FL:33854:9548954578:bpeterson@mdc.edu:2014
-Z23118650:Colleen:Rohland:6/10/2010:Associate Professor:73752:5010 SIXFORKS ROAD:Pembroke Pines:FL:38607:9549453135:crohland@mdc.edu:2022
-Z23118683:Kathy:Ketner:9/18/2010:Professor:79101:1713 SWORDFISH LANE:BocaRaton:FL:33427:5617902642:kketner@mdc.edu:2016
-Z23118748:Kay:Pawlukiewicz:12/27/2010:Assistant Professor:17394:3850STONEY CREEK CHURCH RD:BocaRaton:FL:33427:5617828195:kpawlukie@mdc.edu:2018
-Z23118831:Dolly:Maiden:12/27/2010:Professor:115512:2320 ROCKLANEDRIVE:Deerfield Beach:FL:34035:9544315789:dmaiden@mdc.edu:2004
-Z23118842:Bill:Slaughter:4/6/2011:Professor:16466:6101 BELLOW ST:BoyntonBeach:FL:34227:5617937066:bslaughte@mdc.edu:2001
-Z23118932:Bob:Schultz:7/15/2011:Assistant Professor:15213:5321 SUN COASTDR.:Boca Raton:FL:33424:5617452135:bschultz@mdc.edu:2017
-Z23118955:Debbie:Schue:10/23/2011:Assistant Professor:46258:5313 INGLEWOODLANE:Boynton Beach:FL:34230:5617919585:dschue@mdc.edu:2001
-Z23118994:Ann:Sloan:1/31/2012:Associate Professor:112925:611 MIDDLE SOUNDLOOP RD. #3:Aventura:FL:33340:9548520684:asloan@mdc.edu:2016
-Z23119021:Doris:Weber:5/10/2012:Assistant Professor:56709:903 DANIELDRIVE:Boynton Beach:FL:34230:5617929017:dweber@mdc.edu:2027
-Z23119121:Bert:Neal:5/10/2012:Associate Professor:37360:326 BRECKENRIDGEDR:Deerfield Beach:FL:34031:9545981607:bneal@mdc.edu:2007
-Z23119185:Kathe:Strommen:8/18/2012:Assistant Professor:79291:702 REDFOREST TRL:Deerfield Beach:FL:34035:9548483365:kstrommen@mdc.edu:2033
-Z23119222:Ed:Ioos:8/18/2012:Professor:142331:1404 MAPLE ST:CoralGables:FL:34283:9542790114:eioos@mdc.edu:2018
-Z23119233:Joyce:White:11/26/2012:Assistant Professor:89033:9424 PALM BAYCIRCLE:Deerfield Beach:FL:34034:9548945132:jwhite@mdc.edu:2010
-Z23119307:Hugh:Jones:11/26/2012:Assistant Professor:95603:1515 CAROMARPL:Coral Spring:FL:33033:9545710048:hjones@mdc.edu:2007
+Z23115435:Candace:Jurischk:8/1/2000:Assistant Professor:104545.0:15A FOUNTAIN MANOR DR:Boca Raton:FL:33431:5617889033:cjurischk@mdc.edu:2000
+Z23115476:Pat:Rowlett:11/9/2000:Associate Professor:90922.0:5063 CAMERONRD:Delray Beach:FL:33531:5618597155:prowlett@mdc.edu:2020
+Z23115511:Diane:Richardson:2/17/2001:Assistant Professor:41613.0:4824 FARMPOND LN:Boynton Beach:FL:34223:5617999078:drichards@mdc.edu:2011
+Z23115519:Martin:Healey:2/17/2001:Professor:104737.0:111 YEOPIMCIRCLE:Boynton Beach:FL:34223:5615098051:mhealey@mdc.edu:2011
+Z23115566:Melissa:Pratt:5/28/2001:Professor:96403.0:424 MCPHEE DRIVE:CoralSpring:FL:33033:9542270838:mpratt@mdc.edu:2024
+Z23115591:Carol:Ritchey:9/5/2001:Professor:90269.0:4912 LILES ROAD:BoyntonBeach:FL:34227:5617918786:critchey@mdc.edu:2012
+Z23115682:Betty:Herje:12/14/2001:Professor:142453.0:1137 CHILMARKAVE:Deerfield Beach:FL:34045:9545451730:bherje@mdc.edu:2019
+Z23115772:Barbara:Kuklentz:12/14/2001:Associate Professor:123325.0:201 WOODSREAM DR:Greenacres:FL:33329:5614812521:bkuklentz@mdc.edu:2025
+Z23115861:Bob:Lachner:3/24/2002:Professor:130237.0:2012 LAWRENCE DR:BoyntonBeach:FL:34229:5617922053:blachner@mdc.edu:2028
+Z23115912:Dianne:Michael:7/2/2002:Associate Professor:67019.0:2924 HICKORYHILL RD:Boca Raton:FL:33422:5618767990:dmichael@mdc.edu:2030
+Z23115964:Dick:Stallings:10/10/2002:Assistant Professor:86283.0:6424 PERNODWAY:Deerfield Beach:FL:34035:9542943568:dstalling@mdc.edu:2028
+Z23115967:Karen:Young:1/18/2003:Assistant Professor:92168.0:PO BOX93:Deerfield Beach:FL:34080:9545482085:kyoung@mdc.edu:2014
+Z23115996:Frederick:Thorson:1/18/2003:Assistant Professor:50711.0:738EVERETTS CREEK:Boca Raton:FL:33430:5617872828:fthorson@mdc.edu:2026
+Z23116032:Mandy:Walker:1/18/2003:Professor:148519.0:8411 CAMELOTDRIVE:Deerfield Beach:FL:34033:9542296047:mwalker@mdc.edu:2016
+Z23116080:Jane:Halfhill:4/28/2003:Associate Professor:37631.0:104 BARDSEYCT:Wellington:FL:33228:5612821818:jhalfhill@mdc.edu:2006
+Z23116082:Jo:Jacobs:8/6/2003:Professor:41432.0:1427 KEITH COURT:PompanoBeach:FL:34247:9546027462:jjacobs@mdc.edu:2015
+Z23116100:Debra:Hitchcock:8/6/2003:Professor:133280.0:1203 KINGSBROOKRD:Greenacres:FL:33329:5618596967:dhitchcoc@mdc.edu:2021
+Z23116151:John:Southern:8/6/2003:Associate Professor:148606.0:6311 RIVERHILLS DR:Lake Worth:FL:33062:5617849625:jsouthern@mdc.edu:2024
+Z23116246:Bridget:Whitener:11/14/2003:Professor:135530.0:9509 NW NEWGATEDR:Boynton Beach:FL:34225:5619625610:bwhitener@mdc.edu:2017
+Z23116257:Elinda:See:2/22/2004:Associate Professor:109016.0:5449 WHITINGAVE:Deerfield Beach:FL:34035:9542456789:esee@mdc.edu:2012
+Z23116317:Norm:Wilhide:2/22/2004:Professor:109241.0:B CO 407TH FSB:DeerfieldBeach:FL:34045:9546785295:nwilhide@mdc.edu:2031
+Z23116326:Carol:Pickard:6/1/2004:Professor:99000.0:4102 LEAFMORESTREET:Wellington:FL:33224:5611578946:cpickard@mdc.edu:2014
+Z23116368:Keith:Wilson:9/9/2004:Associate Professor:55102.0:PO BOX10636:Deerfield Beach:FL:34035:9544692587:kwilson@mdc.edu:2007
+Z23116411:Naomi:Oliphant:12/18/2004:Assistant Professor:14880.0:3504EDGEMONT RD:Deerfield Beach:FL:34036:9545269874:noliphant@mdc.edu:2000
+Z23116436:Jean:Neal:12/18/2004:Assistant Professor:61800.0:325 YORKSHIRELN:Boynton Beach:FL:34221:5617729223:jneal@mdc.edu:2012
+Z23116443:Fred:Terry:12/18/2004:Assistant Professor:72881.0:7208 SAINTLEDGER DR:Boca Raton:FL:33431:5618471763:fterry@mdc.edu:2003
+Z23116519:Larry:Parker:12/18/2004:Professor:141468.0:3721 DUXFORD DRIVE:PalmBeach Gardens:FL:33710:5617925831:lparker@mdc.edu:2005
+Z23116602:Janice:Hartis Jr.:12/18/2004:Associate Professor:108751.0:1100MAYBERRY PL:Riviera Beach:FL:35400:5612497509:jhartis j@mdc.edu:2011
+Z23116680:Carol:Mortenson:12/18/2004:Assistant Professor:37460.0:3116LANTERN WAY:Boca Raton:FL:33424:5618510531:cmortenso@mdc.edu:2020
+Z23116731:David:Matthews:12/18/2004:Associate Professor:42206.0:2420WENTWORTH ST:Ft. Lauderdale:FL:34275:9546027089:dmatthews@mdc.edu:2015
+Z23116744:Linda:Harrington:3/28/2005:Professor:31084.0:109 CAPE FEARDRIVE:Deerfield Beach:FL:34025:9543759601:lharringt@mdc.edu:2025
+Z23116745:Margaret:Phillips:3/28/2005:Assistant Professor:28873.0:4102LEAFMORE ST:Wellington:FL:33223:5613756562:mphillips@mdc.edu:2002
+Z23116800:Nancy:Rhynes:7/6/2005:Associate Professor:40091.0:481 MCCOPPINCT.:Boynton Beach:FL:34231:5618710347:nrhynes@mdc.edu:2009
+Z23116873:Karen:King:7/6/2005:Professor:92575.0:1805 HUNTINGTON RD:DeerfieldBeach:FL:34035:9541958125:kking@mdc.edu:2030
+Z23116962:Dan:Thorpe:10/14/2005:Associate Professor:90148.0:738 ARJEANDR:Deerfield Beach:FL:34036:9544812485:dthorpe@mdc.edu:2033
+Z23116998:Dave:Wall:10/14/2005:Associate Professor:75657.0:860 PELICANBAY:Oakland Park:FL:33901:9549333773:dwall@mdc.edu:2014
+Z23117003:Anne:Payne:1/22/2006:Assistant Professor:115476.0:3904 CASCADEDR:Deerfield Beach:FL:34030:9544891231:apayne@mdc.edu:2002
+Z23117062:Greg:Koehler:5/2/2006:Assistant Professor:16072.0:186 TRILLIUMPLACE:Boca Raton:FL:33433:5618471669:gkoehler@mdc.edu:2019
+Z23117099:Gail:Linn:5/2/2006:Professor:87505.0:2126 PINE DRIVE:BocaRaton:FL:33422:5618722824:glinn@mdc.edu:2009
+Z23117193:Leigh:Gurganus:8/10/2006:Assistant Professor:99210.0:1019 BROWNINGRD.:Dania Beach:FL:33423:9544564894:lgurganus@mdc.edu:2032
+Z23117247:Dot:Kiziah:11/18/2006:Professor:63687.0:1817 DEARMON DR.:BocaRaton:FL:33421:5619132489:dkiziah@mdc.edu:2010
+Z23117341:Jan:Kraft:2/26/2007:Professor:138034.0:19903 225TH ST:DeerfieldBeach:FL:34036:9541325784:jkraft@mdc.edu:2008
+Z23117430:Andrew:Lein:6/6/2007:Associate Professor:72580.0:207 TRAVISLN:Greenacres:FL:33329:5614695790:alein@mdc.edu:2034
+Z23117526:Dick:Weaver:6/6/2007:Professor:77444.0:9019 WILLOW TRACECOURT:Lauderhill:FL:33711:9542435846:dweaver@mdc.edu:2000
+Z23117602:Dianne:McNeice:9/14/2007:Professor:54978.0:2714 VON THURINGERCT:Boynton Beach:FL:34223:5617991734:dmcneice@mdc.edu:2023
+Z23117643:Martha Baker:Sael:9/14/2007:Assistant Professor:94235.0:512MEADOWOOD DRIVE:Boynton Beach:FL:34223:5615098343:msael@mdc.edu:2031
+Z23117672:Jeff:Steffen:9/14/2007:Associate Professor:37919.0:6521 GATERIDGEDRIVE #202:Boynton Beach:FL:34221:5614526027:jsteffen@mdc.edu:2032
+Z23117758:Carol:Myers:12/23/2007:Professor:91475.0:3203SANDBURG:Plantation:FL:33347:9547720766:cmyers@mdc.edu:2029
+Z23117819:Georgia:Miller:12/23/2007:Professor:85146.0:3015 COTTAGE PL APTG:Davie:FL:34891:9545613458:gmiller@mdc.edu:2013
+Z23117827:Ann:Weller:12/23/2007:Associate Professor:111971.0:9201 SulkirkDr.:Deerfield Beach:FL:34036:9543245789:aweller@mdc.edu:2010
+Z23117909:Bob:Schoolmeester:4/1/2008:Professor:119901.0:5307 HOLLY RIDGERD:Boynton Beach:FL:34221:5613956553:bschoolme@mdc.edu:2020
+Z23117944:Ed:Setzer:7/10/2008:Associate Professor:73069.0:555 WHISTLING SWANDRIVE:Hollywood:FL:34222:9543345505:esetzer@mdc.edu:2017
+Z23117959:Elaine:Hayes:10/18/2008:Professor:50867.0:111 KNOLLWOODCT:Deerfield Beach:FL:34034:9545647891:ehayes@mdc.edu:2016
+Z23117978:Kathleen:Stewart:1/26/2009:Professor:80449.0:662 ANSLEYCT:Deerfield Beach:FL:34036:9545187851:kstewart@mdc.edu:2002
+Z23118018:Carolyn:Holbrook:5/6/2009:Associate Professor:73388.0:12204QUEENSBRIDGE CT:Deerfield Beach:FL:34035:9542125851:cholbrook@mdc.edu:2002
+Z23118098:Gretchen:Johnson:5/6/2009:Assistant Professor:58693.0:1508 PAGANRD:Boca Raton:FL:33432:5618633898:gjohnson@mdc.edu:2006
+Z23118167:Karen:Sanford:5/6/2009:Associate Professor:73173.0:5201 FIELDBROOKDR:Tamarac:FL:33433:9545104855:ksanford@mdc.edu:2032
+Z23118258:Armenta:Pohlig:8/14/2009:Associate Professor:99050.0:4132 WHITNEYPL:Deerfield Beach:FL:34034:9544478784:apohlig@mdc.edu:2006
+Z23118322:Bernie:Kepley:11/22/2009:Assistant Professor:61308.0:1705 RIVERRD.:Deerfield Beach:FL:34035:9547824956:bkepley@mdc.edu:2024
+Z23118382:Lori:Kinlaw:11/22/2009:Professor:66581.0:1810 PARKDR:Sunrise:FL:34036:9547894567:lkinlaw@mdc.edu:2027
+Z23118411:Dorothy:Shade:3/2/2010:Associate Professor:70183.0:5700 DUMFRIESDR:Greenacres:FL:33331:5616781079:dshade@mdc.edu:2033
+Z23118424:Doris:RUSSELL:6/10/2010:Associate Professor:47150.0:5105HUNTINGDON DR:Cooper City:FL:33349:9545956317:drussell@mdc.edu:2003
+Z23118473:Jeff:Mitchell:6/10/2010:Assistant Professor:76575.0:3043MARLBOROUGH RD:Wellington:FL:33273:5612187720:jmitchell@mdc.edu:2003
+Z23118499:Faye (Liz):Snyder:6/10/2010:Assistant Professor:47093.0:624KANKAKEE CT:Miami:FL:35932:9544962366:fsnyder@mdc.edu:2030
+Z23118569:Brian:Peterson:6/10/2010:Assistant Professor:21994.0:403 THE CAPEBLVD.:Miami Gardens:FL:33854:9548954578:bpeterson@mdc.edu:2014
+Z23118650:Colleen:Rohland:6/10/2010:Associate Professor:73752.0:5010 SIXFORKS ROAD:Pembroke Pines:FL:38607:9549453135:crohland@mdc.edu:2022
+Z23118683:Kathy:Ketner:9/18/2010:Professor:79101.0:1713 SWORDFISH LANE:BocaRaton:FL:33427:5617902642:kketner@mdc.edu:2016
+Z23118831:Dolly:Maiden:12/27/2010:Professor:115512.0:2320 ROCKLANEDRIVE:Deerfield Beach:FL:34035:9544315789:dmaiden@mdc.edu:2004
+Z23118842:Bill:Slaughter:4/6/2011:Professor:16466.0:6101 BELLOW ST:BoyntonBeach:FL:34227:5617937066:bslaughte@mdc.edu:2001
+Z23118932:Bob:Schultz:7/15/2011:Assistant Professor:15213.0:5321 SUN COASTDR.:Boca Raton:FL:33424:5617452135:bschultz@mdc.edu:2017
+Z23118955:Debbie:Schue:10/23/2011:Assistant Professor:46258.0:5313 INGLEWOODLANE:Boynton Beach:FL:34230:5617919585:dschue@mdc.edu:2001
+Z23118994:Ann:Sloan:1/31/2012:Associate Professor:112925.0:611 MIDDLE SOUNDLOOP RD. #3:Aventura:FL:33340:9548520684:asloan@mdc.edu:2016
+Z23119021:Doris:Weber:5/10/2012:Assistant Professor:56709.0:903 DANIELDRIVE:Boynton Beach:FL:34230:5617929017:dweber@mdc.edu:2027
+Z23119121:Bert:Neal:5/10/2012:Associate Professor:37360.0:326 BRECKENRIDGEDR:Deerfield Beach:FL:34031:9545981607:bneal@mdc.edu:2007
+Z23119185:Kathe:Strommen:8/18/2012:Assistant Professor:79291.0:702 REDFOREST TRL:Deerfield Beach:FL:34035:9548483365:kstrommen@mdc.edu:2033
+Z23119222:Ed:Ioos:8/18/2012:Professor:142331.0:1404 MAPLE ST:CoralGables:FL:34283:9542790114:eioos@mdc.edu:2018
+Z23119233:Joyce:White:11/26/2012:Assistant Professor:89033.0:9424 PALM BAYCIRCLE:Deerfield Beach:FL:34034:9548945132:jwhite@mdc.edu:2010
+Z23119307:Hugh:Jones:11/26/2012:Assistant Professor:95603.0:1515 CAROMARPL:Coral Spring:FL:33033:9545710048:hjones@mdc.edu:2007
+Z23118748:Kay:Whatafak:12/27/2010:Assistant Professor:17394.0:3850STONEY CREEK CHURCH RD:BocaRaton:FL:33427:5617828195:kpawlukie@mdc.edu:2018
