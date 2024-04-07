@@ -2,6 +2,7 @@ package Main;
 
 import java.io.IOException;
 
+import Controllers.IdentificationController;
 import Controllers.LogInController;
 import Controllers.MainController;
 import Controllers.SelectEditController;
@@ -46,6 +47,8 @@ public class Main extends Application {
 
     private static final String editFacultyViewPath = "/View/EditFacultyView.fxml";
 
+    private static final String identificationPath = "/View/IdentificationView.fxml";
+
     private Stage secondaryStage = new Stage();
 
     public static void main(String[] args) {
@@ -60,7 +63,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        loadMainView(primaryStage, "");
+        loadIdentificationView();
     }
 
     /**
@@ -85,6 +88,25 @@ public class Main extends Application {
             alert.setHeaderText("Error loading view");
             alert.setContentText("An error occurred while loading the main view");
             alert.showAndWait();
+        }
+    }
+
+    public void loadIdentificationView() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(identificationPath));
+            Parent root = loader.load();
+            IdentificationController controller = loader.getController();
+            controller.setMain(this);
+            secondaryStage.setTitle("Identificate yourself");
+            secondaryStage.setScene(new Scene(root, 300, 240));
+            secondaryStage.setResizable(false);
+            secondaryStage.show();
+        } catch(IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the identification view");
+            alert.showAndWait();            
         }
     }
 
