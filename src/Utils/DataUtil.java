@@ -342,4 +342,14 @@ public class DataUtil {
         }
         return false;  // return false otherwise
     }
+
+    public static boolean isCourse(String CRN) {
+        ArrayList<CourseRoster> roster = DataReader.readCourseRoster();
+        for(CourseRoster oneRecord: roster) {
+            if(oneRecord.getCRN() == Long.parseLong(CRN)) {
+                return true;
+            }
+        }
+        return false;
+    }
  }

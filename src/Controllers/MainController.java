@@ -19,7 +19,6 @@ import java.io.IOException;
 
 import Main.Main;
 import Utils.SceneManager;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -54,9 +53,6 @@ public class MainController implements SceneManager {
 
     @FXML
     private Button createNewCourseButton;
-
-    @FXML
-    private Button ExitButton;
 
     @FXML
     private Button createNewStudentButton;
@@ -101,17 +97,6 @@ public class MainController implements SceneManager {
     @Override
     public void setMain(Main main) {
         this.main = main;
-    }
-
-    @FXML
-    void ExitButton(ActionEvent event) {
-        ExitButton.setOnAction(e -> {
-            try {
-                Platform.exit();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        });
     }
 
     @FXML
