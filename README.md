@@ -29,4 +29,5 @@ This project is a Java application that simulates a basic college registration s
     - `Util`: the folder to maintain the utility classes
         - `DataReader.java`: the source java file for the DataReader class
         - `DataUtil.java`: the source java file for the DataUtil class
+        - `DataWriter.java`: the source java file for the DataWriter class
 - `lib`: the folder to maintain dependencies
