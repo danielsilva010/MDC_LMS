@@ -59,7 +59,33 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage primaryStage) {
-        loadMainView(primaryStage, "");;
+
+        loadMainView(primaryStage, "");
+    }
+
+    /**
+     * Load the main view
+     * 
+     * @param primaryStage the primary stage
+     */
+    public void loadMainView(Stage primaryStage, String name) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(mainViewPath));
+            Parent root = loader.load();
+            MainController controller = loader.getController();
+            controller.setName(name);
+            controller.setMain(this);
+            primaryStage.setTitle("Course Registration System");
+            primaryStage.setScene(new Scene(root, 650, 400));
+            primaryStage.setResizable(false);
+            primaryStage.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Error loading view");
+            alert.setContentText("An error occurred while loading the main view");
+            alert.showAndWait();
+        }
     }
 
     /**
@@ -201,31 +227,6 @@ public class Main extends Application {
             alert.setTitle("Error");
             alert.setHeaderText("Error loading view");
             alert.setContentText("An error occurred while loading the select edit view");
-            alert.showAndWait();
-        }
-    }
-
-    /**
-     * Load the main view
-     * 
-     * @param primaryStage the primary stage
-     */
-    public void loadMainView(Stage primaryStage, String name) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(mainViewPath));
-            Parent root = loader.load();
-            MainController controller = loader.getController();
-            controller.setName(name);
-            controller.setMain(this);
-            primaryStage.setTitle("Course Registration System");
-            primaryStage.setScene(new Scene(root, 650, 400));
-            primaryStage.setResizable(false);
-            primaryStage.show();
-        } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Error loading view");
-            alert.setContentText("An error occurred while loading the main view");
             alert.showAndWait();
         }
     }
