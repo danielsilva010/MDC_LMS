@@ -1,6 +1,6 @@
 ## COP 2800 - Java Programming
 
-This project is in no way shape or form professionally associated with Miami Dade College, this is a practice project for the COP 2800 course.
+<em>This project is in no way shape or form professionally associated with Miami Dade College, this is a practice project for the COP 2800 course.</em>
 
 ### Project Description [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
